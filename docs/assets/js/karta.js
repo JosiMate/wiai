@@ -197,8 +197,15 @@
                    children: dzieci }] });
 
     const blob = await Packer.toBlob(doc);
-    const nr = (dane._nr || "brak-numeru").replace(/[^\w-]/g, "");
-    const nazwa = `${(dane._klasa || def.klasa || "1TT").replace(/[^\w-]/g, "")}_${nr}_${def.sufiks || "karta"}.docx`;
+    /* Nazwa pliku bez polskich znaków: ogonki zamieniamy na litery bazowe,
+     * bo samo odsianie znaków spoza [A-Za-z0-9_-] zjadałoby je bez śladu
+     * ("Wiśniewska" stawała się "Winiewska"). */
+    const bezOgonkow = (s) => s
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      .replace(/ł/g, "l").replace(/Ł/g, "L")
+      .replace(/[^\w-]/g, "");
+    const nr = bezOgonkow(dane._nr || "brak-numeru") || "brak-numeru";
+    const nazwa = `${bezOgonkow(dane._klasa || def.klasa || "1TT")}_${nr}_${def.sufiks || "karta"}.docx`;
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url; a.download = nazwa; document.body.appendChild(a); a.click();

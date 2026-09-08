@@ -422,7 +422,7 @@ pracą kontrolną — to jest lista, według której powstają zadania.
 
 Pełne wymagania w jednym dokumencie — do wydruku albo przekazania rodzicom.
 
-[:material-file-word: Wymagania edukacyjne (.docx)](../pliki/wymagania-edukacyjne-wiai-4ti.docx){ .md-button download }
+[:material-file-word: Wymagania edukacyjne (.docx)](../pliki/wymagania-edukacyjne-wiai-4ti.docx){ .md-button download="wymagania-edukacyjne-wiai-4ti.docx" }
 
 ---
 
