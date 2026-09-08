@@ -111,12 +111,22 @@
   }
 
   function start() {
-    document.querySelectorAll('.quiz > script[type="application/json"]').forEach((dane) => {
-      const host = dane.parentElement;
+    document.querySelectorAll(".quiz").forEach((host) => {
       if (host.dataset.gotowe) return;
+
+      /* Przy nawigacji natychmiastowej (navigation.instant) Material odtwarza
+       * znaczniki <script> z pobranej strony i gubi przy tym atrybut type,
+       * więc selektor script[type="application/json"] nic nie znajduje.
+       * Bierzemy więc pierwszy skrypt bez src, a gdy i tego nie ma —
+       * tekst samego kontenera. */
+      const zrodlo = host.querySelector('script[type="application/json"]')
+                  || host.querySelector("script:not([src])");
+      const tekst = (zrodlo ? zrodlo.textContent : host.textContent).trim();
+      if (!tekst) return;
+
       host.dataset.gotowe = "1";
       let pytania;
-      try { pytania = JSON.parse(dane.textContent); }
+      try { pytania = JSON.parse(tekst); }
       catch (e) {
         host.innerHTML = '<p class="kp-blad">Nie udało się wczytać pytań (błąd w danych quizu).</p>';
         console.warn("quiz: błąd w JSON-ie —", e.message);
