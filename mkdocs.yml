@@ -1,0 +1,121 @@
+site_name: WiAI 4TI
+site_description: Materiały do lekcji przedmiotu witryny i aplikacje internetowe — klasa 4TI, technik informatyk
+site_author: PCEiKZ Szczucin
+
+# Adres docelowy strony. Przy GitHub Pages dla repozytorium projektowego
+# ma postać https://<użytkownik>.github.io/<nazwa-repo>/ — zmień, jeśli
+# nazwiesz repozytorium inaczej albo podepniesz własną domenę.
+site_url: https://josimate.github.io/wiai/
+
+# Włącza w nagłówku odnośnik do repozytorium i przycisk "Edytuj tę stronę".
+repo_url: https://github.com/JosiMate/wiai
+repo_name: JosiMate/wiai
+edit_uri: edit/main/docs/
+copyright: PCEiKZ Szczucin — materiały do użytku edukacyjnego
+
+theme:
+  name: material
+  language: pl
+  icon:
+    logo: material/language-html5
+    repo: fontawesome/brands/github
+  favicon: assets/favicon.png
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Przełącz na tryb jasny
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Przełącz na tryb ciemny
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Przełącz na tryb automatyczny
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.action.edit
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tooltips
+
+extra_css:
+  - assets/extra.css
+
+extra_javascript:
+  # docx.umd.js celowo NIE jest tu wymieniony — karta.js doczyta go dopiero
+  # przy generowaniu pliku, żeby nie obciążać czytelników materiału.
+  - assets/js/karta.js
+  - assets/js/quiz.js
+  - assets/js/postep.js
+  - assets/js/narzedzia.js
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: "#"
+      permalink_title: Odnośnik do tej sekcji
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  # Ikony Material/Octicons zapisywane jako :material-nazwa: — bez tego
+  # rozszerzenia shortcode'y zostają w tekście jako goły napis.
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+
+plugins:
+  # Wyszukiwarka lunr nie ma polskiego stemmera (biblioteka lunr-languages
+  # nie wspiera polskiego), więc świadomie zostawiamy tokenizer domyślny.
+  # Wyszukiwanie po polsku działa, ale bez odmiany przez przypadki:
+  # "wymagania" znajdzie "wymagania", nie znajdzie "wymaganiom".
+  - search
+
+nav:
+  - Start: index.md
+  - Dział I. Organizacja pracy i powtórzenie:
+      - Wymagania edukacyjne i bhp: dzial-1/wymagania-i-bhp.md
+
+extra:
+  social:
+    - icon: material/school
+      link: https://www.pceikz.pl
+      name: PCEiKZ Szczucin
+  generator: false
+
+not_in_nav: |
+  /assets/
