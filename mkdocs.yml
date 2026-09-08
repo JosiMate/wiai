@@ -110,6 +110,8 @@ nav:
   - Dział I. Organizacja pracy i powtórzenie:
       - Wymagania edukacyjne i bhp: dzial-1/wymagania-i-bhp.md
       - Powtórzenie HTML i CSS: dzial-1/powtorzenie-html-css.md
+  - Dział II. Tworzenie i publikowanie witryn internetowych:
+      - Edytory WYSIWYG i dobór narzędzi: dzial-2/edytory-wysiwyg.md
 
 extra:
   social:

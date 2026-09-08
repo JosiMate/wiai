@@ -1,0 +1,101 @@
+{
+  "id": "edytory-wysiwyg",
+  "tytul": "Edytory WYSIWYG i dobór narzędzi",
+  "przedmiot": "PCEiKZ Szczucin · witryny i aplikacje internetowe · klasa 4TI",
+  "klasa": "4TI",
+  "sufiks": "WYSIWYG",
+  "zadania": [
+    {
+      "nr": 1,
+      "tytul": "Ta sama strona dwiema drogami",
+      "poziom": "wymagania podstawowe · ocena 3",
+      "polecenie": "Zbuduj wizytówkę (nagłówek, sekcja z tekstem i obrazem, stopka) najpierw w narzędziu wizualnym, potem ręcznie w edytorze kodu. Podejrzyj kod źródłowy obu wersji skrótem <code>Ctrl + U</code> i uzupełnij porównanie.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z1_narzedzie", "Użyte narzędzie wizualne", "nazwa programu lub serwisu"],
+          ["z1_zn_wiz", "Liczba znaczników — wersja wizualna", ""],
+          ["z1_zn_rec", "Liczba znaczników — wersja ręczna", ""],
+          ["z1_style_wiz", "Liczba atrybutów style — wersja wizualna", ""],
+          ["z1_style_rec", "Liczba atrybutów style — wersja ręczna", ""],
+          ["z1_sem_wiz", "Znaczniki semantyczne w wersji wizualnej", "wypisz albo napisz: brak"],
+          ["z1_rozmiar_wiz", "Rozmiar pliku HTML — wersja wizualna", "w kB"],
+          ["z1_rozmiar_rec", "Rozmiar pliku HTML — wersja ręczna", "w kB"]
+        ]},
+        { "typ": "zrzut", "id": "z1_zrzut_kod", "opis": "fragment kodu źródłowego wersji wygenerowanej wizualnie" }
+      ]
+    },
+    {
+      "nr": 2,
+      "tytul": "Walidacja i waga strony",
+      "poziom": "wymagania rozszerzające · ocena 4",
+      "polecenie": "Sprawdź obie wersje w walidatorze <code>validator.w3.org</code>, a potem zmierz rozmiar pobranych zasobów w narzędziach deweloperskich (F12 → zakładka Sieć).",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z2_bledy_wiz", "Błędy walidatora — wersja wizualna", ""],
+          ["z2_bledy_rec", "Błędy walidatora — wersja ręczna", ""],
+          ["z2_zasoby_wiz", "Rozmiar wszystkich zasobów — wersja wizualna", ""],
+          ["z2_zasoby_rec", "Rozmiar wszystkich zasobów — wersja ręczna", ""]
+        ]},
+        { "typ": "zrzut", "id": "z2_zrzut_walidator", "opis": "wynik walidatora dla wersji wygenerowanej wizualnie" },
+        { "typ": "tekst", "id": "z2_wniosek", "wiersze": 4,
+          "pytanie": "Sformułuj wniosek z obu pomiarów. Odnieś się do semantyki i do wagi strony — nie ograniczaj się do stwierdzenia, że jedna wersja jest lepsza." }
+      ]
+    },
+    {
+      "nr": 3,
+      "tytul": "Konsekwencje wygenerowanego kodu",
+      "poziom": "wymagania rozszerzające · ocena 4",
+      "polecenie": "Pytania dotyczą kodu, który obejrzałeś w zadaniu 1.",
+      "pola": [
+        { "typ": "tekst", "id": "z3_semantyka", "wiersze": 3,
+          "pytanie": "Generator zamienił nagłówek sekcji na div z dużą czcionką. Wymień dwie konkretne szkody, jakie to powoduje — poza wyglądem." },
+        { "typ": "tekst", "id": "z3_style", "wiersze": 3,
+          "pytanie": "Dlaczego style zapisane w atrybucie style utrudniają zmianę wyglądu całego serwisu? Odwołaj się do specyficzności." },
+        { "typ": "tekst", "id": "z3_egzamin", "wiersze": 2,
+          "pytanie": "Strona wygląda dobrze, ale zbudowano ją z samych divów ze stylami lokalnymi. Co się z nią stanie na egzaminie praktycznym INF.03?" }
+      ]
+    },
+    {
+      "nr": 4,
+      "tytul": "Dobór narzędzia do zlecenia",
+      "poziom": "wymagania dopełniające · ocena 5",
+      "polecenie": "Dla każdego z trzech zleceń wskaż narzędzie i uzasadnij wybór, powołując się na kryteria z sekcji 4 materiału: kto aktualizuje, jak długo strona ma żyć, czyj jest kod, wymagania dostępności, budżet. <strong>Uzasadnienie ma być argumentem, nie preferencją.</strong>",
+      "pola": [
+        { "typ": "tekst", "id": "z4_a", "wiersze": 4,
+          "pytanie": "A. Wizytówka fryzjera — jedna podstrona, właścicielka sama chce zmieniać cennik, budżet minimalny." },
+        { "typ": "tekst", "id": "z4_b", "wiersze": 4,
+          "pytanie": "B. Serwis szkoły publicznej — wiele podstron, ogłoszenia dodaje sekretariat, obowiązuje WCAG." },
+        { "typ": "tekst", "id": "z4_c", "wiersze": 4,
+          "pytanie": "C. Sklep z rękodziełem — rozwijany przez kilka lat, kod ma zostać własnością zamawiającego." }
+      ]
+    },
+    {
+      "nr": 5,
+      "tytul": "Środowisko pracy programisty",
+      "poziom": "wymagania dopełniające · ocena 5",
+      "polecenie": "Odtwórz strukturę menu z sekcji 5 materiału, używając wyłącznie skrótu Emmeta.",
+      "pola": [
+        { "typ": "tekst", "id": "z5_skrot", "wiersze": 2,
+          "pytanie": "Zapisz użyty skrót Emmeta." },
+        { "typ": "zrzut", "id": "z5_zrzut", "opis": "edytor z rozwiniętą strukturą HTML" },
+        { "typ": "tabela", "wiersze": [
+          ["z5_czas_emmet", "Czas: Emmet", "w sekundach"],
+          ["z5_czas_wiz", "Czas: przeciąganie w narzędziu wizualnym", ""]
+        ]},
+        { "typ": "tekst", "id": "z5_narzedzia", "wiersze": 3,
+          "pytanie": "Wymień trzy dodatki lub funkcje edytora kodu, które zastępują wygodę narzędzia wizualnego, i napisz, co daje każde z nich." }
+      ]
+    },
+    {
+      "nr": 6,
+      "tytul": "Do wyboru — na ocenę wyższą",
+      "poziom": "wymagania dopełniające i wykraczające · oceny 5–6",
+      "polecenie": "Wykonaj jedno z trzech zadań opisanych w sekcji „Na ocenę celującą” na stronie materiału.",
+      "pola": [
+        { "typ": "wybor", "id": "z6_wybor", "pytanie": "Wybieram zadanie",
+          "opcje": ["A — test dostępności strony z kreatora", "B — oczyszczenie wygenerowanego kodu", "C — rekomendacja narzędzi dla trzech zleceń"] },
+        { "typ": "tekst", "id": "z6_odp", "wiersze": 10, "pytanie": "Rozwiązanie wraz z wnioskami" }
+      ]
+    }
+  ]
+}
