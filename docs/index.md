@@ -33,7 +33,7 @@ to powtórzenie i sprawdzian końcowy.
 | Temat | Godz. | Materiały |
 | --- | :---: | --- |
 | **[Wymagania edukacyjne, przepisy bhp i sanitarne](dzial-1/wymagania-i-bhp.md)** | 1 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
-| Powtórzenie wiadomości z klasy 3 (HTML/CSS) | 2 | *w przygotowaniu* |
+| **[Powtórzenie wiadomości z klasy 3 (HTML/CSS)](dzial-1/powtorzenie-html-css.md)** | 2 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 
 ### Dział II. Tworzenie i publikowanie witryn internetowych
 

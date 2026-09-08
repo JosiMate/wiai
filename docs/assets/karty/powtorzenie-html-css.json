@@ -1,0 +1,95 @@
+{
+  "id": "powtorzenie-html-css",
+  "tytul": "Powtórzenie: HTML i CSS",
+  "przedmiot": "PCEiKZ Szczucin · witryny i aplikacje internetowe · klasa 4TI",
+  "klasa": "4TI",
+  "sufiks": "HTMLCSS",
+  "zadania": [
+    {
+      "nr": 1,
+      "tytul": "Struktura dokumentu",
+      "poziom": "wymagania podstawowe · ocena 3",
+      "polecenie": "Zbuduj szkielet strony wizytówkowej: nagłówek z tytułem i menu (trzy pozycje), główna treść z dwiema sekcjami, treść poboczna, stopka. <strong>Wyłącznie znaczniki semantyczne — ani jednego <code>div</code>.</strong> Sprawdź wynik w walidatorze W3C.",
+      "pola": [
+        { "typ": "tekst", "id": "z1_kod", "wiersze": 12,
+          "pytanie": "Wklej kod z sekcji body (bez stylów)." },
+        { "typ": "zrzut", "id": "z1_walidator", "opis": "wynik walidatora W3C dla twojej strony" },
+        { "typ": "tekst", "id": "z1_uzasadnienie", "wiersze": 3,
+          "pytanie": "Który znacznik semantyczny wybrałeś na treść poboczną i dlaczego akurat ten?" }
+      ]
+    },
+    {
+      "nr": 2,
+      "tytul": "Znajdź pięć błędów",
+      "poziom": "wymagania podstawowe i rozszerzające · oceny 3–4",
+      "polecenie": "W ćwiczeniu 2 na stronie materiału jest fragment kodu z pięcioma błędami. Wypisz każdy z nich i podaj poprawkę.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z2_b1", "Błąd 1 i poprawka", ""],
+          ["z2_b2", "Błąd 2 i poprawka", ""],
+          ["z2_b3", "Błąd 3 i poprawka", ""],
+          ["z2_b4", "Błąd 4 i poprawka", ""],
+          ["z2_b5", "Błąd 5 i poprawka", ""]
+        ]},
+        { "typ": "tekst", "id": "z2_poprawiony", "wiersze": 10,
+          "pytanie": "Wklej poprawioną wersję całego fragmentu." }
+      ]
+    },
+    {
+      "nr": 3,
+      "tytul": "Specyficzność i model pudełkowy",
+      "poziom": "wymagania rozszerzające · ocena 4",
+      "polecenie": "Zadania rachunkowe — policz i uzasadnij, nie zgaduj.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z3_spec1", "Specyficzność selektora #menu a", "zapisz jako cztery liczby"],
+          ["z3_spec2", "Specyficzność selektora nav ul li a.link", ""],
+          ["z3_wygrywa", "Który wygrywa", ""],
+          ["z3_box_content", "Szerokość elementu przy content-box", "width 300px, padding 20px, border 5px"],
+          ["z3_box_border", "Szerokość tego samego elementu przy border-box", ""]
+        ]},
+        { "typ": "tekst", "id": "z3_marginesy", "wiersze": 3,
+          "pytanie": "Akapit ma margin-bottom 30px, następny margin-top 20px. Jaki będzie odstęp i dlaczego?" }
+      ]
+    },
+    {
+      "nr": 4,
+      "tytul": "Formularz gotowy pod PHP",
+      "poziom": "wymagania rozszerzające · ocena 4",
+      "polecenie": "Zbuduj formularz kontaktowy: imię, e-mail, temat (lista wyboru), treść (pole wielowierszowe) i przycisk wysyłania. Każde pole ma powiązaną etykietę i atrybut <code>name</code>. Ustaw metodę wysyłania właściwą dla formularza z dłuższą treścią.",
+      "pola": [
+        { "typ": "tekst", "id": "z4_kod", "wiersze": 12, "pytanie": "Wklej kod formularza." },
+        { "typ": "wybor", "id": "z4_metoda", "pytanie": "Wybrana metoda wysyłania",
+          "opcje": ["get", "post"] },
+        { "typ": "tekst", "id": "z4_dlaczego", "wiersze": 3,
+          "pytanie": "Uzasadnij wybór metody. Wymień dwie konkretne różnice między GET a POST." },
+        { "typ": "tekst", "id": "z4_php", "wiersze": 2,
+          "pytanie": "Jak w PHP odczytasz wartość pola z e-mailem? Zapisz dokładny fragment kodu." }
+      ]
+    },
+    {
+      "nr": 5,
+      "tytul": "Układ responsywny",
+      "poziom": "wymagania dopełniające · ocena 5",
+      "polecenie": "Zbuduj galerię czterech kart: jedna kolumna na telefonie, trzy kolumny od 48 rem. Grid, <code>gap</code>, jednostki względne, podejście mobile-first.",
+      "pola": [
+        { "typ": "tekst", "id": "z5_css", "wiersze": 10, "pytanie": "Wklej reguły CSS odpowiadające za układ." },
+        { "typ": "zrzut", "id": "z5_waski", "opis": "strona przy wąskim oknie — jedna kolumna" },
+        { "typ": "zrzut", "id": "z5_szeroki", "opis": "ta sama strona przy szerokim oknie — trzy kolumny" },
+        { "typ": "tekst", "id": "z5_flex", "wiersze": 3,
+          "pytanie": "Dlaczego do tego układu lepszy jest grid niż flexbox? Odpowiedz przez różnicę między nimi, nie przez preferencję." }
+      ]
+    },
+    {
+      "nr": 6,
+      "tytul": "Do wyboru — na ocenę wyższą",
+      "poziom": "wymagania dopełniające i wykraczające · oceny 5–6",
+      "polecenie": "Wykonaj jedno z trzech zadań opisanych w sekcji „Na ocenę celującą” na stronie materiału.",
+      "pola": [
+        { "typ": "wybor", "id": "z6_wybor", "pytanie": "Wybieram zadanie",
+          "opcje": ["A — przebudowa układu z float na grid", "B — audyt dostępności wybranej strony", "C — zastąpienie JavaScriptu selektorem :has()"] },
+        { "typ": "tekst", "id": "z6_odp", "wiersze": 10, "pytanie": "Rozwiązanie wraz z wnioskami" }
+      ]
+    }
+  ]
+}

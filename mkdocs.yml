@@ -109,6 +109,7 @@ nav:
   - Start: index.md
   - Dział I. Organizacja pracy i powtórzenie:
       - Wymagania edukacyjne i bhp: dzial-1/wymagania-i-bhp.md
+      - Powtórzenie HTML i CSS: dzial-1/powtorzenie-html-css.md
 
 extra:
   social:
