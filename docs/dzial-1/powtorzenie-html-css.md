@@ -11,6 +11,19 @@
     oczywiste, JavaScript i PHP będą wyglądały na trudniejsze, niż są naprawdę
     — bo zabraknie ci nie programowania, tylko fundamentu pod nim.
 
+!!! success "Cele lekcji"
+
+    Po tej lekcji potrafisz:
+
+    1. zbudować poprawny dokument HTML5 i wskazać w nim elementy struktury: nagłówek, nawigację, sekcje główną i stopkę
+    2. dobrać znacznik do rodzaju treści — nagłówki, listy, tabelę, obraz z tekstem alternatywnym, odnośnik
+    3. zbudować formularz z polami różnych typów i wyjaśnić, do czego służą atrybuty `name`, `id` i `for`
+    4. napisać selektory CSS: elementu, klasy, identyfikatora, potomka i pseudoklasy, i przewidzieć, który z nich zadziała silniej
+    5. wyjaśnić model pudełkowy i policzyć rzeczywistą szerokość elementu przy obu wartościach `box-sizing`
+    6. zbudować układ strony z użyciem flexboxa i siatki CSS oraz dobrać jedno do drugiego według rodzaju układu
+    7. przygotować stronę responsywną: zapytania medialne, jednostki względne, obrazy skalowalne
+    8. sprawdzić kod walidatorem W3C i poprawić zgłoszone błędy
+
 ## Jak wykorzystać tę lekcję
 
 Zacznij od **[testu na końcu strony](#sprawdz-sie)**. Zajmie kilka minut i pokaże,

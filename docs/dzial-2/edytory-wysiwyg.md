@@ -10,6 +10,17 @@
     umiesz spojrzeć na zadanie, warunki i odbiorcę, i uzasadnić, czym je
     zrobisz. To pytanie wraca potem przy każdym zleceniu w pracy.
 
+!!! success "Cele lekcji"
+
+    Po tej lekcji potrafisz:
+
+    1. wyjaśnić, na czym polega zasada WYSIWYG, i wskazać, za co po jej zastosowaniu nadal odpowiadasz jako autor strony
+    2. rozróżnić cztery rodziny narzędzi do budowy witryn i podać przykład zastosowania każdej z nich
+    3. ocenić kod wygenerowany przez edytor: znaleźć nadmiarowe znaczniki, style wpisane w atrybuty i braki w dostępności
+    4. dobrać narzędzie do zadania, uzasadniając wybór wymaganiami zlecenia, budżetem i kompetencjami odbiorcy
+    5. wskazać, kiedy edytor WYSIWYG jest rozwiązaniem lepszym od pisania kodu ręcznie, a kiedy gorszym
+    6. wymienić składniki nowoczesnego środowiska pracy front-end i powiedzieć, co każdy z nich wnosi
+
 ## 1. Co znaczy WYSIWYG
 
 **WYSIWYG** to skrót od *What You See Is What You Get* — „to, co widzisz, jest
