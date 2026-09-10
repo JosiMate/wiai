@@ -1,0 +1,69 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Motyw kolorystyczny serwisu wiai — wyprowadzony z ikony serwisu.
+
+   Ikona (docs/assets/favicon.png) to znaczniki „</>" na tle #3f51b5: indygo.
+   To akurat dokładnie ten sam kolor, którego Material używa w palecie
+   `primary: indigo`, więc serwis i bez tego pliku nie wyglądał niespójnie.
+   Plik jest tu z dwóch innych powodów:
+
+     • w motywie ciemnym Material zostawia ten sam ciemny indygo, który na tle
+       slate ma 2,36:1 — odnośniki były praktycznie nieczytelne;
+     • pozostałe cztery serwisy mają własne motywy wyprowadzone z ikon i dobrze,
+       żeby ten trzymał się tej samej konwencji, gdyby ikona kiedyś się zmieniła.
+
+   Wczytywany jako trzeci, po stylesheets/extra.css; dotyczy wyłącznie tego
+   serwisu.
+
+   Kontrast policzony na wartościach, które CSS naprawdę wylicza w przeglądarce
+   (a nie na tle „mniej więcej takim jak slate"). Próg AA dla tekstu to 4,5:1;
+   tło motywu ciemnego wychodzi tu #1e2029:
+       #3f51b5 na białym        → 6,87:1  ✔ motyw jasny
+       #3f51b5 na tle slate     → 2,36:1  ✘ za mało, stąd jaśniejszy wariant
+       #8c9eff na tle slate     → 6,53:1  ✔ motyw ciemny
+       tekst #171a2b na #8c9eff → 6,93:1  ✔ napis na przycisku podstawowym
+       biel na #8c9eff          → 2,49:1  ✘ dlatego napis jest ciemny
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────── motyw ciemny (slate) ─────────────────────────── */
+/* Selektory celowo dwuczłonowe. Material ustawia --md-typeset-a-color regułą
+   [data-md-color-scheme=slate][data-md-color-primary=indigo], która ma wyższą
+   swoistość niż sam [data-md-color-scheme=slate] — bez dopisania drugiego
+   atrybutu nasze wartości w ogóle by nie weszły. */
+[data-md-color-scheme="slate"][data-md-color-primary] {
+  /* Domyślne 232 zostaje: szarości slate są zbudowane dokładnie z odcienia
+     tej ikony (231°), więc nie ma czego poprawiać. Zmienna jest tu wypisana
+     świadomie — żeby przy zmianie ikony było widać, gdzie sięgnąć. */
+  --md-hue: 232;
+
+  /* Odnośniki i akcenty: jaśniejszy brat koloru ikony (indigo A100). */
+  --md-typeset-a-color: #8c9eff;
+  --md-primary-fg-color: #8c9eff;
+  --md-primary-fg-color--light: #b3c0ff;
+  --md-primary-fg-color--dark: #3f51b5;
+  --md-accent-fg-color: #b3c0ff;
+
+  /* Napis na przycisku podstawowym musi być ciemny — biel na tym indygo
+     daje 2,49:1, czyli poniżej każdego progu. */
+  --md-primary-bg-color: #171a2b;
+  --md-primary-bg-color--light: #171a2b;
+}
+
+/* ─────────────────────────── motyw jasny (default) ─────────────────────────── */
+[data-md-color-scheme="default"][data-md-color-primary] {
+  /* Tu wchodzi dokładnie kolor ikony — na bieli ma 6,87:1. */
+  --md-typeset-a-color: #3f51b5;
+  --md-primary-fg-color: #3f51b5;
+  --md-primary-fg-color--light: #5c6bc0;
+  --md-primary-fg-color--dark: #283593;
+  --md-accent-fg-color: #283593;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffff;
+}
+
+/* Pasek wyboru tekstu — drobiazg, ale widać go przy każdym zaznaczeniu. */
+::selection {
+  background-color: color-mix(in srgb, var(--md-typeset-a-color) 28%, transparent);
+}
+
+/* Ten serwis nie ma kafelków wyboru rocznika ani modułu — strona startowa to
+   od razu spis tematów — więc reguł na kafelki tu nie ma. */
