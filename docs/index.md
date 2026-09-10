@@ -33,7 +33,7 @@ to powtórzenie i sprawdzian końcowy.
 | Temat | Godz. | Materiały |
 | --- | :---: | --- |
 | **[Wymagania edukacyjne, przepisy bhp i sanitarne](dzial-1/wymagania-i-bhp.md)** | 1 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
-| Powtórzenie wiadomości z klasy 3 (HTML/CSS) | 2 | *w przygotowaniu* |
+| **[Powtórzenie wiadomości z klasy 3 (HTML/CSS)](dzial-1/powtorzenie-html-css.md)** | 2 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 
 ### Dział II. Tworzenie i publikowanie witryn internetowych
 
@@ -41,7 +41,7 @@ to powtórzenie i sprawdzian końcowy.
 
 | Temat | Godz. | Materiały |
 | --- | :---: | --- |
-| Edytory WYSIWYG – charakterystyka i dobór narzędzi | 3 | *w przygotowaniu* |
+| **[Edytory WYSIWYG – charakterystyka i dobór narzędzi](dzial-2/edytory-wysiwyg.md)** | 3 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 | Tworzenie witryny internetowej według projektu/scenopisu – ćwiczenia | 3 | *w przygotowaniu* |
 | Walidacja poprawności kodu HTML i CSS (W3C) oraz testowanie w przeglądarkach | 3 | *w przygotowaniu* |
 | Publikacja stron www – klienci FTP i serwery hostingowe | 3 | *w przygotowaniu* |
