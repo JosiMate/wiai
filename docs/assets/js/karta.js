@@ -209,7 +209,7 @@
             const bin = atob(b64);
             const bajty = new Uint8Array(bin.length);
             for (let i = 0; i < bin.length; i++) bajty[i] = bin.charCodeAt(i);
-            const typ = /png/.test(nag) ? "png" : "jpg";
+            const typ = /png/i.test(nag) ? "png" : "jpg";
             const wym = await rozmiar(d);
             dzieci.push(new Paragraph({ spacing: { after: 160 }, children: [
               new ImageRun({ type: typ, data: bajty, transformation: wym })] }));
