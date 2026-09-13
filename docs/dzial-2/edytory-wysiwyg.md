@@ -348,6 +348,11 @@ Zapisany plik dołącz w **Dzienniku VULCAN → Zadania domowe**, w zadaniu
     zrzuty z pomiarami — oddajesz **osobno**, w Dzienniku VULCAN w zadaniu
     *Zadanie na ocenę celującą: Edytory WYSIWYG i dobór narzędzi*, w ciągu **dwóch tygodni** od
     omówienia tematu.
+
+    Wykonane i oddane w terminie zadanie liczy się jako „inne, porównywalne
+    osiągnięcie” w rozumieniu § 29 ust. 1 pkt 1 lit. c statutu — do oceny
+    celującej nie trzeba startować w konkursie.
+
 Wybierz jedno zadanie.
 
 1. **Przetestuj dostępność strony z kreatora.** Zbuduj prostą stronę

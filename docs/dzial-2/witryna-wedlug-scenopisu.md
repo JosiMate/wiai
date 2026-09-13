@@ -540,6 +540,11 @@ Oddajesz **dwie rzeczy**: spakowaną witrynę i kartę pracy.
     zrzuty z pomiarami — oddajesz **osobno**, w Dzienniku VULCAN w zadaniu
     *Zadanie na ocenę celującą: Tworzenie witryny według projektu/scenopisu — ćwiczenia*, w ciągu **dwóch tygodni** od
     omówienia tematu.
+
+    Wykonane i oddane w terminie zadanie liczy się jako „inne, porównywalne
+    osiągnięcie” w rozumieniu § 29 ust. 1 pkt 1 lit. c statutu — do oceny
+    celującej nie trzeba startować w konkursie.
+
 Wybierz jedno zadanie. Warunkiem jest wcześniejsze oddanie kompletnej witryny.
 
 1. **Czwarta podstrona — galeria.** Dołóż `galeria.html` z siatką miniatur

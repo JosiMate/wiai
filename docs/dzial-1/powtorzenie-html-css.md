@@ -485,6 +485,11 @@ niedostępne, wklej odpowiedzi w pole tekstowe.
     zrzuty z pomiarami — oddajesz **osobno**, w Dzienniku VULCAN w zadaniu
     *Zadanie na ocenę celującą: Powtórzenie: HTML i CSS*, w ciągu **dwóch tygodni** od
     omówienia tematu.
+
+    Wykonane i oddane w terminie zadanie liczy się jako „inne, porównywalne
+    osiągnięcie” w rozumieniu § 29 ust. 1 pkt 1 lit. c statutu — do oceny
+    celującej nie trzeba startować w konkursie.
+
 Wybierz jedno i przygotuj krótkie omówienie dla klasy.
 
 1. **Przebuduj układ z pływających elementów na grid.** Znajdź w internecie
