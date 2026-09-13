@@ -108,6 +108,41 @@ to powtórzenie i sprawdzian końcowy.
 
 </div>
 
+
+<!-- zadania6:start -->
+
+## Zadania na ocenę celującą
+
+Każdy dział ma w Dzienniku VULCAN własne zadanie **„Zadanie na ocenę celującą:
+Dział …”**. Wybierasz **jedno** zadanie z listy poniżej i odsyłasz je tam
+w ciągu **dwóch tygodni od zakończenia działu**. Zadanie da się wykonać po
+przerobieniu tematu, przy którym stoi — dlatego cała lista jest widoczna
+od początku działu, a nie dopiero na jego końcu.
+
+Pełne zasady (co zostaje w karcie pracy, jak nazwać plik, co jest oceniane)
+opisuje strona [wymagań edukacyjnych](dzial-1/wymagania-i-bhp.md).
+
+??? example "Dział I. Organizacja pracy i powtórzenie"
+
+    | Zadanie | Z tematu |
+    | --- | --- |
+    | **1.** Przebuduj układ z pływających elementów na grid | [Powtórzenie wiadomości z klasy 3 (HTML/CSS)](dzial-1/powtorzenie-html-css.md) |
+    | **2.** Zbadaj dostępność wybranej strony publicznej | [Powtórzenie wiadomości z klasy 3 (HTML/CSS)](dzial-1/powtorzenie-html-css.md) |
+    | **3.** Zastąp JavaScript selektorem `:has()` | [Powtórzenie wiadomości z klasy 3 (HTML/CSS)](dzial-1/powtorzenie-html-css.md) |
+
+??? example "Dział II. Tworzenie i publikowanie witryn internetowych"
+
+    | Zadanie | Z tematu |
+    | --- | --- |
+    | **1.** Przetestuj dostępność strony z kreatora | [Edytory WYSIWYG – charakterystyka i dobór narzędzi](dzial-2/edytory-wysiwyg.md) |
+    | **2.** Oczyść wygenerowany kod | [Edytory WYSIWYG – charakterystyka i dobór narzędzi](dzial-2/edytory-wysiwyg.md) |
+    | **3.** Przygotuj rekomendację dla klienta | [Edytory WYSIWYG – charakterystyka i dobór narzędzi](dzial-2/edytory-wysiwyg.md) |
+    | **1.** Czwarta podstrona — galeria | [Tworzenie witryny internetowej według projektu/scenopisu – ćwiczenia](dzial-2/witryna-wedlug-scenopisu.md) |
+    | **2.** Wersja ciemna bez JavaScriptu | [Tworzenie witryny internetowej według projektu/scenopisu – ćwiczenia](dzial-2/witryna-wedlug-scenopisu.md) |
+    | **3.** Audyt strony | [Tworzenie witryny internetowej według projektu/scenopisu – ćwiczenia](dzial-2/witryna-wedlug-scenopisu.md) |
+    | **4.** Wersja do druku | [Tworzenie witryny internetowej według projektu/scenopisu – ćwiczenia](dzial-2/witryna-wedlug-scenopisu.md) |
+
+<!-- zadania6:end -->
 ---
 
 *Łącznie 90 godzin w roku szkolnym. Zakres przedmiotu odpowiada jednostkom
