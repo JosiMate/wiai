@@ -475,41 +475,6 @@ niedostępne, wklej odpowiedzi w pole tekstowe.
 
 ---
 
-## Na ocenę celującą
-
-
-!!! info "Jak oddajesz zadanie na ocenę celującą"
-
-    W karcie pracy zaznaczasz tylko, **które zadanie wybrałeś**, i opisujesz
-    w kilku zdaniach, co z niego wyszło. Samą pracę — plik, kod, witrynę albo
-    zrzuty z pomiarami — oddajesz **osobno**, w Dzienniku VULCAN, w zadaniu
-    *Zadanie na ocenę celującą* założonym do tego działu. Termin: **dwa tygodnie
-    od zakończenia działu**.
-
-    Plik nazwij `nr<numer w dzienniku>-<skrót tematu>`, a w treści zadania dopisz
-    3–5 zdań: którego tematu i zadania dotyczy, co zrobiłeś i jaki jest wynik.
-
-    Wykonane i oddane w terminie zadanie liczy się jako „inne, porównywalne
-    osiągnięcie” w rozumieniu § 29 ust. 1 pkt 1 lit. c statutu — do oceny
-    celującej nie trzeba startować w konkursie. Pełne zasady opisuje strona
-    *Wymagania edukacyjne i bhp*.
-
-Wybierz jedno i przygotuj krótkie omówienie dla klasy.
-
-1. **Przebuduj układ z pływających elementów na grid.** Znajdź w internecie
-   stronę zbudowaną na `float` (albo napisz taką sam), a potem odtwórz ten sam
-   układ gridem. Porównaj długość arkusza stylów przed i po.
-
-2. **Zbadaj dostępność wybranej strony publicznej** — na przykład szkoły albo
-   urzędu. Sprawdź kontrast, obsługę klawiaturą, obecność `alt` i etykiet.
-   Opisz trzy najpoważniejsze problemy i podaj poprawki.
-
-3. **Zastąp JavaScript selektorem `:has()`.** Znajdź przykład efektu, który
-   kiedyś wymagał skryptu (na przykład podświetlenie formularza zawierającego
-   nieprawidłowe pole) i zrealizuj go samym CSS-em.
-
----
-
 !!! info "Materiały uzupełniające"
 
     - Dokumentacja HTML i CSS: [MDN Web Docs](https://developer.mozilla.org/pl/)

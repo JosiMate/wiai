@@ -530,45 +530,6 @@ Oddajesz **dwie rzeczy**: spakowaną witrynę i kartę pracy.
 
 ---
 
-## Na ocenę celującą
-
-
-!!! info "Jak oddajesz zadanie na ocenę celującą"
-
-    W karcie pracy zaznaczasz tylko, **które zadanie wybrałeś**, i opisujesz
-    w kilku zdaniach, co z niego wyszło. Samą pracę — plik, kod, witrynę albo
-    zrzuty z pomiarami — oddajesz **osobno**, w Dzienniku VULCAN, w zadaniu
-    *Zadanie na ocenę celującą* założonym do tego działu. Termin: **dwa tygodnie
-    od zakończenia działu**.
-
-    Plik nazwij `nr<numer w dzienniku>-<skrót tematu>`, a w treści zadania dopisz
-    3–5 zdań: którego tematu i zadania dotyczy, co zrobiłeś i jaki jest wynik.
-
-    Wykonane i oddane w terminie zadanie liczy się jako „inne, porównywalne
-    osiągnięcie” w rozumieniu § 29 ust. 1 pkt 1 lit. c statutu — do oceny
-    celującej nie trzeba startować w konkursie. Pełne zasady opisuje strona
-    *Wymagania edukacyjne i bhp*.
-
-Wybierz jedno zadanie. Warunkiem jest wcześniejsze oddanie kompletnej witryny.
-
-1. **Czwarta podstrona — galeria.** Dołóż `galeria.html` z siatką miniatur
-   (Grid, `loading="lazy"`, opisy alternatywne). Zmierz w zakładce *Sieć*
-   rozmiar pobranych zasobów przed zastosowaniem `loading="lazy"` i po nim.
-
-2. **Wersja ciemna bez JavaScriptu.** Dodaj drugi zestaw zmiennych w regule
-   `@media (prefers-color-scheme: dark)` i sprawdź kontrast każdej pary kolorów
-   również w tej wersji. Podaj zmierzone wartości.
-
-3. **Audyt strony.** Przepuść witrynę przez wbudowany audyt przeglądarki
-   (F12 → *Lighthouse* lub odpowiednik) i opisz trzy najpoważniejsze uwagi:
-   co znaczą, co poprawiłeś i jak zmienił się wynik.
-
-4. **Wersja do druku.** Napisz regułę `@media print`, która ukrywa nawigację
-   i stopkę, rozwija odsyłacze do postaci tekstowej i mieści cennik na jednej
-   stronie A4.
-
----
-
 !!! info "Materiały uzupełniające"
 
     - Walidator HTML: [validator.w3.org](https://validator.w3.org/) · walidator CSS: [jigsaw.w3.org/css-validator](https://jigsaw.w3.org/css-validator/)

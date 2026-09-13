@@ -95,28 +95,6 @@
         { "typ": "tekst", "id": "z5_slabe", "wiersze": 3,
           "pytanie": "Które kryterium z karty oceny wypadło u ciebie najsłabiej i co konkretnie zrobisz przy kolejnej witrynie, żeby to poprawić?" }
       ]
-    },
-    {
-      "nr": 6,
-      "tytul": "Zgłoszenie zadania na ocenę celującą",
-      "poziom": "wymagania wykraczające · ocena 6",
-      "polecenie": "Wypełnij to zgłoszenie, jeśli wykonujesz zadanie dodatkowe. <strong>Samą pracę oddajesz osobno</strong> — w Dzienniku VULCAN, w zadaniu „Zadanie na ocenę celującą” założonym do tego działu, w ciągu dwóch tygodni od zakończenia działu. W karcie zostaje zgłoszenie i wnioski.",
-      "pola": [
-        { "typ": "wybor", "id": "z6_wybor", "pytanie": "Wybieram zadanie",
-          "opcje": [
-            "1 — czwarta podstrona z galerią",
-            "2 — wersja ciemna bez JavaScriptu",
-            "3 — audyt strony",
-            "4 — wersja do druku"
-          ] },
-        { "typ": "tekst", "id": "z6_opis", "wiersze": 6,
-          "pytanie": "Co zrobiłeś i co z tego wyszło? Kilka zdań: na czym polegało zadanie, jak je wykonałeś i jaki jest wynik albo wniosek.",
-          "podpowiedz": "Zadanie polegało na … . Zrobiłem … . Wyszło mi, że …" },
-        { "typ": "tabela", "wiersze": [
-          ["z6_plik", "Nazwa pliku oddanego w VULCAN-ie", "nr<numer w dzienniku>-<skrót tematu>"],
-          ["z6_data", "Data wysłania", ""]
-        ]}
-      ]
     }
   ]
 }

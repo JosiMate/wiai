@@ -85,27 +85,6 @@
         { "typ": "tekst", "id": "z5_narzedzia", "wiersze": 3,
           "pytanie": "Wymień trzy dodatki lub funkcje edytora kodu, które zastępują wygodę narzędzia wizualnego, i napisz, co daje każde z nich." }
       ]
-    },
-    {
-      "nr": 6,
-      "tytul": "Zgłoszenie zadania na ocenę celującą",
-      "poziom": "wymagania wykraczające · ocena 6",
-      "polecenie": "Wypełnij to zgłoszenie, jeśli wykonujesz zadanie dodatkowe. <strong>Samą pracę oddajesz osobno</strong> — w Dzienniku VULCAN, w zadaniu „Zadanie na ocenę celującą” założonym do tego działu, w ciągu dwóch tygodni od zakończenia działu. W karcie zostaje zgłoszenie i wnioski.",
-      "pola": [
-        { "typ": "wybor", "id": "z6_wybor", "pytanie": "Wybieram zadanie",
-          "opcje": [
-            "A — test dostępności strony z kreatora",
-            "B — oczyszczenie wygenerowanego kodu",
-            "C — rekomendacja narzędzi dla trzech zleceń"
-          ] },
-        { "typ": "tekst", "id": "z6_opis", "wiersze": 6,
-          "pytanie": "Co zrobiłeś i co z tego wyszło? Kilka zdań: na czym polegało zadanie, jak je wykonałeś i jaki jest wynik albo wniosek.",
-          "podpowiedz": "Zadanie polegało na … . Zrobiłem … . Wyszło mi, że …" },
-        { "typ": "tabela", "wiersze": [
-          ["z6_plik", "Nazwa pliku oddanego w VULCAN-ie", "nr<numer w dzienniku>-<skrót tematu>"],
-          ["z6_data", "Data wysłania", ""]
-        ]}
-      ]
     }
   ]
 }

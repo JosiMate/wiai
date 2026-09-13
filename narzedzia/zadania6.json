@@ -1,0 +1,66 @@
+{
+  "Dział I. Organizacja pracy i powtórzenie": [
+    {
+      "ozn": "A",
+      "tytul": "Strona, która przechodzi audyt dostępności",
+      "wymaga": "po temacie „Powtórzenie wiadomości z klasy 3 (HTML/CSS)”",
+      "opis": [
+        "Zbuduj jednostronicową witrynę — nagłówek, nawigacja, treść, formularz kontaktowy, stopka — i doprowadź ją do stanu, w którym automatyczny audyt dostępności nie zgłasza żadnego błędu.",
+        "Sprawdź też to, czego narzędzie nie wykryje: obsługę samą klawiaturą, sensowność opisów alternatywnych i kolejność nagłówków. Podaj **zmierzone** kontrasty każdej pary kolorów."
+      ],
+      "oddajesz": "pliki witryny, zrzuty z wynikiem audytu przed poprawkami i po nich oraz listę tego, co poprawiłeś ręcznie"
+    },
+    {
+      "ozn": "B",
+      "tytul": "Ten sam układ trzy razy",
+      "wymaga": "po temacie „Powtórzenie wiadomości z klasy 3 (HTML/CSS)”",
+      "opis": [
+        "Zbuduj ten sam układ strony — nagłówek, dwie kolumny, stopka — trzema technikami: elementami pływającymi, Flexboksem i Gridem.",
+        "Porównaj liczbę reguł CSS, zachowanie przy zwężaniu okna i to, co dzieje się, gdy treść w jednej kolumnie jest znacznie dłuższa. Wskaż, która technika do czego się nadaje i dlaczego dwie pierwsze wciąż spotyka się w cudzym kodzie."
+      ],
+      "oddajesz": "trzy komplety plików, tabelę porównawczą i wniosek"
+    },
+    {
+      "ozn": "C",
+      "tytul": "Zadanie egzaminacyjne z HTML i CSS — na czas",
+      "wymaga": "po całym dziale",
+      "opis": [
+        "Znajdź w arkuszach egzaminu zawodowego INF.03 z lat poprzednich zadanie praktyczne obejmujące HTML i CSS. Wykonaj je w warunkach egzaminacyjnych: bez podpowiadania sobie w trakcie, z zegarem.",
+        "Potem oceń własną pracę według kryteriów z arkusza i wypisz, gdzie straciłbyś punkty."
+      ],
+      "oddajesz": "wykonaną pracę, wskazanie arkusza, zmierzony czas i samoocenę punktową z uzasadnieniem"
+    }
+  ],
+  "Dział II. Tworzenie i publikowanie witryn internetowych": [
+    {
+      "ozn": "A",
+      "tytul": "Audyt przed i po — z liczbami",
+      "wymaga": "po temacie „Tworzenie witryny internetowej według projektu/scenopisu”",
+      "opis": [
+        "Weź witrynę zbudowaną w tym dziale i przeprowadź pełny audyt: dostępność, wydajność i poprawność kodu (walidatory W3C). Zapisz stan wyjściowy **w liczbach**: wynik audytu, rozmiar pobranych zasobów, czas do wyświetlenia treści, liczba błędów walidacji.",
+        "Wprowadź co najmniej pięć poprawek i zmierz to samo jeszcze raz. Przy każdej poprawce napisz, ile dała."
+      ],
+      "oddajesz": "raport z dwiema kolumnami pomiarów, listę poprawek oraz pliki witryny przed i po"
+    },
+    {
+      "ozn": "B",
+      "tytul": "Publikacja bez wgrywania plików ręcznie",
+      "wymaga": "po temacie o publikacji stron",
+      "opis": [
+        "Umieść witrynę w repozytorium i skonfiguruj publikację, która uruchamia się sama po zapisaniu zmian. Opisz procedurę tak, żeby kolega odtworzył ją bez Twojej pomocy: co trzeba założyć, co ustawić, co zrobić, gdy publikacja się nie powiedzie.",
+        "Porównaj ten sposób z wgrywaniem plików klientem FTP: czas, ryzyko pomyłki i możliwość cofnięcia zmiany."
+      ],
+      "oddajesz": "odsyłacz do opublikowanej witryny, opis procedury i porównanie obu sposobów"
+    },
+    {
+      "ozn": "C",
+      "tytul": "Kreator kontra własny kod — uczciwy test",
+      "wymaga": "po temacie „Edytory WYSIWYG”",
+      "opis": [
+        "Zbuduj tę samą prostą stronę — strona główna z sekcją „o nas” i formularzem — dwa razy: w edytorze WYSIWYG lub kreatorze oraz własnym kodem.",
+        "Zmierz jedno i drugie: czas wykonania, rozmiar pobranych zasobów, wynik audytu dostępności i liczbę błędów walidacji. Na koniec napisz rekomendację dla klienta, który pyta, co wybrać — razem z warunkami, przy których zmieniasz zdanie."
+      ],
+      "oddajesz": "obie wersje strony, tabelę pomiarów i jednostronicową rekomendację"
+    }
+  ]
+}
