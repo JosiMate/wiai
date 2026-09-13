@@ -42,7 +42,7 @@ to powtórzenie i sprawdzian końcowy.
 | Temat | Godz. | Materiały |
 | --- | :---: | --- |
 | **[Edytory WYSIWYG – charakterystyka i dobór narzędzi](dzial-2/edytory-wysiwyg.md)** | 3 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
-| Tworzenie witryny internetowej według projektu/scenopisu – ćwiczenia | 3 | *w przygotowaniu* |
+| **[Tworzenie witryny internetowej według projektu/scenopisu – ćwiczenia](dzial-2/witryna-wedlug-scenopisu.md)** | 3 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 | Walidacja poprawności kodu HTML i CSS (W3C) oraz testowanie w przeglądarkach | 3 | *w przygotowaniu* |
 | Publikacja stron www – klienci FTP i serwery hostingowe | 3 | *w przygotowaniu* |
 

@@ -1,0 +1,111 @@
+{
+  "id": "wiai-witryna-wedlug-scenopisu",
+  "tytul": "Tworzenie witryny według projektu/scenopisu",
+  "przedmiot": "PCEiKZ Szczucin · witryny i aplikacje internetowe · klasa 4TI",
+  "klasa": "4TI",
+  "sufiks": "SCENOPIS",
+  "zadania": [
+    {
+      "nr": 1,
+      "tytul": "Analiza scenopisu",
+      "poziom": "wymagania podstawowe · ocena 3",
+      "polecenie": "Ćwiczenie 1. Przeczytaj cały scenopis, zanim zaczniesz pisać kod. Odpowiedzi mają odsyłać do numerów punktów scenopisu.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z1_w1", "Ustalenie wiążące 1", "np. paleta barw, punkt 2"],
+          ["z1_w2", "Ustalenie wiążące 2", ""],
+          ["z1_w3", "Ustalenie wiążące 3", ""],
+          ["z1_w4", "Ustalenie wiążące 4", ""],
+          ["z1_w5", "Ustalenie wiążące 5", ""],
+          ["z1_d1", "Pozostawione twojej decyzji 1", ""],
+          ["z1_d2", "Pozostawione twojej decyzji 2", ""]
+        ]},
+        { "typ": "tekst", "id": "z1_sekcje", "wiersze": 4,
+          "pytanie": "Wypisz sekcje strony głównej w kolejności z makiety i przypisz każdej znacznik, którego użyjesz.",
+          "podpowiedz": "3.1 sekcja powitalna → <section class=\"hero\"> , 3.2 … , 3.3 … , stopka → …" }
+      ]
+    },
+    {
+      "nr": 2,
+      "tytul": "Szkielet trzech podstron",
+      "poziom": "wymagania podstawowe · ocena 3",
+      "polecenie": "Ćwiczenie 1, punkty 2–5. Struktura i treści bez stylów.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z2_pliki", "Nazwy utworzonych plików HTML", ""],
+          ["z2_katalogi", "Podkatalogi w projekcie", ""],
+          ["z2_h1", "Treść nagłówka h1 na stronie głównej", ""],
+          ["z2_menu", "Jak oznaczyłeś aktywną pozycję menu", "klasa i atrybut"]
+        ]},
+        { "typ": "zrzut", "id": "z2_zrzut", "opis": "strona główna bez stylów — sam szkielet z treścią" },
+        { "typ": "tekst", "id": "z2_sciezki", "wiersze": 3,
+          "pytanie": "Dlaczego w projekcie używa się wyłącznie ścieżek względnych i małych liter w nazwach plików? Podaj, co dokładnie zepsuje się po wysłaniu na serwer, jeśli zrobisz inaczej." }
+      ]
+    },
+    {
+      "nr": 3,
+      "tytul": "Style według projektu",
+      "poziom": "wymagania rozszerzające · ocena 4",
+      "polecenie": "Ćwiczenie 2. Kolory wyłącznie przez zmienne z bloku <code>:root</code>.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z3_kafelki", "Reguła układająca trzy kafelki usług", "przepisz dokładnie"],
+          ["z3_naglowek", "Reguła układająca pasek nagłówka", "przepisz dokładnie"],
+          ["z3_kontener", "Szerokość kontenera i sposób wyśrodkowania", ""],
+          ["z3_kontrast", "Zmierzony kontrast przycisku „Umów przegląd”", "np. 5,2 : 1"]
+        ]},
+        { "typ": "zrzut", "id": "z3_zrzut", "opis": "strona główna po ostylowaniu, widok szeroki" },
+        { "typ": "tekst", "id": "z3_grid_flex", "wiersze": 4,
+          "pytanie": "Dlaczego kafelki układasz siatką Grid, a pasek nagłówka Flexboksem? Wyjaśnij różnicę, odwołując się do tego, co każde z tych narzędzi robi z wolnym miejscem." }
+      ]
+    },
+    {
+      "nr": 4,
+      "tytul": "Telefon i dostępność",
+      "poziom": "wymagania dopełniające · ocena 5",
+      "polecenie": "Ćwiczenie 3, punkty 1–2. Sprawdzaj w narzędziach deweloperskich przy szerokości 360 px.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z4_media", "Zapytanie medialne, którego użyłeś", "przepisz dokładnie"],
+          ["z4_zmiany", "Co zmienia się poniżej 720 px", ""],
+          ["z4_focus", "Reguła odpowiadająca za widoczny obrys przy nawigacji klawiaturą", ""]
+        ]},
+        { "typ": "zrzut", "id": "z4_zrzut", "opis": "strona główna w widoku 360 px" },
+        { "typ": "tekst", "id": "z4_tab", "wiersze": 4,
+          "pytanie": "Przejdź całą witrynę klawiszem Tab. Opisz, co udało się obsłużyć bez myszy, a co wymagało poprawki — i jakiej." },
+        { "typ": "tekst", "id": "z4_alt", "wiersze": 3,
+          "pytanie": "Kiedy opis alternatywny obrazu powinien być pusty (alt=\"\"), a kiedy musi zawierać treść? Podaj po jednym przykładzie ze swojej witryny." }
+      ]
+    },
+    {
+      "nr": 5,
+      "tytul": "Walidacja i samoocena",
+      "poziom": "wymagania rozszerzające i dopełniające · oceny 4–5",
+      "polecenie": "Ćwiczenie 3, punkty 3–4. Walidatory: validator.w3.org oraz jigsaw.w3.org/css-validator.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z5_html_przed", "Liczba błędów HTML przed poprawkami", ""],
+          ["z5_html_po", "Liczba błędów HTML po poprawkach", ""],
+          ["z5_css", "Liczba błędów CSS po poprawkach", ""],
+          ["z5_punkty", "Wynik samooceny z karty oceny", "na 20 punktów"]
+        ]},
+        { "typ": "zrzut", "id": "z5_zrzut", "opis": "wynik walidacji jednej podstrony" },
+        { "typ": "tekst", "id": "z5_blad", "wiersze": 4,
+          "pytanie": "Opisz jeden błąd zgłoszony przez walidator: co dokładnie komunikował, na czym polegał i jak go poprawiłeś." },
+        { "typ": "tekst", "id": "z5_slabe", "wiersze": 3,
+          "pytanie": "Które kryterium z karty oceny wypadło u ciebie najsłabiej i co konkretnie zrobisz przy kolejnej witrynie, żeby to poprawić?" }
+      ]
+    },
+    {
+      "nr": 6,
+      "tytul": "Do wyboru — na ocenę celującą",
+      "poziom": "wymagania wykraczające · ocena 6",
+      "polecenie": "Wykonaj jedno z zadań opisanych w sekcji „Na ocenę celującą” na stronie materiału.",
+      "pola": [
+        { "typ": "wybor", "id": "z6_wybor", "pytanie": "Wybieram zadanie",
+          "opcje": ["1 — czwarta podstrona z galerią", "2 — wersja ciemna bez JavaScriptu", "3 — audyt strony", "4 — wersja do druku"] },
+        { "typ": "tekst", "id": "z6_odp", "wiersze": 12, "pytanie": "Opis wykonania wraz z pomiarami przed i po" }
+      ]
+    }
+  ]
+}
