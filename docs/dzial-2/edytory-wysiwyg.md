@@ -345,13 +345,17 @@ Zapisany plik dołącz w **Dzienniku VULCAN → Zadania domowe**, w zadaniu
 
     W karcie pracy zaznaczasz tylko, **które zadanie wybrałeś**, i opisujesz
     w kilku zdaniach, co z niego wyszło. Samą pracę — plik, kod, witrynę albo
-    zrzuty z pomiarami — oddajesz **osobno**, w Dzienniku VULCAN w zadaniu
-    *Zadanie na ocenę celującą: Edytory WYSIWYG i dobór narzędzi*, w ciągu **dwóch tygodni** od
-    omówienia tematu.
+    zrzuty z pomiarami — oddajesz **osobno**, w Dzienniku VULCAN, w zadaniu
+    *Zadanie na ocenę celującą* założonym do tego działu. Termin: **dwa tygodnie
+    od zakończenia działu**.
+
+    Plik nazwij `nr<numer w dzienniku>-<skrót tematu>`, a w treści zadania dopisz
+    3–5 zdań: którego tematu i zadania dotyczy, co zrobiłeś i jaki jest wynik.
 
     Wykonane i oddane w terminie zadanie liczy się jako „inne, porównywalne
     osiągnięcie” w rozumieniu § 29 ust. 1 pkt 1 lit. c statutu — do oceny
-    celującej nie trzeba startować w konkursie.
+    celującej nie trzeba startować w konkursie. Pełne zasady opisuje strona
+    *Wymagania edukacyjne i bhp*.
 
 Wybierz jedno zadanie.
 
