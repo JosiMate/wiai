@@ -98,13 +98,24 @@
     },
     {
       "nr": 6,
-      "tytul": "Do wyboru — na ocenę celującą",
+      "tytul": "Zgłoszenie zadania na ocenę celującą",
       "poziom": "wymagania wykraczające · ocena 6",
-      "polecenie": "Wykonaj jedno z zadań opisanych w sekcji „Na ocenę celującą” na stronie materiału.",
+      "polecenie": "Wypełnij to zgłoszenie, jeśli wykonujesz zadanie dodatkowe. <strong>Samą pracę oddajesz osobno</strong> — w Dzienniku VULCAN, w zadaniu „Zadanie na ocenę celującą”, w ciągu dwóch tygodni od omówienia tematu. W karcie zostaje zgłoszenie i wnioski.",
       "pola": [
         { "typ": "wybor", "id": "z6_wybor", "pytanie": "Wybieram zadanie",
-          "opcje": ["1 — czwarta podstrona z galerią", "2 — wersja ciemna bez JavaScriptu", "3 — audyt strony", "4 — wersja do druku"] },
-        { "typ": "tekst", "id": "z6_odp", "wiersze": 12, "pytanie": "Opis wykonania wraz z pomiarami przed i po" }
+          "opcje": [
+            "1 — czwarta podstrona z galerią",
+            "2 — wersja ciemna bez JavaScriptu",
+            "3 — audyt strony",
+            "4 — wersja do druku"
+          ] },
+        { "typ": "tekst", "id": "z6_opis", "wiersze": 6,
+          "pytanie": "Co zrobiłeś i co z tego wyszło? Kilka zdań: na czym polegało zadanie, jak je wykonałeś i jaki jest wynik albo wniosek.",
+          "podpowiedz": "Zadanie polegało na … . Zrobiłem … . Wyszło mi, że …" },
+        { "typ": "tabela", "wiersze": [
+          ["z6_plik", "Nazwa pliku oddanego w VULCAN-ie", "dokładnie tak, jak go wysłałeś"],
+          ["z6_data", "Data wysłania", ""]
+        ]}
       ]
     }
   ]

@@ -340,6 +340,14 @@ Zapisany plik dołącz w **Dzienniku VULCAN → Zadania domowe**, w zadaniu
 
 ## Na ocenę celującą
 
+
+!!! info "Jak oddajesz zadanie na ocenę celującą"
+
+    W karcie pracy zaznaczasz tylko, **które zadanie wybrałeś**, i opisujesz
+    w kilku zdaniach, co z niego wyszło. Samą pracę — plik, kod, witrynę albo
+    zrzuty z pomiarami — oddajesz **osobno**, w Dzienniku VULCAN w zadaniu
+    *Zadanie na ocenę celującą: Edytory WYSIWYG i dobór narzędzi*, w ciągu **dwóch tygodni** od
+    omówienia tematu.
 Wybierz jedno zadanie.
 
 1. **Przetestuj dostępność strony z kreatora.** Zbuduj prostą stronę
