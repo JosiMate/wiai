@@ -19,9 +19,10 @@ klienta, **PHP** po stronie serwera.
 .
 ├── .github/workflows/
 │   └── deploy.yml       # buduje stronę i publikuje na GitHub Pages
-├── mkdocs.yml           # konfiguracja: nawigacja, motyw, rozszerzenia Markdown
+├── mkdocs.yml           # konfiguracja: motyw, rozszerzenia Markdown, wtyczki
 ├── requirements.txt     # zależności Pythona (wersja przypięta — patrz niżej)
 └── docs/
+    ├── .nav.yml                        # kolejność działów w lewej kolumnie
     ├── index.md                        # spis wszystkich 31 tematów
     ├── dzial-1/                        # materiały działu I
     ├── pliki/                          # wymagania edukacyjne do pobrania
@@ -162,8 +163,10 @@ w drugim.
 
 1. Utwórz plik `.md` w katalogu odpowiedniego działu, np.
    `docs/dzial-2/edytory-wysiwyg.md`.
-2. Dopisz go do sekcji `nav:` w `mkdocs.yml` — inaczej budowanie ze flagą
-   `--strict` zgłosi błąd, bo strona istnieje, ale nie ma do niej dojścia.
+2. Dopisz go do `.nav.yml` w tym samym katalogu — tam ustawiasz kolejność
+   i nazwę w lewej kolumnie. Pominięty wpis nie gubi strony: wtyczka
+   awesome-nav dołoży ją na końcu działu z tytułem z nagłówka pierwszego
+   poziomu (`append_unmatched: true`).
 3. W `docs/index.md` zmień status tematu z *w przygotowaniu* na link.
 4. `git add`, `git commit`, `git push`.
 
