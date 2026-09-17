@@ -1,0 +1,22 @@
+Szprycha — wersja do naprawy
+Witryny i aplikacje internetowe, klasa 4TI, PCEiKZ Szczucin
+
+W tej paczce są trzy strony i jeden arkusz stylów. Dwie strony mają błędy,
+jedna jest już poprawna — Twoim pierwszym zadaniem jest sprawdzić, która.
+
+Jak pracować:
+1. Rozpakuj całość do własnego katalogu. NIE zmieniaj nazw plików.
+2. Otwórz index.html w przeglądarce i obejrzyj stronę. Wygląda prawie dobrze —
+   i o to chodzi: przeglądarka naprawia błędy po cichu, walidator ich nie
+   przemilcza.
+3. Zwaliduj każdy plik .html na validator.w3.org, a arkusz stylów na
+   jigsaw.w3.org/css-validator/. Zapisz listę komunikatów, zanim cokolwiek
+   poprawisz — to ta lista jest dowodem Twojej pracy, nie sam poprawiony plik.
+4. Poprawiaj po jednym błędzie i po każdej poprawce waliduj ponownie. Jeden
+   brakujący znacznik potrafi wygenerować kilka komunikatów naraz.
+5. Na koniec spakuj poprawioną wersję do 4TI_<numer w dzienniku>_walidacja.zip
+
+Uwaga na ostrzeżenia. Nie wszystkie trzeba usunąć — ale każde zignorowane
+musisz umieć uzasadnić. To jest osobne pytanie w karcie pracy.
+
+Zdjęcie w katalogu img jest poglądowe, przygotowane na potrzeby ćwiczenia.

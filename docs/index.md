@@ -43,7 +43,7 @@ to powtórzenie i sprawdzian końcowy.
 | --- | :---: | --- |
 | **[Edytory WYSIWYG – charakterystyka i dobór narzędzi](dzial-2/edytory-wysiwyg.md)** | 3 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 | **[Tworzenie witryny internetowej według projektu/scenopisu – ćwiczenia](dzial-2/witryna-wedlug-scenopisu.md)** | 3 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
-| Walidacja poprawności kodu HTML i CSS (W3C) oraz testowanie w przeglądarkach | 3 | *w przygotowaniu* |
+| **[Walidacja poprawności kodu HTML i CSS (W3C) oraz testowanie w przeglądarkach](dzial-2/walidacja-testowanie.md)** | 3 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 | Publikacja stron www – klienci FTP i serwery hostingowe | 3 | *w przygotowaniu* |
 
 ### Dział III. Podstawy programowania — środowisko i dane

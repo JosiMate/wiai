@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Szprycha — serwis rowerowy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="index.html">Szprycha</a>
+    <nav>
+      <ul>
+        Menu:
+        <li><a href="index.html">Start</a></li>
+        <li><a href="uslugi.html">Usługi</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero">
+      <h1>Serwis rowerowy Szprycha</h1>
+      <p>Naprawiamy rowery miejskie, górskie i szosowe. <b>Przegląd w <i>24 godziny</b></i>.</p>
+      <img src="img/warsztat.jpg" width="800" height="450">
+    </section>
+
+    <section id="uslugi">
+      <h3>Co robimy</h3>
+      <table border="1">
+        <tr>
+          <th>Usługa</th>
+          <th>Czas</th>
+          <th>Cena</th>
+        </tr>
+        <tr>
+          <td>Przegląd podstawowy</td>
+          <td>1 dzień</td>
+          <td>90 zł</td>
+        </tr>
+        <tr>
+          <td>Centrowanie koła</td>
+          <td>2 godziny</td>
+          <td>45 zł</td>
+        </tr>
+        <tr>
+          <td>Wymiana łańcucha</td>
+          <td>1 godzina</td>
+          <td>60 zł</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="opinie">
+      <center>Opinie klientów</center>
+      <p>„Rower wrócił do mnie lepszy, niż był w sklepie.” — Marek</p>
+      <p>„Naprawili to, czego dwa inne serwisy nie potrafiły.” — Ola</p>
+    </section>
+
+    <section id="kontakt">
+      <h2>Napisz do nas</h2>
+      <form action="wyslij.php" method="post">
+        <p>Imię: <input type="text" name="imie"></p>
+        <p>E-mail: <input type="email" name="mail"></p>
+        <p>Wiadomość: <textarea name="tresc" rows="5"></textarea></p>
+        <p><button type="submit">Wyślij</button></p>
+      </form>
+    </section>
+
+    <section id="kontakt">
+      <h2>Gdzie jesteśmy</h2>
+      <p>ul. Wolności 12, 33-230 Szczucin</p>
+      <p><a href="szukaj.html?q=rower&kopia=1">Zobacz na mapie</a></p>
+    </section>
+
+    <section id="godziny">
+      <p>Otwarte od poniedziałku do piątku, 9:00–17:00.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Szprycha. <a href="#">Regulamin</a></p>
+</body>
+</html>

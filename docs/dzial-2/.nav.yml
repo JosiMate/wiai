@@ -7,3 +7,4 @@ append_unmatched: true
 nav:
   - "Edytory WYSIWYG i dobór narzędzi": edytory-wysiwyg.md
   - "Witryna według projektu/scenopisu": witryna-wedlug-scenopisu.md
+  - "Walidacja W3C i testowanie w przeglądarkach": walidacja-testowanie.md

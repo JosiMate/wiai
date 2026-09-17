@@ -1,0 +1,179 @@
+{
+  "id": "walidacja-testowanie",
+  "tytul": "Walidacja kodu HTML i CSS oraz testowanie w przeglądarkach",
+  "przedmiot": "PCEiKZ Szczucin · witryny i aplikacje internetowe · INF.03",
+  "klasa": "4TI",
+  "sufiks": "WALIDACJA",
+  "zadania": [
+    {
+      "nr": 1,
+      "tytul": "Inwentaryzacja usterek",
+      "poziom": "wymagania podstawowe · ocena 3",
+      "polecenie": "Ćwiczenie 1. Zwaliduj wszystkie trzy pliki z paczki na <code>validator.w3.org</code> <strong>zanim cokolwiek poprawisz</strong>. Po poprawkach tych liczb już nie odtworzysz.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z1_index_b", "index.html — liczba błędów", ""],
+          ["z1_index_o", "index.html — liczba ostrzeżeń", ""],
+          ["z1_kontakt_b", "kontakt.html — liczba błędów", ""],
+          ["z1_kontakt_o", "kontakt.html — liczba ostrzeżeń", ""],
+          ["z1_uslugi_b", "uslugi.html — liczba błędów", ""],
+          ["z1_uslugi_o", "uslugi.html — liczba ostrzeżeń", ""],
+          ["z1_czysta", "Która strona jest już poprawna", "nazwa pliku"],
+          ["z1_sposob", "Której zakładki walidatora użyłeś", "URI, File Upload czy Direct Input"]
+        ]},
+        { "typ": "zrzut", "id": "z1_zrzut",
+          "opis": "ekran walidatora z wynikiem dla pliku index.html przed poprawkami" }
+      ]
+    },
+    {
+      "nr": 2,
+      "tytul": "Naprawa — po jednym błędzie",
+      "poziom": "wymagania podstawowe i rozszerzające · oceny 3–4",
+      "polecenie": "Ćwiczenie 2. Popraw <code>index.html</code> i <code>kontakt.html</code>, pracując od góry i walidując po każdej poprawce. Przepisuj komunikaty dokładnie tak, jak wyświetla je walidator.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z2_b1_komunikat", "Błąd 1 — komunikat walidatora", "przepisz dokładnie"],
+          ["z2_b1_poprawka", "Błąd 1 — co zmieniłeś w kodzie", ""],
+          ["z2_b2_komunikat", "Błąd 2 — komunikat walidatora", ""],
+          ["z2_b2_poprawka", "Błąd 2 — co zmieniłeś w kodzie", ""],
+          ["z2_b3_komunikat", "Błąd 3 — komunikat walidatora", ""],
+          ["z2_b3_poprawka", "Błąd 3 — co zmieniłeś w kodzie", ""],
+          ["z2_kaskada", "Która poprawka wygasiła więcej niż jeden komunikat", ""],
+          ["z2_kaskada_ile", "Ile komunikatów zniknęło po tej jednej poprawce", ""]
+        ]},
+        { "typ": "tekst", "id": "z2_dlaczego_kaskada", "wiersze": 4,
+          "pytanie": "Wyjaśnij, dlaczego jedna usterka potrafi wygenerować kilka komunikatów naraz. Odwołaj się do tego, co walidator robi z dokumentem po napotkaniu niezamkniętego znacznika." },
+        { "typ": "zrzut", "id": "z2_zrzut",
+          "opis": "wynik walidacji index.html po poprawkach — zielony pasek „Document checking completed”" }
+      ]
+    },
+    {
+      "nr": 3,
+      "tytul": "Ostrzeżenia i decyzje",
+      "poziom": "wymagania rozszerzające · ocena 4",
+      "polecenie": "Ćwiczenie 3. Przy każdym ostrzeżeniu z <code>index.html</code> zdecyduj: poprawiam czy zostawiam. Uzasadnienie „bo walidator tak kazał” nie jest uzasadnieniem.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z3_o1_tresc", "Ostrzeżenie 1 — czego dotyczy", ""],
+          ["z3_o1_decyzja", "Ostrzeżenie 1 — poprawiam czy zostawiam", ""],
+          ["z3_o1_powod", "Ostrzeżenie 1 — dlaczego tak zdecydowałeś", ""],
+          ["z3_o2_tresc", "Ostrzeżenie 2 — czego dotyczy", ""],
+          ["z3_o2_decyzja", "Ostrzeżenie 2 — poprawiam czy zostawiam", ""],
+          ["z3_o2_powod", "Ostrzeżenie 2 — dlaczego tak zdecydowałeś", ""],
+          ["z3_o3_tresc", "Ostrzeżenie 3 — czego dotyczy", ""],
+          ["z3_o3_decyzja", "Ostrzeżenie 3 — poprawiam czy zostawiam", ""],
+          ["z3_o3_powod", "Ostrzeżenie 3 — dlaczego tak zdecydowałeś", ""]
+        ]},
+        { "typ": "wybor", "id": "z3_section",
+          "pytanie": "Przy ostrzeżeniu o sekcji bez nagłówka wybrałeś",
+          "opcje": ["dodanie nagłówka", "zamianę section na div", "zostawienie bez zmian"] },
+        { "typ": "tekst", "id": "z3_section_powod", "wiersze": 3,
+          "pytanie": "Uzasadnij ten wybór. Kiedy fragment treści zasługuje na znacznik section, a kiedy właściwszy jest div?" },
+        { "typ": "tekst", "id": "z3_lang", "wiersze": 3,
+          "pytanie": "Brak atrybutu lang to formalnie tylko ostrzeżenie. Napisz, co konkretnie dzieje się z taką stroną u użytkownika czytnika ekranu i dlaczego mimo wszystko poprawiamy je zawsze." }
+      ]
+    },
+    {
+      "nr": 4,
+      "tytul": "Arkusz stylów",
+      "poziom": "wymagania rozszerzające · ocena 4",
+      "polecenie": "Ćwiczenie 4. Zwaliduj <code>css/style.css</code> na <code>jigsaw.w3.org/css-validator</code>. Cztery z tych usterek zmieniają wygląd strony — porównaj ją w przeglądarce przed poprawką i po.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z4_ile", "Liczba błędów zgłoszonych przez walidator CSS", ""],
+          ["z4_u1", "Usterka 1 — wiersz i na czym polega", ""],
+          ["z4_u1_widac", "Usterka 1 — co się zmieniło na stronie po poprawce", ""],
+          ["z4_u2", "Usterka 2 — wiersz i na czym polega", ""],
+          ["z4_u2_widac", "Usterka 2 — co się zmieniło na stronie po poprawce", ""],
+          ["z4_u3", "Usterka 3 — wiersz i na czym polega", ""],
+          ["z4_u3_widac", "Usterka 3 — co się zmieniło na stronie po poprawce", ""],
+          ["z4_u4", "Usterka 4 — wiersz i na czym polega", ""],
+          ["z4_u4_widac", "Usterka 4 — co się zmieniło na stronie po poprawce", ""]
+        ]},
+        { "typ": "tekst", "id": "z4_srednik", "wiersze": 4,
+          "pytanie": "W arkuszu brakuje jednego średnika. Ile deklaracji przez to przepadło i dlaczego akurat tyle? Wyjaśnij, co przeglądarka robi z niezrozumiałą wartością." },
+        { "typ": "zrzut", "id": "z4_zrzut",
+          "opis": "nagłówek strony przed poprawkami i po — widać różnicę w pasku nawigacji" }
+      ]
+    },
+    {
+      "nr": 5,
+      "tytul": "Dostępność — czego walidator nie widzi",
+      "poziom": "wymagania dopełniające · ocena 5",
+      "polecenie": "Ćwiczenie 5. Poprawioną stronę przepuść przez <strong>WAVE</strong> albo axe DevTools. Szukasz tego, czego walidator W3C nie zgłosił.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z5_wave_bledy", "WAVE — liczba błędów (Errors)", ""],
+          ["z5_wave_ostrz", "WAVE — liczba ostrzeżeń (Alerts)", ""],
+          ["z5_p1", "Problem 1, którego W3C nie zgłosił", ""],
+          ["z5_p2", "Problem 2, którego W3C nie zgłosił", ""],
+          ["z5_naprawione", "Które dwa naprawiłeś i jak", ""],
+          ["z5_kontrast_zolty", "Kontrast #fca311 na #14213d", "podaj w postaci x : 1"],
+          ["z5_kontrast_szary", "Kontrast #a8b0bd na #f6f7f9", "podaj w postaci x : 1"],
+          ["z5_kontrast_ktory", "Która para nie spełnia wymagania 4,5 : 1", ""]
+        ]},
+        { "typ": "tekst", "id": "z5_roznica", "wiersze": 4,
+          "pytanie": "Strona z zerem błędów w walidatorze W3C może być nie do użycia dla osoby niewidomej. Podaj z tej paczki konkretny przykład kodu, który jest poprawny składniowo i jednocześnie bezużyteczny dla czytnika ekranu." },
+        { "typ": "zrzut", "id": "z5_zrzut",
+          "opis": "wynik WAVE ze znacznikami nałożonymi na stronę" }
+      ]
+    },
+    {
+      "nr": 6,
+      "tytul": "Testowanie w przeglądarkach",
+      "poziom": "wymagania dopełniające · ocena 5",
+      "polecenie": "Ćwiczenie 6. Poprawioną stronę sprawdź w narzędziach deweloperskich, a potem otwórz w drugiej przeglądarce działającej na innym silniku.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z6_360", "Szerokość 360 px — co się psuje", "wpisz „nic”, jeśli układ jest w porządku"],
+          ["z6_768", "Szerokość 768 px — co się psuje", ""],
+          ["z6_1280", "Szerokość 1280 px — co się psuje", ""],
+          ["z6_konsola", "Konsola — treść komunikatów albo „pusta”", ""],
+          ["z6_siec", "Zakładka Sieć — czy coś zwróciło 404", ""],
+          ["z6_lh_wyd", "Lighthouse — wydajność", ""],
+          ["z6_lh_dost", "Lighthouse — dostępność", ""],
+          ["z6_lh_prakt", "Lighthouse — dobre praktyki", ""],
+          ["z6_lh_seo", "Lighthouse — SEO", ""],
+          ["z6_lh_zalecenia", "Dwie rzeczy z listy zaleceń Lighthouse", ""],
+          ["z6_druga", "Druga przeglądarka i jej silnik", "np. Firefox — Gecko"],
+          ["z6_roznice", "Różnice między przeglądarkami", "wpisz „brak”, jeśli ich nie ma"]
+        ]},
+        { "typ": "tekst", "id": "z6_viewport", "wiersze": 4,
+          "pytanie": "Dwie strony z paczki nie mają znacznika viewport, a trzecia ma. Otwórz obie przy szerokości 360 px i opisz różnicę. Co dokładnie robi telefon ze stroną bez tego znacznika?" },
+        { "typ": "tekst", "id": "z6_symulacja", "wiersze": 3,
+          "pytanie": "Tryb responsywny to symulacja, a nie telefon. Podaj dwie rzeczy, których w ten sposób nie sprawdzisz i które trzeba zobaczyć na prawdziwym urządzeniu." }
+      ]
+    },
+    {
+      "nr": 7,
+      "tytul": "Twoja własna witryna",
+      "poziom": "wymagania dopełniające · ocena 5",
+      "polecenie": "Ćwiczenie 7. Przejdź listą kontrolną z sekcji 9 przez własną witrynę „Szprycha” z poprzedniego tematu. To ta część, która realnie podnosi ocenę za tamtą pracę.",
+      "pola": [
+        { "typ": "tabela", "wiersze": [
+          ["z7_bledy_przed", "Liczba błędów W3C w twojej witrynie — przed poprawkami", ""],
+          ["z7_bledy_po", "Liczba błędów W3C — po poprawkach", ""],
+          ["z7_najczestszy", "Błąd, który powtarzał się u ciebie najczęściej", ""],
+          ["z7_lista", "Ile punktów listy kontrolnej spełniasz", "z dziesięciu"],
+          ["z7_brakuje", "Których punktów jeszcze nie spełniasz", ""]
+        ]},
+        { "typ": "tekst", "id": "z7_nawyk", "wiersze": 4,
+          "pytanie": "Który błąd popełniasz na tyle regularnie, że warto go sprawdzać odruchowo przed każdym oddaniem pracy? Napisz, po czym go poznasz bez uruchamiania walidatora." },
+        { "typ": "zrzut", "id": "z7_zrzut",
+          "opis": "wynik walidacji twojej witryny po poprawkach" }
+      ]
+    },
+    {
+      "nr": 8,
+      "tytul": "Samoocena",
+      "poziom": "",
+      "polecenie": "Krótko i szczerze — to nie jest oceniane na stopień.",
+      "pola": [
+        { "typ": "tekst", "id": "s_trudne", "wiersze": 3,
+          "pytanie": "Co było najtrudniejsze: znalezienie błędu, zrozumienie komunikatu po angielsku czy decyzja, co zrobić z ostrzeżeniem?" },
+        { "typ": "tekst", "id": "s_wnioski", "wiersze": 3,
+          "pytanie": "Czy po tych zajęciach uważasz walidację za stratę czasu, czy za coś, co warto robić przed każdym oddaniem pracy? Uzasadnij jednym konkretem z dzisiejszych ćwiczeń." }
+      ]
+    }
+  ]
+}

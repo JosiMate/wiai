@@ -1,0 +1,152 @@
+/* Szprycha — arkusz stylów do naprawy.
+   Uwaga: w tym pliku celowo zostawiono błędy. Twoim zadaniem jest je znaleźć
+   walidatorem CSS, a nie zgadnąć na oko. */
+
+:root {
+  --granat: #14213d;
+  --zolty: #fca311;
+  --jasny: #f6f7f9;
+  --tekst: #222222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  colour: var(--tekst);
+  background-color: var(--jasny);
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16 24px;
+  background-color: var(--granat);
+}
+
+.logo {
+  color: var(--zolty);
+  font-size: 24px
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: var(--granat);
+  font-size: 32px;
+}
+
+h2 {
+  color: var(--granat);
+  font-size: 24px;
+  border-bottom: 2px solid var(--zolty);
+  padding-bottom: 6px;
+}
+
+#opinie p {
+  color: #a8b0bd;
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: centre;
+}
+
+th,
+td {
+  border: 1px solid #d9d9d9;
+  padding: 8px 12px;
+}
+
+th {
+  background-color: var(--granat);
+  color: #ffffff;
+}
+
+form p {
+  margin: 12px 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: var(--zolty);
+  color: var(--granat);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--granat);
+  color: #ffffff;
+  padding: 20px 24px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--zolty);
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
