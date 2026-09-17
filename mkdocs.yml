@@ -65,6 +65,8 @@ extra_javascript:
   # docx.umd.js celowo NIE jest tu wymieniony — karta.js doczyta go dopiero
   # przy generowaniu pliku, żeby nie obciążać czytelników materiału.
   - assets/js/karta.js
+  # karty.js korzysta z window.KartaPracy, więc musi iść PO karta.js
+  - assets/js/karty.js
   - assets/js/quiz.js
   - assets/js/postep.js
   - assets/js/narzedzia.js
@@ -102,15 +104,31 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
 
+validation:
+  links:
+    # Strony tematów odsyłają do konkretnych zadań w karcie pracy
+    # (…#zadanie-3). Te kotwice powstają dopiero w przeglądarce, gdy karta.js
+    # zbuduje kartę z pliku JSON, więc MkDocs ich w źródle nie widzi i przy
+    # każdym temacie zgłaszałby INFO o „braku kotwicy". Wyłączamy sprawdzanie
+    # SAMYCH KOTWIC — sprawdzanie istnienia plików zostaje włączone.
+    anchors: ignore
+
 plugins:
   # Wyszukiwarka lunr nie ma polskiego stemmera (biblioteka lunr-languages
   # nie wspiera polskiego), więc świadomie zostawiamy tokenizer domyślny.
   # Wyszukiwanie po polsku działa, ale bez odmiany przez przypadki:
   # "wymagania" znajdzie "wymagania", nie znajdzie "wymaganiom".
   - search
-  # Nawigacją rządzą pliki .nav.yml w katalogach docs/ — dzięki temu
-  # dopisanie tematu nie wymaga już zaglądania do tego pliku.
-  - awesome-nav
+
+nav:
+  - Start: index.md
+  - Dział I. Organizacja pracy i powtórzenie:
+      - Wymagania edukacyjne i bhp: dzial-1/wymagania-i-bhp.md
+      - Powtórzenie HTML i CSS: dzial-1/powtorzenie-html-css.md
+  - Dział II. Tworzenie i publikowanie witryn internetowych:
+      - Edytory WYSIWYG i dobór narzędzi: dzial-2/edytory-wysiwyg.md
+
+  - Karty pracy: karty/index.md
 
 extra:
   social:
@@ -118,3 +136,6 @@ extra:
       link: https://www.pceikz.pl
       name: PCEiKZ Szczucin
   generator: false
+
+not_in_nav: |
+  /assets/

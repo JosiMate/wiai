@@ -452,26 +452,50 @@ przeczytać uważniej.
 
 ---
 
-## Praca do oddania
+## Karta pracy
 
 Z tego tematu oddajesz **kartę pracy**. Wypełnij ją tutaj, na stronie —
 odpowiedzi zapisują się w twojej przeglądarce, a na końcu jednym przyciskiem
 pobierasz gotowy plik Worda z właściwą nazwą.
 
-!!! info "Twoje odpowiedzi zostają na twoim komputerze"
+<div class="kp-podsumowanie" data-karta="powtorzenie-html-css"></div>
 
-    Formularz niczego nie wysyła. Wszystko dzieje się w przeglądarce, a plik
-    Worda powstaje dopiero po kliknięciu przycisku. Odwrotna strona tej samej
-    monety: wyczyszczenie danych przeglądania usunie odpowiedzi, a na cudzym
-    komputerze ich nie znajdziesz. Kiedy skończysz — pobierz plik.
+<span id="karta" class="kp-kotwica"></span>
 
-<div class="karta-pracy" data-karta="powtorzenie-html-css"></div>
+???+ karta "Rozwiń kartę pracy"
+
+    !!! info "Twoje odpowiedzi zostają na twoim komputerze"
+
+        Formularz niczego nie wysyła. Wszystko dzieje się w przeglądarce, a plik
+        Worda powstaje dopiero po kliknięciu przycisku. Odwrotna strona tej samej
+        monety: wyczyszczenie danych przeglądania usunie odpowiedzi, a na cudzym
+        komputerze ich nie znajdziesz. Kiedy skończysz — pobierz plik.
+
+    <div class="karta-pracy" data-karta="powtorzenie-html-css"></div>
 
 ### Jak ją oddać
 
 Zapisany plik dołącz w **Dzienniku VULCAN → Zadania domowe**, w zadaniu
 *Powtórzenie HTML i CSS — karta pracy*. Jeśli w twoim widoku załączniki są
 niedostępne, wklej odpowiedzi w pole tekstowe.
+
+---
+
+## Na ocenę celującą
+
+Wybierz jedno i przygotuj krótkie omówienie dla klasy.
+
+1. **Przebuduj układ z pływających elementów na grid.** Znajdź w internecie
+   stronę zbudowaną na `float` (albo napisz taką sam), a potem odtwórz ten sam
+   układ gridem. Porównaj długość arkusza stylów przed i po.
+
+2. **Zbadaj dostępność wybranej strony publicznej** — na przykład szkoły albo
+   urzędu. Sprawdź kontrast, obsługę klawiaturą, obecność `alt` i etykiet.
+   Opisz trzy najpoważniejsze problemy i podaj poprawki.
+
+3. **Zastąp JavaScript selektorem `:has()`.** Znajdź przykład efektu, który
+   kiedyś wymagał skryptu (na przykład podświetlenie formularza zawierającego
+   nieprawidłowe pole) i zrealizuj go samym CSS-em.
 
 ---
 

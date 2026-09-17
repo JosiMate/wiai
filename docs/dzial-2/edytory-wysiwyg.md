@@ -318,23 +318,49 @@ Test z natychmiastową odpowiedzią. **Nie jest oceniany i nic nie wysyła.**
 
 ---
 
-## Praca do oddania
+## Karta pracy
 
 Z tego tematu oddajesz **kartę pracy** — jej trzon to porównanie kodu z obu
 narzędzi, więc wykonaj najpierw ćwiczenia 1 i 2.
 
-!!! info "Twoje odpowiedzi zostają na twoim komputerze"
+<div class="kp-podsumowanie" data-karta="edytory-wysiwyg"></div>
 
-    Formularz niczego nie wysyła. Plik Worda powstaje dopiero po kliknięciu
-    przycisku. Wyczyszczenie danych przeglądania usunie odpowiedzi — kiedy
-    skończysz, pobierz plik.
+<span id="karta" class="kp-kotwica"></span>
 
-<div class="karta-pracy" data-karta="edytory-wysiwyg"></div>
+???+ karta "Rozwiń kartę pracy"
+
+    !!! info "Twoje odpowiedzi zostają na twoim komputerze"
+
+        Formularz niczego nie wysyła. Plik Worda powstaje dopiero po kliknięciu
+        przycisku. Wyczyszczenie danych przeglądania usunie odpowiedzi — kiedy
+        skończysz, pobierz plik.
+
+    <div class="karta-pracy" data-karta="edytory-wysiwyg"></div>
 
 ### Jak ją oddać
 
 Zapisany plik dołącz w **Dzienniku VULCAN → Zadania domowe**, w zadaniu
 *Edytory WYSIWYG — karta pracy*.
+
+---
+
+## Na ocenę celującą
+
+Wybierz jedno zadanie.
+
+1. **Przetestuj dostępność strony z kreatora.** Zbuduj prostą stronę
+   w wybranym kreatorze z chmury, a potem sprawdź ją pod kątem WCAG: przejdź
+   tabulatorem, zbadaj kontrast, sprawdź obecność `alt` i etykiet. Opisz, co
+   dało się poprawić z poziomu kreatora, a czego nie — i wyciągnij wniosek.
+
+2. **Oczyść wygenerowany kod.** Weź stronę z narzędzia wizualnego i przepisz
+   ją ręcznie: znaczniki semantyczne, style w zewnętrznym arkuszu, ten sam
+   wygląd. Podaj rozmiar pliku przed i po oraz liczbę błędów walidatora.
+
+3. **Przygotuj rekomendację dla klienta.** Wymyśl trzy różne zlecenia — na
+   przykład wizytówka fryzjera, serwis szkoły, sklep z rękodziełem — i dla
+   każdego uzasadnij dobór narzędzia, odwołując się do pięciu kryteriów
+   z sekcji 4. Uzasadnienie ma być argumentem, nie preferencją.
 
 ---
 
