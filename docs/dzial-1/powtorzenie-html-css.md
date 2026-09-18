@@ -481,24 +481,6 @@ niedostępne, wklej odpowiedzi w pole tekstowe.
 
 ---
 
-## Na ocenę celującą
-
-Wybierz jedno i przygotuj krótkie omówienie dla klasy.
-
-1. **Przebuduj układ z pływających elementów na grid.** Znajdź w internecie
-   stronę zbudowaną na `float` (albo napisz taką sam), a potem odtwórz ten sam
-   układ gridem. Porównaj długość arkusza stylów przed i po.
-
-2. **Zbadaj dostępność wybranej strony publicznej** — na przykład szkoły albo
-   urzędu. Sprawdź kontrast, obsługę klawiaturą, obecność `alt` i etykiet.
-   Opisz trzy najpoważniejsze problemy i podaj poprawki.
-
-3. **Zastąp JavaScript selektorem `:has()`.** Znajdź przykład efektu, który
-   kiedyś wymagał skryptu (na przykład podświetlenie formularza zawierającego
-   nieprawidłowe pole) i zrealizuj go samym CSS-em.
-
----
-
 !!! info "Materiały uzupełniające"
 
     - Dokumentacja HTML i CSS: [MDN Web Docs](https://developer.mozilla.org/pl/)

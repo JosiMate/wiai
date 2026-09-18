@@ -509,17 +509,23 @@ pisałeś style zamiast struktury.
 
 ---
 
-## Praca do oddania
+## Karta pracy
 
 Oddajesz **dwie rzeczy**: spakowaną witrynę i kartę pracy.
 
-!!! info "Twoje odpowiedzi zostają na twoim komputerze"
+<div class="kp-podsumowanie" data-karta="witryna-wedlug-scenopisu"></div>
 
-    Formularz niczego nie wysyła. Plik Worda powstaje dopiero po kliknięciu
-    przycisku. Wyczyszczenie danych przeglądania usunie odpowiedzi — kiedy
-    skończysz, pobierz plik.
+<span id="karta" class="kp-kotwica"></span>
 
-<div class="karta-pracy" data-karta="witryna-wedlug-scenopisu"></div>
+???+ karta "Rozwiń kartę pracy"
+
+    !!! info "Twoje odpowiedzi zostają na twoim komputerze"
+
+        Formularz niczego nie wysyła. Plik Worda powstaje dopiero po kliknięciu
+        przycisku. Wyczyszczenie danych przeglądania usunie odpowiedzi — kiedy
+        skończysz, pobierz plik.
+
+    <div class="karta-pracy" data-karta="witryna-wedlug-scenopisu"></div>
 
 ### Jak to oddać
 

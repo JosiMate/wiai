@@ -291,6 +291,7 @@
 @media print {
   .kp-stopka, .kp-zrzut-pusty, .qz-sprawdz, .qz-reset, .pg-pasek, .nz { display: none !important; }
 }
+
 /* ─────────────────────────────────────────── przegląd kart pracy
    Karta pracy ma własną stronę, a jej stan pokazujemy w dwóch miejscach:
    paskiem na stronie działu i tabelą na zbiorczej stronie „Karty pracy".

@@ -198,30 +198,6 @@
      "pytanie": "Wymień trzy dodatki lub funkcje edytora kodu, które zastępują wygodę narzędzia wizualnego, i napisz, co daje każde z nich."
     }
    ]
-  },
-  {
-   "nr": 6,
-   "tytul": "Do wyboru — na ocenę wyższą",
-   "poziom": "wymagania dopełniające i wykraczające · oceny 5–6",
-   "polecenie": "Wykonaj jedno z trzech zadań opisanych w sekcji „Na ocenę celującą” na stronie materiału.",
-   "pola": [
-    {
-     "typ": "wybor",
-     "id": "z6_wybor",
-     "pytanie": "Wybieram zadanie",
-     "opcje": [
-      "A — test dostępności strony z kreatora",
-      "B — oczyszczenie wygenerowanego kodu",
-      "C — rekomendacja narzędzi dla trzech zleceń"
-     ]
-    },
-    {
-     "typ": "tekst",
-     "id": "z6_odp",
-     "wiersze": 10,
-     "pytanie": "Rozwiązanie wraz z wnioskami"
-    }
-   ]
   }
  ],
  "idPoprzedni": "edytory-wysiwyg"

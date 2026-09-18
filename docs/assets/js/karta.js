@@ -55,7 +55,7 @@
       const stare = localStorage.getItem(KLUCZ(def.idPoprzedni));
       if (!stare) return;
       localStorage.setItem(KLUCZ(def.id), stare);
-    } catch { /* tryb prywatny albo brak miejsca — trudno, karta ruszy pusta */ }
+    } catch { /* tryb prywatny albo brak miejsca — karta ruszy pusta */ }
   }
   /* Zapis może się nie udać z dwóch zupełnie różnych powodów, a uczeń musi
      wiedzieć z którego: w trybie prywatnym nic nie pomoże poza pobraniem
@@ -63,7 +63,7 @@
      Zwracamy więc powód, a nie samo true/false. */
   const zapisz = (id, dane) => {
     try {
-      // Znacznik czasu potrzebny jest przeglądowi kart („ostatnia zmiana”).
+      // Znacznik czasu potrzebny jest przeglądowi kart („ostatnia zmiana").
       // Zapisujemy go w danych, a nie osobno, żeby wędrował razem z plikiem
       // przenoszonym na drugi komputer. Z liczenia wypełnionych pól jest
       // wykluczony — patrz policzWypelnione.
@@ -261,7 +261,7 @@
             const bin = atob(b64);
             const bajty = new Uint8Array(bin.length);
             for (let i = 0; i < bin.length; i++) bajty[i] = bin.charCodeAt(i);
-            const typ = /png/.test(nag) ? "png" : "jpg";
+            const typ = /png/i.test(nag) ? "png" : "jpg";
             const wym = await rozmiar(d);
             dzieci.push(new Paragraph({ spacing: { after: 160 }, children: [
               new ImageRun({ type: typ, data: bajty, transformation: wym })] }));

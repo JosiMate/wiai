@@ -182,30 +182,6 @@
      "pytanie": "Dlaczego do tego układu lepszy jest grid niż flexbox? Odpowiedz przez różnicę między nimi, nie przez preferencję."
     }
    ]
-  },
-  {
-   "nr": 6,
-   "tytul": "Do wyboru — na ocenę wyższą",
-   "poziom": "wymagania dopełniające i wykraczające · oceny 5–6",
-   "polecenie": "Wykonaj jedno z trzech zadań opisanych w sekcji „Na ocenę celującą” na stronie materiału.",
-   "pola": [
-    {
-     "typ": "wybor",
-     "id": "z6_wybor",
-     "pytanie": "Wybieram zadanie",
-     "opcje": [
-      "A — przebudowa układu z float na grid",
-      "B — audyt dostępności wybranej strony",
-      "C — zastąpienie JavaScriptu selektorem :has()"
-     ]
-    },
-    {
-     "typ": "tekst",
-     "id": "z6_odp",
-     "wiersze": 10,
-     "pytanie": "Rozwiązanie wraz z wnioskami"
-    }
-   ]
   }
  ],
  "idPoprzedni": "powtorzenie-html-css"

@@ -491,19 +491,25 @@ Test z natychmiastową odpowiedzią. **Nie jest oceniany i nic nie wysyła.**
 
 ---
 
-## Praca do oddania
+## Karta pracy
 
 Z tego tematu oddajesz **kartę pracy** oraz **spakowaną, poprawioną witrynę**.
 Kartę wypełniaj w trakcie ćwiczeń — pyta o liczby i komunikaty, których po
 poprawieniu plików już nie odtworzysz.
 
-!!! info "Twoje odpowiedzi zostają na twoim komputerze"
+<div class="kp-podsumowanie" data-karta="walidacja-testowanie"></div>
 
-    Formularz niczego nie wysyła. Plik Worda powstaje dopiero po kliknięciu
-    przycisku. Wyczyszczenie danych przeglądania usunie odpowiedzi — kiedy
-    skończysz, pobierz plik.
+<span id="karta" class="kp-kotwica"></span>
 
-<div class="karta-pracy" data-karta="walidacja-testowanie"></div>
+???+ karta "Rozwiń kartę pracy"
+
+    !!! info "Twoje odpowiedzi zostają na twoim komputerze"
+
+        Formularz niczego nie wysyła. Plik Worda powstaje dopiero po kliknięciu
+        przycisku. Wyczyszczenie danych przeglądania usunie odpowiedzi — kiedy
+        skończysz, pobierz plik.
+
+    <div class="karta-pracy" data-karta="walidacja-testowanie"></div>
 
 ### Jak ją oddać
 

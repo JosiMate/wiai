@@ -7,7 +7,9 @@ hide:
 
 **Witryny i aplikacje internetowe · klasa 4TI · INF.03**
 
-Tu w jednym miejscu widzisz **całą swoją pracę z tego przedmiotu**: ile masz wypełnione w każdej karcie i kiedy ostatnio przy tym siedziałeś. Kartę otwierasz, klikając nazwę tematu.
+Tu w jednym miejscu widzisz **całą swoją pracę z tego przedmiotu**: ile masz
+wypełnione w każdej karcie i kiedy ostatnio przy tym siedziałeś. Kartę
+otwierasz, klikając nazwę tematu.
 
 <div class="kp-przeglad">
 <script type="application/json">
@@ -21,6 +23,16 @@ Tu w jednym miejscu widzisz **całą swoją pracę z tego przedmiotu**: ile masz
     "plik": "edytory-wysiwyg",
     "tytul": "Dział II · Edytory WYSIWYG i dobór narzędzi",
     "url": "../dzial-2/edytory-wysiwyg/#karta"
+  },
+  {
+    "plik": "witryna-wedlug-scenopisu",
+    "tytul": "Dział II · Witryna według projektu/scenopisu",
+    "url": "../dzial-2/witryna-wedlug-scenopisu/#karta"
+  },
+  {
+    "plik": "walidacja-testowanie",
+    "tytul": "Dział II · Walidacja W3C i testowanie w przeglądarkach",
+    "url": "../dzial-2/walidacja-testowanie/#karta"
   }
 ]
 </script>
@@ -33,7 +45,7 @@ wysyłane do szkoły ani nigdzie indziej. To wygodne, ale ma jeden skutek:
 w pracowni i w domu to są dwa osobne komplety.
 
 Dlatego jest przycisk **Zapisz wszystkie karty do pliku**. Dostajesz jeden plik
-`moje-karty-pracy.json` ze wszystkimi tematami naraz — przenosisz go
+`moje-karty-pracy.json` ze wszystkimi tematach naraz — przenosisz go
 pendrive'em, OneDrive'em albo mailem do siebie i na drugim komputerze klikasz
 **Wczytaj karty z pliku**. Plik z pojedynczej karty też tu zadziała.
 

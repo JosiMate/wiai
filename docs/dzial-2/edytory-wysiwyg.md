@@ -344,26 +344,6 @@ Zapisany plik dołącz w **Dzienniku VULCAN → Zadania domowe**, w zadaniu
 
 ---
 
-## Na ocenę celującą
-
-Wybierz jedno zadanie.
-
-1. **Przetestuj dostępność strony z kreatora.** Zbuduj prostą stronę
-   w wybranym kreatorze z chmury, a potem sprawdź ją pod kątem WCAG: przejdź
-   tabulatorem, zbadaj kontrast, sprawdź obecność `alt` i etykiet. Opisz, co
-   dało się poprawić z poziomu kreatora, a czego nie — i wyciągnij wniosek.
-
-2. **Oczyść wygenerowany kod.** Weź stronę z narzędzia wizualnego i przepisz
-   ją ręcznie: znaczniki semantyczne, style w zewnętrznym arkuszu, ten sam
-   wygląd. Podaj rozmiar pliku przed i po oraz liczbę błędów walidatora.
-
-3. **Przygotuj rekomendację dla klienta.** Wymyśl trzy różne zlecenia — na
-   przykład wizytówka fryzjera, serwis szkoły, sklep z rękodziełem — i dla
-   każdego uzasadnij dobór narzędzia, odwołując się do pięciu kryteriów
-   z sekcji 4. Uzasadnienie ma być argumentem, nie preferencją.
-
----
-
 !!! info "Materiały uzupełniające"
 
     - Walidator kodu: [validator.w3.org](https://validator.w3.org/)
