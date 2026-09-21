@@ -33,6 +33,11 @@ otwierasz, klikając nazwę tematu.
     "plik": "walidacja-testowanie",
     "tytul": "Dział II · Walidacja W3C i testowanie w przeglądarkach",
     "url": "../dzial-2/walidacja-testowanie/#karta"
+  },
+  {
+    "plik": "publikacja-ftp-hosting",
+    "tytul": "Dział II · Publikacja — FTP i hosting",
+    "url": "../dzial-2/publikacja-ftp-hosting/#karta"
   }
 ]
 </script>

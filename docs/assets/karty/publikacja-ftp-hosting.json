@@ -1,0 +1,219 @@
+{
+ "id": "wiai-publikacja-ftp-hosting",
+ "tytul": "Publikacja stron www — klienci FTP i serwery hostingowe",
+ "przedmiot": "PCEiKZ Szczucin · witryny i aplikacje internetowe · INF.03",
+ "klasa": "4TI",
+ "sufiks": "PUBLIKACJA",
+ "zadania": [
+  {
+   "nr": 1,
+   "tytul": "Konfiguracja klienta",
+   "poziom": "wymagania konieczne · ocena 2",
+   "polecenie": "Ćwiczenie 1. Połączenie utworzone z danych od nauczyciela. <strong>Hasła nie wpisuj do karty ani nie zapisuj w programie</strong> — na zrzucie zasłoń to pole.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      ["z1_program", "Nazwa i wersja klienta", ""],
+      ["z1_host", "Host (serwer)", ""],
+      ["z1_user", "Użytkownik", ""],
+      ["z1_port", "Port", ""],
+      ["z1_protokol", "Protokół", "FTP / FTPS / SFTP"]
+     ]
+    },
+    {
+     "typ": "wybor",
+     "id": "z1_tryb",
+     "pytanie": "Tryb połączenia dla danych",
+     "opcje": ["pasywny", "aktywny", "nie wiem, ustawienie domyślne"]
+    },
+    {
+     "typ": "tekst",
+     "id": "z1_dlaczego",
+     "wiersze": 3,
+     "pytanie": "Dlaczego wybrano ten protokół, a nie któryś z pozostałych dwóch? Odwołaj się do tego, co jest w nim szyfrowane."
+    },
+    {
+     "typ": "zrzut",
+     "id": "z1_zrzut",
+     "opis": "menedżer połączeń z widocznym hostem, portem i protokołem — bez hasła"
+    }
+   ]
+  },
+  {
+   "nr": 2,
+   "tytul": "Wgranie witryny",
+   "poziom": "wymagania konieczne i podstawowe · oceny 2–3",
+   "polecenie": "Ćwiczenie 2. Cała witryna razem z katalogami, do właściwego katalogu publikacji.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      ["z2_katalog", "Nazwa katalogu publikacji na serwerze", "public_html / www / htdocs / inny"],
+      ["z2_plikow", "Liczba wgranych plików", ""],
+      ["z2_rozmiar", "Łączny rozmiar", ""],
+      ["z2_katalogi", "Wgrane podkatalogi", "np. css, obrazy"],
+      ["z2_czas", "Ile trwał transfer", ""]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "z2_porownanie",
+     "wiersze": 3,
+     "pytanie": "Jak sprawdziłeś, że na serwerze jest dokładnie to samo co na dysku? Czy czegoś brakowało — a jeśli tak, to czego?"
+    },
+    {
+     "typ": "zrzut",
+     "id": "z2_zrzut",
+     "opis": "oba panele klienta: dysk po lewej, serwer po prawej"
+    }
+   ]
+  },
+  {
+   "nr": 3,
+   "tytul": "Lista kontrolna po publikacji",
+   "poziom": "wymagania podstawowe i rozszerzające · oceny 3–4",
+   "polecenie": "Ćwiczenie 3. Najpierw zapisz objaw i hipotezę, dopiero potem poprawiaj — tej kolejności wymaga dokumentacja zawodowa.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      ["z3_adres", "Adres, pod którym działa witryna", ""],
+      ["z3_p1", "1. Otwiera się pod adresem", "tak / nie"],
+      ["z3_p2", "2. Otwiera się z zewnątrz (telefon, sieć komórkowa)", "tak / nie"],
+      ["z3_p3", "3. Działa z www i bez www", "tak / nie"],
+      ["z3_p4", "4. Jest kłódka i https", "tak / nie"],
+      ["z3_p5", "5. Wszystkie podstrony się otwierają", "tak / nie"],
+      ["z3_p6", "6. Obrazki i style się wczytały", "tak / nie"],
+      ["z3_p7", "7. Konsola bez błędów 404", "liczba błędów"],
+      ["z3_p8", "8. Układ działa na wąskim ekranie", "tak / nie"],
+      ["z3_p9", "9. Walidator czysty po adresie (Validate by URI)", "błędy / ostrzeżenia"]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "z3_usterka",
+     "wiersze": 6,
+     "pytanie": "Opisz jedną usterkę wykrytą po publikacji: objaw → hipoteza → co zrobiłeś → wynik ponownego sprawdzenia. Jeżeli nic nie zawiodło, opisz, który punkt listy uważasz za najłatwiejszy do przeoczenia i dlaczego.",
+     "podpowiedz": "Objaw: … Podejrzewałem, że … Sprawdziłem … Poprawiłem … Po ponownym sprawdzeniu …"
+    },
+    {
+     "typ": "zrzut",
+     "id": "z3_zrzut",
+     "opis": "opublikowana witryna otwarta pod swoim adresem, z widocznym paskiem adresu"
+    }
+   ]
+  },
+  {
+   "nr": 4,
+   "tytul": "Dobór hostingu dla klienta",
+   "poziom": "wymagania rozszerzające · ocena 4",
+   "polecenie": "Ćwiczenie 4. Warsztat rowerowy: pięć podstron, galeria, formularz kontaktowy na adres w domenie klienta, kilkaset odwiedzin miesięcznie.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      ["z4_a_nazwa", "Oferta A — dostawca i nazwa pakietu", ""],
+      ["z4_a_cena", "Oferta A — cena za rok", ""],
+      ["z4_a_miejsce", "Oferta A — przestrzeń i transfer", ""],
+      ["z4_a_dodatki", "Oferta A — PHP, bazy, SSL, konta e-mail", ""],
+      ["z4_b_nazwa", "Oferta B — dostawca i nazwa pakietu", ""],
+      ["z4_b_cena", "Oferta B — cena za rok", ""],
+      ["z4_b_miejsce", "Oferta B — przestrzeń i transfer", ""],
+      ["z4_b_dodatki", "Oferta B — PHP, bazy, SSL, konta e-mail", ""]
+     ]
+    },
+    {
+     "typ": "wybor",
+     "id": "z4_rodzaj",
+     "pytanie": "Rodzaj hostingu, który proponujesz klientowi",
+     "opcje": ["współdzielony", "statyczny", "VPS", "dedykowany", "chmurowy"]
+    },
+    {
+     "typ": "tekst",
+     "id": "z4_uzasadnienie",
+     "wiersze": 5,
+     "pytanie": "Uzasadnij wybór, wiążąc konkretną potrzebę klienta z konkretnym parametrem pakietu. Napisz też, dlaczego odrzuciłeś drogę droższą.",
+     "podpowiedz": "Witryna jest … , ruch szacuję na … , więc wystarczy … z … . VPS byłby … , bo …"
+    }
+   ]
+  },
+  {
+   "nr": 5,
+   "tytul": "Domena i rekordy DNS",
+   "poziom": "wymagania rozszerzające i dopełniające · oceny 4–5",
+   "polecenie": "Ćwiczenie 5. Domena <code>szprycha-&lt;numer w dzienniku&gt;.pl</code>, serwer o adresie 192.0.2.10, poczta na mail.hostingodawca.pl.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      ["z5_r1_typ", "1. Domena bez www → serwer: typ rekordu", ""],
+      ["z5_r1_wartosc", "1. …nazwa i wartość", ""],
+      ["z5_r2_typ", "2. Adres z www → tam, gdzie domena: typ rekordu", ""],
+      ["z5_r2_wartosc", "2. …nazwa i wartość", ""],
+      ["z5_r3_typ", "3. Poczta kontakt@: typ rekordu", ""],
+      ["z5_r3_wartosc", "3. …nazwa i wartość", ""],
+      ["z5_rejestr", "Kto prowadzi rejestr domen .pl i u kogo domenę się rejestruje", ""]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "z5_ttl",
+     "wiersze": 5,
+     "pytanie": "Dlaczego po zapisaniu zmian kolega z innej sieci może przez jakiś czas widzieć starą stronę? Co robi się przed planowaną zmianą, żeby skrócić ten czas — i czego to NIE załatwia?"
+    }
+   ]
+  },
+  {
+   "nr": 6,
+   "tytul": "Publikacja bez klienta FTP",
+   "poziom": "wymagania dopełniające · ocena 5",
+   "polecenie": "Ćwiczenie 6. Ta sama witryna, drugim sposobem: z repozytorium, na hostingu statycznym.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      ["z6_serwis", "Użyty serwis", ""],
+      ["z6_adres", "Adres opublikowanej witryny", ""],
+      ["z6_zmiana", "Jaką zmianę wprowadziłeś na próbę", ""],
+      ["z6_czas_repo", "Czas od zapisania zmiany do jej pojawienia się na żywo", ""],
+      ["z6_czas_ftp", "Szacowany czas tej samej poprawki przez klienta FTP", ""]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "z6_porownanie",
+     "wiersze": 6,
+     "pytanie": "Porównaj oba sposoby publikacji: czas, ryzyko pomyłki, możliwość cofnięcia zmiany i pracę zespołową. Wskaż sytuację, w której mimo wszystko wybierzesz klienta FTP.",
+     "podpowiedz": "pamiętaj, czego hosting statyczny nie potrafi"
+    }
+   ]
+  },
+  {
+   "nr": 7,
+   "tytul": "Samoocena",
+   "poziom": "",
+   "polecenie": "Na koniec tematu i całego działu.",
+   "pola": [
+    {
+     "typ": "wybor",
+     "id": "z7_poziom",
+     "pytanie": "Gdybyś jutro dostał zlecenie „opublikuj tę witrynę”, poradziłbyś sobie",
+     "opcje": ["samodzielnie, od początku do końca", "samodzielnie, ale z zaglądaniem do materiału", "z pomocą nauczyciela", "jeszcze nie"]
+    },
+    {
+     "typ": "tekst",
+     "id": "z7_trudne",
+     "wiersze": 3,
+     "pytanie": "Który etap publikacji był najtrudniejszy i co konkretnie sprawiło kłopot?"
+    },
+    {
+     "typ": "tekst",
+     "id": "z7_powtorzyc",
+     "wiersze": 2,
+     "pytanie": "Co powtórzysz przed egzaminem z tego tematu?"
+    }
+   ]
+  }
+ ]
+}
