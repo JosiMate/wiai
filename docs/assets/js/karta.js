@@ -34,6 +34,14 @@
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
+  function dzisiejszaDataLocal() {
+    const d = new Date();
+    const rok = d.getFullYear();
+    const miesiac = String(d.getMonth() + 1).padStart(2, "0");
+    const dzien = String(d.getDate()).padStart(2, "0");
+    return `${rok}-${miesiac}-${dzien}`;
+  }
+
   // ---------------------------------------------------------------- magazyn
   const wczytaj = (id) => {
     try { return JSON.parse(localStorage.getItem(KLUCZ(id))) || {}; }
@@ -95,25 +103,34 @@
     ? (b / 1024 / 1024).toFixed(1).replace(".", ",") + " MB"
     : Math.round(b / 1024) + " kB");
 
-  /* Ile pól uczeń naprawdę wypełnił. Dwa wyjątki są konieczne: klasa wjeżdża
-     do danych sama przy pierwszym otwarciu karty (wartość domyślna
-     z definicji), a „_zapisano" dokłada zapis — bez nich pusta karta
-     zgłaszałaby, że coś już w niej jest. */
+  /* Ile pól uczeń naprawdę wypełnił. Trzy wyjątki są konieczne: klasa i data
+     wjeżdżają do danych same przy pierwszym otwarciu karty (wartości domyślne),
+     a „_zapisano" dokłada zapis — bez nich pusta karta zgłaszałaby, że coś już
+     w niej jest. */
   function policzWypelnione(dane, def) {
     return Object.entries(dane || {}).filter(([k, v]) =>
-      v !== "" && v != null && k !== "_zapisano"
-      && !(k === "_klasa" && def && v === def.klasa)).length;
+      v !== "" && v != null && k !== "_zapisano" && k !== "_data_domyslna"
+      && !(k === "_klasa" && def && v === def.klasa)
+      && !(k === "_data" && dane && v === dane._data_domyslna)).length;
   }
 
   /* Ile pól karta ma w ogóle — liczone z definicji, nie z DOM-u, żeby
      przegląd kart mógł to policzyć bez renderowania karty. Trzy pola
      nagłówka (numer, klasa, data) są wspólne dla każdej karty. */
-  function policzWszystkie(def) {
+  function policzWszystkie(def, dane) {
     let n = 3;
     for (const z of def.zadania || []) {
       for (const p of z.pola || []) {
         n += p.typ === "tabela" ? (p.wiersze || []).length : 1;
       }
+    }
+    /* Klasa i data przyjeżdżają do karty już wypełnione i dopóki uczeń ich nie
+       poprawi, nie liczą się jako wypełnione. Nie mogą więc powiększać sumy —
+       inaczej karta zrobiona w całości pokazywałaby 51 z 53 i pasek postępu
+       nigdy nie dobiłby do końca. Gdy uczeń którąś poprawi, wraca do sumy. */
+    if (dane) {
+      if (def && dane._klasa === def.klasa) n -= 1;
+      if (dane._data && dane._data === dane._data_domyslna) n -= 1;
     }
     return n;
   }
@@ -317,9 +334,17 @@
     const id = def.id;
     przeniesStarePodNowaNazwe(def);
     let dane = wczytaj(id);
-    // Wartości domyślne (klasa) są tylko w atrybucie value pola — bez tego
-    // nigdy nie trafiłyby do zapisanych danych, bo nikt ich nie edytuje.
-    if (!dane._klasa && def.klasa) { dane._klasa = def.klasa; zapisz(id, dane); }
+    // Wartości domyślne (klasa i data) są zapisywane przy pierwszym otwarciu,
+    // żeby trafiły do danych i nie zmieniały się przy kolejnych wizytach.
+    let zmieniono = false;
+    if (!dane._klasa && def.klasa) { dane._klasa = def.klasa; zmieniono = true; }
+    if (!dane._data) {
+      const dzis = dzisiejszaDataLocal();
+      dane._data = dzis;
+      dane._data_domyslna = dzis;
+      zmieniono = true;
+    }
+    if (zmieniono) { zapisz(id, dane); }
     render(host, def, dane);
     const status = host.querySelector(".kp-status");
 
