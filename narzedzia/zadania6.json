@@ -62,5 +62,37 @@
       ],
       "oddajesz": "obie wersje strony, tabelę pomiarów i jednostronicową rekomendację"
     }
+  ],
+  "Dział III. Podstawy programowania — środowisko i dane": [
+    {
+      "ozn": "A",
+      "tytul": "Wycena, której nie da się oszukać",
+      "wymaga": "po temacie „Wprowadzenie do programowania aplikacji internetowych”",
+      "opis": [
+        "Rozbuduj wycenę naprawy o koszyk: kilka różnych usług naraz, każda z własną liczbą rowerów, i rabat 10%, gdy zamówienie przekracza 500 zł. Koszt liczy się na bieżąco w JavaScripcie, a ostateczną kwotę wylicza PHP — z własnego cennika, nie z tego, co przysłała przeglądarka.",
+        "Przygotuj co najmniej dziesięć spreparowanych żądań — zmienione adresy, brakujące i nadmiarowe pola, ujemne i ogromne liczby, znaczniki HTML w danych — i pokaż, że serwer odrzuca każde z nich albo liczy poprawnie."
+      ],
+      "oddajesz": "spakowaną aplikację i tabelę testów: żądanie, oczekiwana odpowiedź, odpowiedź faktyczna"
+    },
+    {
+      "ozn": "B",
+      "tytul": "Środowisko od zera — z instrukcją dla kolegi",
+      "wymaga": "po temacie o środowisku programistycznym",
+      "opis": [
+        "Na czystym komputerze albo maszynie wirtualnej zainstaluj i skonfiguruj kompletne środowisko aplikacji internetowej: serwer WWW z PHP, serwer baz danych, phpMyAdmin i edytor z podświetlaniem składni oraz debuggerem.",
+        "Napisz instrukcję tak, żeby kolega odtworzył to samo bez twojej pomocy — z wersjami programów, zmienionymi ustawieniami i trzema problemami, które mogą się pojawić, wraz z ich rozwiązaniem. Sprawdź instrukcję na koledze i zapisz, gdzie się zatrzymał."
+      ],
+      "oddajesz": "instrukcję, zrzuty działającego środowiska i notatkę z próby na koledze"
+    },
+    {
+      "ozn": "C",
+      "tytul": "Te same dane, dwa języki",
+      "wymaga": "po temacie o operatorach",
+      "opis": [
+        "Przygotuj zestaw co najmniej dwunastu wyrażeń, które w JavaScripcie i PHP wyglądają podobnie, a dają różne wyniki: sklejanie i dodawanie, porównanie luźne i ścisłe, dzielenie całkowite, liczby zmiennoprzecinkowe, puste wartości, tekst zamieniany na liczbę.",
+        "Uruchom każde w obu językach, zapisz wyniki i wyjaśnij przyczynę każdej różnicy. Na koniec sformułuj trzy reguły, których się trzymasz, żeby te różnice nie spowodowały błędu w aplikacji."
+      ],
+      "oddajesz": "dwa pliki z kodem, tabelę wyników z wyjaśnieniami i trzy reguły"
+    }
   ]
 }

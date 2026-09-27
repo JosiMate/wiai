@@ -1,0 +1,361 @@
+{
+ "id": "wiai-wprowadzenie-programowanie",
+ "tytul": "Wprowadzenie do programowania aplikacji internetowych",
+ "przedmiot": "PCEiKZ Szczucin · witryny i aplikacje internetowe · INF.03",
+ "klasa": "4TI",
+ "sufiks": "WPROWADZENIE",
+ "zadania": [
+  {
+   "nr": 1,
+   "tytul": "Rozmowa przeglądarki z serwerem",
+   "poziom": "wymagania konieczne · ocena 2",
+   "polecenie": "Ćwiczenie 1. Otwórz <code>http://localhost/wycena/</code> z włączoną zakładką <strong>Sieć</strong> w narzędziach deweloperskich i odśwież stronę.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z1_ile",
+       "Ile żądań wysłała przeglądarka",
+       ""
+      ],
+      [
+       "z1_pliki",
+       "Jakie pliki pobrała",
+       ""
+      ],
+      [
+       "z1_status",
+       "Kod statusu dokumentu index.html",
+       ""
+      ],
+      [
+       "z1_typ",
+       "Typ treści (Content-Type) dokumentu",
+       ""
+      ],
+      [
+       "z1_404",
+       "Kod statusu dla adresu …/wycena/cennik.html",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "zrzut",
+     "id": "z1_zrzut",
+     "opis": "zakładka Sieć z listą żądań po odświeżeniu strony"
+    },
+    {
+     "typ": "tekst",
+     "id": "z1_czemu_wiele",
+     "wiersze": 3,
+     "pytanie": "Wszedłeś pod jeden adres, a żądań było kilka. Skąd przeglądarka wiedziała, co jeszcze ma pobrać?"
+    }
+   ]
+  },
+  {
+   "nr": 2,
+   "tytul": "Klient i serwer",
+   "poziom": "wymagania konieczne · ocena 2",
+   "polecenie": "Na podstawie sekcji 3 i 8 materiału.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z2_js_gdzie",
+       "JavaScript — gdzie się wykonuje",
+       ""
+      ],
+      [
+       "z2_php_gdzie",
+       "PHP — gdzie się wykonuje",
+       ""
+      ],
+      [
+       "z2_js_widac",
+       "Czy użytkownik widzi kod JavaScriptu",
+       ""
+      ],
+      [
+       "z2_php_widac",
+       "Czy użytkownik widzi kod PHP",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "z2_przyklady",
+     "wiersze": 4,
+     "pytanie": "Podaj po dwa przykłady zadań z aplikacji, którą znasz (sklep, e-dziennik, bank): dwa, które robi JavaScript w przeglądarce, i dwa, które musi zrobić serwer. Przy każdym jedno słowo uzasadnienia."
+    }
+   ]
+  },
+  {
+   "nr": 3,
+   "tytul": "Konsola i pułapka plusa",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 2. Wypisz komunikat w konsoli, a potem wykonaj w konsoli oba polecenia z materiału.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z3_log",
+       "Instrukcja, którą wypisałeś komunikat",
+       ""
+      ],
+      [
+       "z3_bez",
+       "Wynik: …value + 1",
+       ""
+      ],
+      [
+       "z3_z",
+       "Wynik: Number(…value) + 1",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "z3_dlaczego",
+     "wiersze": 3,
+     "pytanie": "Dlaczego pierwszy wynik jest inny niż drugi? Co to znaczy dla każdej wartości, którą odczytujesz z pola formularza?"
+    },
+    {
+     "typ": "zrzut",
+     "id": "z3_zrzut",
+     "opis": "konsola z twoim komunikatem i wynikami obu poleceń"
+    }
+   ]
+  },
+  {
+   "nr": 4,
+   "tytul": "Wycena w przeglądarce",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 3. Uzupełnij <code>js/wycena.js</code> i sprawdź program na trzech przypadkach z tabeli w materiale.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "z4_kod",
+     "wiersze": 10,
+     "pytanie": "Wklej kod funkcji obsługującej kliknięcie (od document.getElementById(\"oblicz\") do końca)."
+    },
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z4_t1",
+       "Przegląd · 3 rowery · ekspres — wynik programu",
+       "oczekiwany: 300 zł"
+      ],
+      [
+       "z4_t2",
+       "Amortyzator · 1 rower · bez ekspresu — wynik programu",
+       "oczekiwany: 220 zł"
+      ],
+      [
+       "z4_t3",
+       "Centrowanie · 4 rowery · bez ekspresu — wynik programu",
+       "oczekiwany: 180 zł"
+      ]
+     ]
+    },
+    {
+     "typ": "zrzut",
+     "id": "z4_zrzut",
+     "opis": "strona z wynikiem dla pierwszego przypadku z tabeli"
+    }
+   ]
+  },
+  {
+   "nr": 5,
+   "tytul": "Pierwszy skrypt PHP",
+   "poziom": "wymagania podstawowe i rozszerzające · oceny 3–4",
+   "polecenie": "Ćwiczenie 4. Utwórz <code>pierwszy.php</code>, otwórz go przez serwer i z dysku, a potem celowo usuń jeden średnik.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z5_adres",
+       "Adres, pod którym skrypt działa",
+       ""
+      ],
+      [
+       "z5_wersja",
+       "Wersja PHP wypisana przez skrypt",
+       ""
+      ],
+      [
+       "z5_zrodlo",
+       "Czy w źródle strony (Ctrl+U) jest kod PHP",
+       ""
+      ],
+      [
+       "z5_dysk",
+       "Co się stało po otwarciu pliku podwójnym kliknięciem",
+       ""
+      ],
+      [
+       "z5_blad",
+       "Komunikat po usunięciu średnika",
+       "przepisz dokładnie"
+      ],
+      [
+       "z5_wiersze",
+       "Wiersz podany przez PHP / wiersz z brakującym średnikiem",
+       "np. 3 / 2"
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "z5_dlaczego",
+     "wiersze": 3,
+     "pytanie": "Odśwież stronę kilka razy — godzina się zmienia, a w źródle stoi zwykły tekst. Wyjaśnij, kto i kiedy wstawił tę godzinę do dokumentu."
+    },
+    {
+     "typ": "zrzut",
+     "id": "z5_zrzut",
+     "opis": "pierwszy.php otwarty przez http://localhost"
+    }
+   ]
+  },
+  {
+   "nr": 6,
+   "tytul": "Wycena na serwerze",
+   "poziom": "wymagania rozszerzające · ocena 4",
+   "polecenie": "Ćwiczenie 5. Uzupełnij <code>wycena.php</code>, sprawdź go trzema przypadkami, a potem przetestuj oba przyciski z wyłączonym JavaScriptem.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "z6_kod",
+     "wiersze": 10,
+     "pytanie": "Wklej kod PHP z górnej części pliku — od odczytu danych do ustawienia $komunikat."
+    },
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z6_url",
+       "Adres w pasku po wysłaniu formularza (pierwszy przypadek)",
+       ""
+      ],
+      [
+       "z6_t1",
+       "Wynik serwera — przypadek 1",
+       ""
+      ],
+      [
+       "z6_t2",
+       "Wynik serwera — przypadek 2",
+       ""
+      ],
+      [
+       "z6_t3",
+       "Wynik serwera — przypadek 3",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "wybor",
+     "id": "z6_bez_js",
+     "pytanie": "Przy wyłączonym JavaScripcie działa",
+     "opcje": [
+      "tylko przycisk „Oblicz w przeglądarce”",
+      "tylko przycisk „Wyślij do serwera”",
+      "oba przyciski",
+      "żaden"
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "z6_ekspres",
+     "wiersze": 3,
+     "pytanie": "Jak w PHP rozpoznałeś, czy zaznaczono tryb ekspresowy? Dlaczego nie da się po prostu odczytać $_GET['ekspres'] jak pozostałych pól?"
+    }
+   ]
+  },
+  {
+   "nr": 7,
+   "tytul": "Nie ufaj klientowi",
+   "poziom": "wymagania dopełniające · ocena 5",
+   "polecenie": "Ćwiczenie 6. Wpisuj adresy z materiału ręcznie w pasek przeglądarki — najpierw przed dopisaniem sprawdzania danych, potem po.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z7_a_przed",
+       "rowery=-3 — odpowiedź PRZED poprawką",
+       ""
+      ],
+      [
+       "z7_b_przed",
+       "usluga=xyz — odpowiedź PRZED poprawką",
+       ""
+      ],
+      [
+       "z7_c_przed",
+       "bez usługi — odpowiedź PRZED poprawką",
+       ""
+      ],
+      [
+       "z7_d_przed",
+       "rowery=1000 — odpowiedź PRZED poprawką",
+       ""
+      ],
+      [
+       "z7_po",
+       "Czy po poprawce wszystkie cztery dają komunikat o błędnych danych",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "z7_warunek",
+     "wiersze": 5,
+     "pytanie": "Wklej warunek, którym sprawdzasz dane, i wyjaśnij każdą jego część."
+    },
+    {
+     "typ": "tekst",
+     "id": "z7_xss",
+     "wiersze": 4,
+     "pytanie": "Co się stało po wpisaniu usluga=<i>test</i> i jak to naprawiłeś? Dlaczego tak samo mógłby wstawić do strony skrypt?"
+    },
+    {
+     "typ": "tekst",
+     "id": "z7_zasada",
+     "wiersze": 3,
+     "pytanie": "Formularz ma min=\"1\" max=\"20\". Napisz, po co w takim razie sprawdzanie w PHP — i po co sprawdzanie w formularzu, skoro i tak jest PHP."
+    }
+   ]
+  },
+  {
+   "nr": 8,
+   "tytul": "Samoocena",
+   "poziom": "",
+   "polecenie": "Krótko i szczerze — to nie jest oceniane na stopień.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "s_trudne",
+     "wiersze": 3,
+     "pytanie": "Co było trudniejsze: JavaScript w przeglądarce czy PHP na serwerze? Co dokładnie sprawiło kłopot?"
+    },
+    {
+     "typ": "tekst",
+     "id": "s_wnioski",
+     "wiersze": 3,
+     "pytanie": "Wyobraź sobie, że piszesz sklep internetowy. Jedną rzecz z dzisiejszych zajęć, której na pewno nie zrobisz w samym JavaScripcie — i dlaczego."
+    }
+   ]
+  }
+ ]
+}

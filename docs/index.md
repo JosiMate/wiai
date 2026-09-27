@@ -52,7 +52,7 @@ to powtórzenie i sprawdzian końcowy.
 
 | Temat | Godz. | Materiały |
 | --- | :---: | --- |
-| Wprowadzenie do programowania aplikacji internetowych | 3 | *w przygotowaniu* |
+| **[Wprowadzenie do programowania aplikacji internetowych](dzial-3/wprowadzenie-programowanie.md)** | 3 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 | Środowisko programistyczne – edytor, kompilator, translator, linker, debugger | 3 | *w przygotowaniu* |
 | Wbudowane typy danych (char, int, float, double) i ich specyfikatory | 3 | *w przygotowaniu* |
 | Deklaracja stałych i zmiennych w odniesieniu do wbudowanych typów danych | 3 | *w przygotowaniu* |
@@ -198,6 +198,42 @@ je wykonać. Pełne zasady opisuje strona [wymagań edukacyjnych](dzial-1/wymaga
     Zmierz jedno i drugie: czas wykonania, rozmiar pobranych zasobów, wynik audytu dostępności i liczbę błędów walidacji. Na koniec napisz rekomendację dla klienta, który pyta, co wybrać — razem z warunkami, przy których zmieniasz zdanie.
 
     **Oddajesz:** obie wersje strony, tabelę pomiarów i jednostronicową rekomendację
+
+??? example "Dział III. Podstawy programowania — środowisko i dane — 3 zadania do wyboru"
+
+    **A. Wycena, której nie da się oszukać**
+
+    *Do wykonania po temacie „Wprowadzenie do programowania aplikacji internetowych”.*
+
+    Rozbuduj wycenę naprawy o koszyk: kilka różnych usług naraz, każda z własną liczbą rowerów, i rabat 10%, gdy zamówienie przekracza 500 zł. Koszt liczy się na bieżąco w JavaScripcie, a ostateczną kwotę wylicza PHP — z własnego cennika, nie z tego, co przysłała przeglądarka.
+
+    Przygotuj co najmniej dziesięć spreparowanych żądań — zmienione adresy, brakujące i nadmiarowe pola, ujemne i ogromne liczby, znaczniki HTML w danych — i pokaż, że serwer odrzuca każde z nich albo liczy poprawnie.
+
+    **Oddajesz:** spakowaną aplikację i tabelę testów: żądanie, oczekiwana odpowiedź, odpowiedź faktyczna
+
+    ---
+
+    **B. Środowisko od zera — z instrukcją dla kolegi**
+
+    *Do wykonania po temacie o środowisku programistycznym.*
+
+    Na czystym komputerze albo maszynie wirtualnej zainstaluj i skonfiguruj kompletne środowisko aplikacji internetowej: serwer WWW z PHP, serwer baz danych, phpMyAdmin i edytor z podświetlaniem składni oraz debuggerem.
+
+    Napisz instrukcję tak, żeby kolega odtworzył to samo bez twojej pomocy — z wersjami programów, zmienionymi ustawieniami i trzema problemami, które mogą się pojawić, wraz z ich rozwiązaniem. Sprawdź instrukcję na koledze i zapisz, gdzie się zatrzymał.
+
+    **Oddajesz:** instrukcję, zrzuty działającego środowiska i notatkę z próby na koledze
+
+    ---
+
+    **C. Te same dane, dwa języki**
+
+    *Do wykonania po temacie o operatorach.*
+
+    Przygotuj zestaw co najmniej dwunastu wyrażeń, które w JavaScripcie i PHP wyglądają podobnie, a dają różne wyniki: sklejanie i dodawanie, porównanie luźne i ścisłe, dzielenie całkowite, liczby zmiennoprzecinkowe, puste wartości, tekst zamieniany na liczbę.
+
+    Uruchom każde w obu językach, zapisz wyniki i wyjaśnij przyczynę każdej różnicy. Na koniec sformułuj trzy reguły, których się trzymasz, żeby te różnice nie spowodowały błędu w aplikacji.
+
+    **Oddajesz:** dwa pliki z kodem, tabelę wyników z wyjaśnieniami i trzy reguły
 
 <!-- zadania6:end -->
 ---

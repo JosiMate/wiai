@@ -38,6 +38,11 @@ otwierasz, klikając nazwę tematu.
     "plik": "publikacja-ftp-hosting",
     "tytul": "Dział II · Publikacja — FTP i hosting",
     "url": "../dzial-2/publikacja-ftp-hosting/#karta"
+  },
+  {
+    "plik": "wprowadzenie-programowanie",
+    "tytul": "Dział III · Wprowadzenie do programowania aplikacji",
+    "url": "../dzial-3/wprowadzenie-programowanie/#karta"
   }
 ]
 </script>
