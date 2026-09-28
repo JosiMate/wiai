@@ -21,7 +21,7 @@
     | 2 | 4: pierwszy skrypt JavaScript | 2–3 |
     | 3 | 5–9: PHP, formularz, zaufanie do danych, najczęstsze błędy | 4–6 |
 
-!!! question "Na rozgrzewkę — 3 minuty, bez zaglądania"
+??? rozgrzewka "Na rozgrzewkę — 3 minuty, bez zaglądania"
 
     Odpowiedz w zeszycie, zanim zaczniesz nowy temat. Odpowiedzi rozwiń
     dopiero wtedy, gdy wszyscy skończą — nie liczą się do oceny.
