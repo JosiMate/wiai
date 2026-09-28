@@ -175,7 +175,7 @@
    "nr": 5,
    "tytul": "Pierwszy skrypt PHP",
    "poziom": "wymagania podstawowe i rozszerzające · oceny 3–4",
-   "polecenie": "Ćwiczenie 4. Utwórz <code>pierwszy.php</code>, otwórz go przez serwer i z dysku, a potem celowo usuń jeden średnik.",
+   "polecenie": "Ćwiczenie 4. Utwórz <code>pierwszy.php</code>, otwórz go przez serwer i z dysku, a potem celowo usuń średnik z końca wiersza 2.",
    "pola": [
     {
      "typ": "tabela",

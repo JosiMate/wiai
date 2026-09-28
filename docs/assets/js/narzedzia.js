@@ -2,6 +2,7 @@
  *
  * Użycie:  <div class="narzedzie" data-narzedzie="hasla"></div>
  *          <div class="narzedzie" data-narzedzie="konwerter"></div>
+ *          <div class="narzedzie" data-narzedzie="tasma"></div>
  *
  * Wszystko liczy się w przeglądarce. Nic nie jest wysyłane — przy narzędziu
  * do haseł to nie ozdobnik, tylko warunek, żeby w ogóle wolno było go użyć.
@@ -126,7 +127,147 @@
     }));
   }
 
-  const NARZEDZIA = { hasla: narzedzieHasla, konwerter: narzedzieKonwerter };
+
+  /* ---------------------------------------------------------- taśma
+   * Droga od kodu źródłowego do działającego programu w trzech językach
+   * i miejsce, w którym wychodzi na jaw każdy z trzech rodzajów błędów.
+   * Uczeń najpierw wskazuje etap, potem widzi odpowiedź — przewiduj, sprawdź.
+   * Komunikaty są prawdziwe (gcc, PHP 8, Chrome), skrócone do jednej linii.
+   */
+  const TASMA = {
+    c: {
+      nazwa: "C — kompilator i linker",
+      etapy: [
+        ["Edytor", "piszesz <code>main.c</code> i <code>cennik.c</code>"],
+        ["Preprocesor", "wkleja pliki z <code>#include</code>"],
+        ["Kompilator", "tłumaczy każdy plik na kod maszynowy: <code>main.o</code>, <code>cennik.o</code>"],
+        ["Linker", "łączy pliki <code>.o</code> i biblioteki w jeden <code>wycena.exe</code>"],
+        ["Uruchomienie", "system wykonuje <code>wycena.exe</code> — kompilator nie jest już potrzebny"],
+      ],
+    },
+    php: {
+      nazwa: "PHP — na serwerze",
+      etapy: [
+        ["Edytor", "piszesz <code>wycena.php</code> w <code>htdocs</code>"],
+        ["Serwer Apache", "przyjmuje żądanie i oddaje plik interpreterowi PHP"],
+        ["Tłumaczenie", "PHP sprawdza składnię całego pliku i tłumaczy go na kod pośredni (opkody)"],
+        ["Wykonanie", "maszyna wirtualna PHP wykonuje opkody; <code>require</code> dołącza kolejne pliki"],
+        ["Odpowiedź", "przeglądarka dostaje gotowy HTML"],
+      ],
+    },
+    js: {
+      nazwa: "JavaScript — w przeglądarce",
+      etapy: [
+        ["Edytor", "piszesz <code>wycena.js</code>"],
+        ["Pobranie", "przeglądarka pobiera skrypt razem ze stroną"],
+        ["Parser", "silnik sprawdza składnię całego skryptu i tłumaczy go na kod bajtowy"],
+        ["Wykonanie", "interpreter wykonuje kod bajtowy; często używane fragmenty kompilator JIT tłumaczy na kod maszynowy"],
+        ["Efekt", "zmiana na stronie, wpis w konsoli"],
+      ],
+    },
+  };
+  const BLEDY = {
+    brak: { nazwa: "bez błędu" },
+    skladnia: { nazwa: "błąd składni" },
+    funkcja: { nazwa: "wywołanie funkcji, której nie ma" },
+    zero: { nazwa: "dzielenie przez zero" },
+  };
+  // etap: indeks etapu, na którym błąd wychodzi na jaw; -1 — nigdzie
+  const WYNIKI = {
+    c: {
+      brak: { etap: -1, kom: "", opis: "Program kompilujesz raz. Gotowy <code>wycena.exe</code> uruchomisz na innym komputerze z tym samym systemem — bez kompilatora i bez kodu źródłowego." },
+      skladnia: { etap: 2, kom: "main.c:6:36: error: expected ';' before 'return'", opis: "Kompilator nie przepuści pliku z błędem składni. Plik <code>.exe</code> w ogóle nie powstaje — nie ma czego uruchomić." },
+      funkcja: { etap: 3, kom: "main.c:(.text+0x17): undefined reference to `rabat'", opis: "Kompilator przepuścił wywołanie, bo plik nagłówkowy <code>cennik.h</code> zapowiada funkcję <code>rabat</code>. Jej treści szuka dopiero linker — we wszystkich plikach <code>.o</code> i bibliotekach. Nie znalazł, więc nie złożył programu." },
+      zero: { etap: 4, kom: "Floating point exception (core dumped)", opis: "Program się zbudował, a awaria przychodzi w chwili dzielenia. Kompilator tego nie widział: dzielnik był znany dopiero podczas działania programu. (Komunikat pochodzi z Linuksa — w Windows program po prostu się zamyka.)" },
+    },
+    php: {
+      brak: { etap: -1, kom: "", opis: "Przy <strong>każdym</strong> żądaniu PHP tłumaczy plik od nowa (chyba że gotowe opkody przechowa moduł OPcache). Dlatego na serwerze musi być interpreter, a nie tylko wynik." },
+      skladnia: { etap: 2, kom: "Parse error: syntax error, unexpected token \"echo\"", opis: "Nie wykonuje się <strong>nic</strong> — nawet wiersze nad błędem. PHP najpierw tłumaczy cały plik, a dopiero potem go wykonuje." },
+      funkcja: { etap: 3, kom: "Fatal error: Uncaught Error: Call to undefined function rabat()", opis: "Tłumaczenie przeszło — istnienie funkcji PHP sprawdza dopiero w chwili wywołania. Wiersze nad wywołaniem już się wykonały i ich wynik jest na stronie." },
+      zero: { etap: 3, kom: "Fatal error: Uncaught DivisionByZeroError: Division by zero", opis: "Od PHP 8 dzielenie przez zero przerywa skrypt w chwili wykonania tego wiersza." },
+    },
+    js: {
+      brak: { etap: -1, kom: "", opis: "Kod źródłowy trafia do przeglądarki użytkownika i to ona go tłumaczy — dlatego każdy może go przeczytać (<kbd>Ctrl</kbd>+<kbd>U</kbd>)." },
+      skladnia: { etap: 2, kom: "Uncaught SyntaxError: missing ) after argument list", opis: "Nie wykona się żadna instrukcja tego skryptu. Inne skrypty na stronie działają dalej. Uwaga: w JavaScripcie sam <strong>brak średnika</strong> zwykle błędem nie jest — silnik wstawia go sam. Tu zabrakło nawiasu." },
+      funkcja: { etap: 3, kom: "Uncaught ReferenceError: rabat is not defined", opis: "Instrukcje przed tym wierszem już się wykonały, kolejne — nie. Błąd wyszedł dopiero wtedy, gdy program doszedł do wywołania." },
+      zero: { etap: -1, kom: "450 / 0 → Infinity", opis: "<strong>JavaScript nie zgłasza tu błędu.</strong> Wynikiem jest <code>Infinity</code>, a <code>0 / 0</code> daje <code>NaN</code>. Program liczy dalej ze złą wartością — taki błąd znajdzie tylko test albo debugger.", ostrzezenie: true },
+    },
+  };
+
+  function narzedzieTasma(host) {
+    let jezyk = "php", blad = "skladnia", odkryte = false;
+    host.innerHTML = `<div class="nz nz-tasma">
+      <div class="nz-tasma-wybor" role="group" aria-label="Język">
+        ${Object.entries(TASMA).map(([k, v]) => `<button type="button" data-j="${k}">${v.nazwa}</button>`).join("")}
+      </div>
+      <div class="nz-tasma-wybor" role="group" aria-label="Błąd">
+        ${Object.entries(BLEDY).map(([k, v]) => `<button type="button" data-b="${k}">${v.nazwa}</button>`).join("")}
+      </div>
+      <p class="nz-tasma-pytanie"></p>
+      <ol class="nz-tasma-etapy"></ol>
+      <button type="button" class="nz-tasma-nigdzie">Nigdzie — program działa bez komunikatu</button>
+      <div class="nz-tasma-wynik" aria-live="polite"></div></div>`;
+    const etapy = host.querySelector(".nz-tasma-etapy");
+    const pytanie = host.querySelector(".nz-tasma-pytanie");
+    const wynik = host.querySelector(".nz-tasma-wynik");
+    const nigdzie = host.querySelector(".nz-tasma-nigdzie");
+
+    function rysuj(zgadniety) {
+      const w = WYNIKI[jezyk][blad];
+      host.querySelectorAll("[data-j]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.j === jezyk));
+      host.querySelectorAll("[data-b]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.b === blad));
+      const pokaz = odkryte || blad === "brak";
+      etapy.innerHTML = TASMA[jezyk].etapy.map(([n, o], i) => {
+        let stan = "";
+        if (pokaz) {
+          if (w.etap === -1 || i < w.etap) stan = "ok";
+          else if (i === w.etap) stan = "stop";
+          else stan = "pominiety";
+          if (w.ostrzezenie && i === TASMA[jezyk].etapy.length - 1) stan = "uwaga";
+        }
+        const tag = pokaz ? "div" : "button type=\"button\"";
+        return `<li class="nz-etap ${stan ? "nz-etap-" + stan : ""}"><${tag} data-i="${i}">
+          <strong>${i + 1}. ${n}</strong><span>${o}</span></${pokaz ? "div" : "button"}></li>`;
+      }).join("");
+      nigdzie.hidden = pokaz;
+      if (blad === "brak") {
+        pytanie.textContent = "Tak wygląda droga programu, gdy wszystko jest w porządku. Wybierz rodzaj błędu powyżej.";
+      } else if (!pokaz) {
+        pytanie.innerHTML = "<strong>Przewiduj:</strong> na którym etapie ten błąd wyjdzie na jaw? Kliknij etap.";
+      } else {
+        pytanie.innerHTML = "";
+      }
+      if (!pokaz) { wynik.innerHTML = ""; return; }
+      let ocena = "";
+      if (zgadniety !== undefined) {
+        ocena = zgadniety === w.etap
+          ? `<p class="nz-tasma-ocena nz-trafione">Dobrze przewidziane.</p>`
+          : `<p class="nz-tasma-ocena nz-chybione">Nie tym razem — zobacz, dlaczego.</p>`;
+      }
+      wynik.innerHTML = ocena
+        + (w.kom ? `<pre class="nz-tasma-kom"><code></code></pre>` : "")
+        + `<p>${w.opis}</p>`
+        + (blad !== "brak" ? `<button type="button" class="nz-tasma-znowu">Spróbuj z innym językiem</button>` : "");
+      if (w.kom) wynik.querySelector("code").textContent = w.kom;
+      const znowu = wynik.querySelector(".nz-tasma-znowu");
+      if (znowu) znowu.addEventListener("click", () => {
+        const kl = Object.keys(TASMA);
+        jezyk = kl[(kl.indexOf(jezyk) + 1) % kl.length]; odkryte = false; rysuj();
+      });
+    }
+
+    host.addEventListener("click", (e) => {
+      const b = e.target.closest("button");
+      if (!b || !host.contains(b)) return;
+      if (b.dataset.j) { jezyk = b.dataset.j; odkryte = false; rysuj(); }
+      else if (b.dataset.b) { blad = b.dataset.b; odkryte = false; rysuj(); }
+      else if (b.dataset.i !== undefined) { odkryte = true; rysuj(Number(b.dataset.i)); }
+      else if (b === nigdzie) { odkryte = true; rysuj(-1); }
+    });
+    rysuj();
+  }
+
+  const NARZEDZIA = { hasla: narzedzieHasla, konwerter: narzedzieKonwerter, tasma: narzedzieTasma };
 
   function start() {
     document.querySelectorAll(".narzedzie[data-narzedzie]").forEach((host) => {

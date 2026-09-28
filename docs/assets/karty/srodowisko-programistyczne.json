@@ -1,0 +1,364 @@
+{
+ "id": "wiai-srodowisko-programistyczne",
+ "tytul": "Środowisko programistyczne — edytor, kompilator, translator, linker, debugger",
+ "przedmiot": "PCEiKZ Szczucin · witryny i aplikacje internetowe · INF.03",
+ "klasa": "4TI",
+ "sufiks": "SRODOWISKO",
+ "zadania": [
+  {
+   "nr": 1,
+   "tytul": "Narzędzia środowiska programistycznego",
+   "poziom": "wymagania konieczne · ocena 2",
+   "polecenie": "Na podstawie sekcji 1 i 2 materiału. Każdą odpowiedź zapisz jednym zdaniem, własnymi słowami.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z1_edytor",
+       "Edytor",
+       ""
+      ],
+      [
+       "z1_translator",
+       "Translator",
+       ""
+      ],
+      [
+       "z1_kompilator",
+       "Kompilator",
+       ""
+      ],
+      [
+       "z1_interpreter",
+       "Interpreter",
+       ""
+      ],
+      [
+       "z1_linker",
+       "Linker",
+       ""
+      ],
+      [
+       "z1_debugger",
+       "Debugger",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "z1_ide",
+     "wiersze": 2,
+     "pytanie": "Czym IDE różni się od edytora kodu? Podaj po jednym przykładzie każdego."
+    }
+   ]
+  },
+  {
+   "nr": 2,
+   "tytul": "Taśma — gdzie wychodzi błąd",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 1. Wpisz nazwę etapu, na którym błąd wychodzi na jaw, albo „nigdzie”. Przy wierszach, w których przewidziałeś źle, dopisz „(źle)”.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z2_c_skl",
+       "C — błąd składni",
+       ""
+      ],
+      [
+       "z2_c_fun",
+       "C — funkcja bez treści",
+       ""
+      ],
+      [
+       "z2_c_zero",
+       "C — dzielenie przez zero",
+       ""
+      ],
+      [
+       "z2_php_skl",
+       "PHP — błąd składni",
+       ""
+      ],
+      [
+       "z2_php_fun",
+       "PHP — funkcja, której nie ma",
+       ""
+      ],
+      [
+       "z2_php_zero",
+       "PHP — dzielenie przez zero",
+       ""
+      ],
+      [
+       "z2_js_skl",
+       "JavaScript — błąd składni",
+       ""
+      ],
+      [
+       "z2_js_fun",
+       "JavaScript — funkcja, której nie ma",
+       ""
+      ],
+      [
+       "z2_js_zero",
+       "JavaScript — dzielenie przez zero",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "z2_czemu",
+     "wiersze": 3,
+     "pytanie": "W PHP przy błędzie składni nie wykonuje się nic, a przy wywołaniu nieistniejącej funkcji wiersze nad nim się wykonują. Dlaczego?"
+    }
+   ]
+  },
+  {
+   "nr": 3,
+   "tytul": "Trzy błędy w wycena.php",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 2. Przy każdym błędzie przepisz najważniejszą część komunikatu.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z3_b1_kom",
+       "Błąd 1 — komunikat",
+       ""
+      ],
+      [
+       "z3_b1_wiersze",
+       "Błąd 1 — wiersz podany przez PHP / wiersz z błędem",
+       ""
+      ],
+      [
+       "z3_b1_rodzaj",
+       "Błąd 1 — składni czy wykonania",
+       ""
+      ],
+      [
+       "z3_b2_kom",
+       "Błąd 2 — komunikat",
+       ""
+      ],
+      [
+       "z3_b2_rodzaj",
+       "Błąd 2 — składni czy wykonania",
+       ""
+      ],
+      [
+       "z3_b3_kom",
+       "Błąd 3 — komunikat",
+       ""
+      ],
+      [
+       "z3_b3_rodzaj",
+       "Błąd 3 — składni czy wykonania",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "z3_lint",
+     "wiersze": 3,
+     "pytanie": "Przy którym błędzie pomogło polecenie php -l, a przy których milczało? Dlaczego?"
+    },
+    {
+     "typ": "zrzut",
+     "id": "z3_zrzut",
+     "opis": "strona wycena.php z wynikiem 405 zł po poprawieniu wszystkich błędów"
+    }
+   ]
+  },
+  {
+   "nr": 4,
+   "tytul": "VS Code dla PHP",
+   "poziom": "wymagania rozszerzające · ocena 4",
+   "polecenie": "Ćwiczenie 3.",
+   "pola": [
+    {
+     "typ": "wybor",
+     "id": "z4_walidacja",
+     "pytanie": "Po ustawieniu php.validate.executablePath błąd składni w cennik.php",
+     "opcje": [
+      "został podkreślony",
+      "nie został podkreślony",
+      "nie udało się zmienić ustawień"
+     ]
+    },
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z4_str",
+       "Trzy funkcje zaproponowane po wpisaniu str",
+       ""
+      ],
+      [
+       "z4_f2",
+       "W ilu miejscach zmieniła się nazwa po F2",
+       ""
+      ],
+      [
+       "z4_f12",
+       "Dokąd przeniósł cię klawisz F12",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "zrzut",
+     "id": "z4_zrzut",
+     "opis": "VS Code z podkreślonym błędem składni PHP"
+    }
+   ]
+  },
+  {
+   "nr": 5,
+   "tytul": "Debugger — trzy błędy logiczne",
+   "poziom": "wymagania rozszerzające · ocena 4",
+   "polecenie": "Ćwiczenie 4. Przy każdym błędzie: wiersz, dane, przy których wychodzi, wartości zmiennych w chwili zatrzymania i poprawka.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z5_b1",
+       "Błąd 1",
+       ""
+      ],
+      [
+       "z5_b2",
+       "Błąd 2",
+       ""
+      ],
+      [
+       "z5_b3",
+       "Błąd 3",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "zrzut",
+     "id": "z5_zrzut",
+     "opis": "zakładka Źródła z programem zatrzymanym na punkcie przerwania i panelem Zakres"
+    },
+    {
+     "typ": "tekst",
+     "id": "z5_checked",
+     "wiersze": 3,
+     "pytanie": "Dlaczego warunek ekspres == \"tak\" nigdy nie był spełniony, choć pole było zaznaczone?"
+    },
+    {
+     "typ": "tekst",
+     "id": "z5_kolejnosc",
+     "wiersze": 2,
+     "pytanie": "Czy poprawka jednego błędu odsłoniła inny? Który i przy jakich danych?"
+    }
+   ]
+  },
+  {
+   "nr": 6,
+   "tytul": "Co ma w środku twój XAMPP",
+   "poziom": "wymagania dopełniające · ocena 5",
+   "polecenie": "Ćwiczenie 5.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z6_php",
+       "Wersja PHP",
+       ""
+      ],
+      [
+       "z6_ini",
+       "Loaded Configuration File",
+       ""
+      ],
+      [
+       "z6_display",
+       "display_errors",
+       ""
+      ],
+      [
+       "z6_listen",
+       "Port w wierszu Listen (httpd.conf)",
+       ""
+      ],
+      [
+       "z6_baza",
+       "Wersja serwera bazy w phpMyAdmin — MySQL czy MariaDB?",
+       ""
+      ],
+      [
+       "z6_netstat",
+       "Programy na portach 80 i 3306 (Netstat)",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "z6_produkcja",
+     "wiersze": 3,
+     "pytanie": "Dlaczego na serwerze produkcyjnym display_errors jest wyłączone, a plik z phpinfo() usuwa się zaraz po sprawdzeniu?"
+    }
+   ]
+  },
+  {
+   "nr": 7,
+   "tytul": "Dobór środowiska",
+   "poziom": "wymagania dopełniające · ocena 5",
+   "polecenie": "Ćwiczenie 6. Narzędzia i uzasadnienie w jednym, dwóch zdaniach.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "z7_s1",
+     "wiersze": 3,
+     "pytanie": "1. Stary laptop, ćwiczenie zadań egzaminacyjnych INF.03"
+    },
+    {
+     "typ": "tekst",
+     "id": "z7_s2",
+     "wiersze": 3,
+     "pytanie": "2. Sklep w PHP, trzy osoby, pół roku pracy"
+    },
+    {
+     "typ": "tekst",
+     "id": "z7_s3",
+     "wiersze": 3,
+     "pytanie": "3. Biała strona na hostingu, dostęp tylko przez SSH"
+    }
+   ]
+  },
+  {
+   "nr": 8,
+   "tytul": "Samoocena",
+   "poziom": "",
+   "polecenie": "Krótko i szczerze — to nie jest oceniane na stopień.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "s_trudne",
+     "wiersze": 3,
+     "pytanie": "Który błąd było ci najtrudniej znaleźć: składni, wykonania czy logiczny? Co pomogło?"
+    },
+    {
+     "typ": "tekst",
+     "id": "s_nawyk",
+     "wiersze": 3,
+     "pytanie": "Jedna rzecz z tego tematu, którą od dziś będziesz robić przy każdym programie."
+    }
+   ]
+  }
+ ]
+}

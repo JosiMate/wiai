@@ -6,3 +6,4 @@ title: "Dział III. Podstawy programowania — środowisko i dane"
 append_unmatched: true
 nav:
   - "Wprowadzenie do programowania aplikacji": wprowadzenie-programowanie.md
+  - "Środowisko programistyczne": srodowisko-programistyczne.md

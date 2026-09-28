@@ -53,7 +53,7 @@ to powtórzenie i sprawdzian końcowy.
 | Temat | Godz. | Materiały |
 | --- | :---: | --- |
 | **[Wprowadzenie do programowania aplikacji internetowych](dzial-3/wprowadzenie-programowanie.md)** | 3 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
-| Środowisko programistyczne – edytor, kompilator, translator, linker, debugger | 3 | *w przygotowaniu* |
+| **[Środowisko programistyczne – edytor, kompilator, translator, linker, debugger](dzial-3/srodowisko-programistyczne.md)** | 3 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 | Wbudowane typy danych (char, int, float, double) i ich specyfikatory | 3 | *w przygotowaniu* |
 | Deklaracja stałych i zmiennych w odniesieniu do wbudowanych typów danych | 3 | *w przygotowaniu* |
 | Własne typy danych – typ wyliczeniowy, unie, klasy, tablice | 3 | *w przygotowaniu* |

@@ -43,6 +43,11 @@ otwierasz, klikając nazwę tematu.
     "plik": "wprowadzenie-programowanie",
     "tytul": "Dział III · Wprowadzenie do programowania aplikacji",
     "url": "../dzial-3/wprowadzenie-programowanie/#karta"
+  },
+  {
+    "plik": "srodowisko-programistyczne",
+    "tytul": "Dział III · Środowisko programistyczne",
+    "url": "../dzial-3/srodowisko-programistyczne/#karta"
   }
 ]
 </script>

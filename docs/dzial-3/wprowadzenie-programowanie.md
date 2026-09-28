@@ -6,24 +6,53 @@
     · efekty kształcenia **INF.03.5.1**, **INF.03.5.2**
 
     Do tej pory budowałeś **strony**: każdy, kto wszedł pod adres, dostawał ten
-    sam plik. Cennik serwisu „Szprycha” był tabelką, którą ktoś musiał
-    przeczytać i przeliczyć w głowie. Dziś ta tabelka zaczyna **liczyć sama**.
+    sam plik. Cennik serwisu „Szprycha” był tabelką, którą klient musiał
+    przeczytać i przeliczyć w głowie. W tym temacie ta tabelka zaczyna
+    **liczyć sama**.
 
     Zrobisz to dwa razy — raz w przeglądarce, w JavaScripcie, i raz na
     serwerze, w PHP. Ten sam wynik, dwie zupełnie różne drogi. Kto rozumie,
     czym się różnią, ten nie popełni błędu, który w aplikacjach internetowych
     kosztuje najwięcej: **zaufania temu, co przysłał użytkownik**.
 
-!!! success "Cele lekcji"
+    | Lekcja | Sekcje | Ćwiczenia |
+    | :---: | --- | --- |
+    | 1 | 1–3: strona a aplikacja, HTTP, klient i serwer | 1 |
+    | 2 | 4: pierwszy skrypt JavaScript | 2–3 |
+    | 3 | 5–9: PHP, formularz, zaufanie do danych, najczęstsze błędy | 4–6 |
 
-    Po tych zajęciach potrafisz:
+!!! question "Na rozgrzewkę — 3 minuty, bez zaglądania"
 
-    1. wyjaśnić, czym aplikacja internetowa różni się od strony internetowej
-    2. opisać drogę żądania i odpowiedzi HTTP i odczytać ją w zakładce **Sieć** narzędzi deweloperskich
-    3. rozróżnić kod wykonywany po stronie klienta (JavaScript) od kodu wykonywanego po stronie serwera (PHP) i powiedzieć, co każdy z nich widzi
-    4. dołączyć skrypt JavaScript do strony, wypisać komunikat w konsoli i obsłużyć kliknięcie przycisku
-    5. uruchomić skrypt PHP na serwerze Apache w pakiecie XAMPP i odebrać w nim dane z formularza
-    6. wyjaśnić, dlaczego serwer musi sprawdzić dane sam, nawet jeśli formularz sprawdził je wcześniej
+    Odpowiedz w zeszycie, zanim zaczniesz nowy temat. Odpowiedzi rozwiń
+    dopiero wtedy, gdy wszyscy skończą — nie liczą się do oceny.
+
+    1. **Z poprzedniej lekcji.** Hosting daje do wyboru FTP i SFTP. Który
+       wybierasz i dlaczego?
+    2. **Sprzed kilku tygodni.** Walidator wskazuje błąd w wierszu 12, a w tym
+       wierszu wszystko wygląda dobrze. Gdzie szukasz przyczyny?
+    3. **Z dawniejszych tematów.** Pole formularza ma `id="imie"` i
+       `name="imie_klienta"`. Pod którą nazwą jego wartość dotrze na serwer?
+
+    ??? success "Odpowiedzi"
+
+        1. **SFTP** — szyfruje i hasło, i przesyłane pliki. Zwykły FTP wysyła
+           hasło otwartym tekstem.
+        2. **Wyżej** — zwykle przyczyną jest niedomknięty znacznik albo
+           cudzysłów kilka wierszy nad wskazanym miejscem. Z tą samą
+           zasadą spotkasz się dziś przy błędach PHP.
+        3. `imie_klienta` — serwer widzi atrybut **`name`**. Atrybut `id` służy
+           etykiecie, CSS i JavaScriptowi.
+
+!!! success "Kryteria sukcesu"
+
+    Po tym temacie:
+
+    1. Powiem jednym zdaniem, czym aplikacja internetowa różni się od strony — i podam przykład każdej z nich.
+    2. Otworzę zakładkę **Sieć** i odczytam z niej metodę, kod statusu i typ treści żądania.
+    3. Powiem, gdzie wykonuje się JavaScript, a gdzie PHP, i co użytkownik widzi z każdego z nich.
+    4. Dołączę skrypt do strony, wypiszę komunikat w konsoli i obsłużę kliknięcie przycisku.
+    5. Uruchomię skrypt PHP przez `http://localhost/…` i odbiorę w nim dane z formularza.
+    6. Wyjaśnię, dlaczego serwer sprawdza dane sam, nawet gdy formularz sprawdził je wcześniej.
 
 ---
 
@@ -64,6 +93,18 @@ szyfrowanego **HTTPS**. Rozmowa ma zawsze dwie części:
    `<img>` i `<script>` — i **dla każdego z tych plików wysyła osobne
    żądanie**. Jedna strona to często kilkadziesiąt rozmów.
 
+!!! example "Przewiduj"
+
+    Strona `index.html` dołącza jeden arkusz stylów, jeden skrypt i dwa
+    obrazy. Ile żądań wyśle przeglądarka po wpisaniu adresu tej strony?
+
+    ??? success "Przewiduj, potem sprawdź wynik"
+
+        **Pięć** — jedno po sam dokument i po jednym na każdy plik, który się
+        w nim znalazł: CSS, skrypt i dwa obrazy. Często dochodzi szóste, po
+        ikonę karty `favicon.ico`, o którą przeglądarka prosi sama. Sprawdzisz
+        to w ćwiczeniu 1.
+
 Kody statusu, które spotkasz najczęściej:
 
 | Kod | Znaczenie | Kiedy go zobaczysz |
@@ -77,8 +118,8 @@ Kody statusu, które spotkasz najczęściej:
 
     ++f12++ → zakładka **Sieć** (*Network*) → odśwież stronę ++f5++. Każdy
     wiersz to jedno żądanie. Kliknij pierwszy — w zakładce **Nagłówki**
-    zobaczysz metodę, kod statusu i typ treści. To pierwsze ćwiczenie dzisiejszej
-    lekcji.
+    zobaczysz metodę, kod statusu i typ treści. Od tego zaczyna się
+    ćwiczenie 1.
 
 ### GET i POST
 
@@ -91,7 +132,7 @@ Formularz może wysłać dane na dwa sposoby:
   hasła, dane osobowe i wszystko, co coś zmienia — zamówienie, wpis
   w dzienniku, przelew.
 
-Dziś używamy `GET`, bo widać w nim dokładnie, co przyszło do serwera.
+W tym temacie używamy `GET`, bo widać w nim dokładnie, co przyszło do serwera.
 Ale zapamiętaj: `POST` **nie jest zabezpieczeniem**. Dane są tylko schowane
 przed okiem, a nie przed kimś, kto otworzy narzędzia deweloperskie.
 
@@ -189,20 +230,41 @@ aktualną godzinę.
 | `.textContent = …` | wpisuje tekst do akapitu `id="zegar"` |
 | `+` między tekstami | skleja teksty w jeden |
 
+!!! example "Przewiduj"
+
+    Zegar w komputerze ucznia jest przestawiony o godzinę do przodu. Jaką
+    godzinę pokaże ten przycisk — prawdziwą czy przestawioną?
+
+    ??? success "Przewiduj, potem sprawdź wynik"
+
+        **Przestawioną.** `new Date()` czyta zegar komputera, na którym działa
+        skrypt — a JavaScript działa u użytkownika. Zapamiętaj to do sekcji 5:
+        `date()` w PHP czyta zegar **serwera**.
+
 !!! warning "Pułapka numer jeden: pole formularza zawsze oddaje tekst"
 
     Wartość odczytana z pola `<input>` — nawet `type="number"` — jest
-    **tekstem**, nie liczbą. A znak `+` przy tekście nie dodaje, tylko skleja:
+    **tekstem**, nie liczbą. Przewidź, co zwróci każdy wiersz, zanim rozwiniesz
+    odpowiedź. Sprawdzisz to w konsoli w ćwiczeniu 2.
 
     ```js
-    "1" + 1           // "11"  — sklejone
-    Number("1") + 1   // 2     — dodane
+    "1" + 1
+    Number("1") + 1
+    "90" * 2
     ```
 
+    ??? success "Przewiduj, potem sprawdź wynik"
+
+        ```text
+        "11"   — znak + przy tekście nie dodaje, tylko skleja
+        2      — Number() zamienił tekst na liczbę, więc + dodaje
+        180    — mnożenie nie ma drugiego znaczenia, więc tekst zamienia się sam
+        ```
+
     Dlatego wartość z pola, z którą chcesz liczyć, zamieniasz najpierw funkcją
-    `Number()`. Mnożenie `"90" * 2` akurat da 180, bo `*` nie ma drugiego
-    znaczenia — ale na tym szczęściu nie buduje się programu. O typach danych
-    jest cały następny temat.
+    `Number()`. Trzeci wiersz działa przypadkiem — na takim szczęściu nie
+    buduje się programu. Typom danych poświęcony jest osobny temat w tym
+    dziale.
 
 ---
 
@@ -267,16 +329,26 @@ $dzis = date('d.m.Y');
 | `.` | sklejanie tekstów — w PHP kropka, nie plus |
 
 Odśwież stronę kilka razy — godzina się zmienia, bo **serwer buduje
-dokument od nowa przy każdym żądaniu**. Teraz naciśnij ++ctrl+u++. W źródle
-strony nie ma ani jednego `<?php`, ani jednego `$`. Jest gotowy HTML z datą
-wpisaną na sztywno — tyle dostała przeglądarka.
+dokument od nowa przy każdym żądaniu**.
+
+!!! example "Przewiduj"
+
+    Otwierasz `http://localhost/wycena/pierwszy.php` i naciskasz ++ctrl+u++.
+    Czy w źródle strony zobaczysz `$serwis` i `<?php`?
+
+    ??? success "Przewiduj, potem sprawdź wynik"
+
+        **Nie.** W źródle jest gotowy HTML — na przykład
+        `<h1>Witaj w serwisie Szprycha</h1>` i data wpisana na sztywno. Kod PHP
+        wykonał się na serwerze i do przeglądarki trafiło tylko to, co wypisał
+        `echo`.
 
 !!! warning "Komunikat o błędzie wskazuje linijkę za błędem"
 
     Brak średnika w PHP kończy się komunikatem wypisanym na stronie:
 
     ```text
-    Parse error: syntax error, unexpected token "echo"
+    Parse error: syntax error, unexpected variable "$dzis"
     in C:\xampp\htdocs\wycena\pierwszy.php on line 3
     ```
 
@@ -313,6 +385,23 @@ echo 'Cześć, ' . htmlspecialchars($imie) . '!';
 - `?? 'nieznajomy'` — wartość zastępcza, gdy pola w żądaniu nie ma wcale
   (ktoś wszedł na adres bez formularza);
 - `htmlspecialchars()` — o tym za chwilę, w sekcji 7.
+
+!!! example "Przewiduj"
+
+    Co wypisze `powitanie.php` pod każdym z tych adresów?
+
+    1. `powitanie.php?imie=Ola`
+    2. `powitanie.php`
+    3. `powitanie.php?imie=`
+
+    ??? success "Przewiduj, potem sprawdź wynik"
+
+        1. `Cześć, Ola!`
+        2. `Cześć, nieznajomy!` — pola `imie` w żądaniu nie ma wcale, więc
+           działa wartość zastępcza po `??`.
+        3. `Cześć, !` — pole **jest**, tylko puste. Operator `??` reaguje
+           wyłącznie na brak pola, a nie na pusty tekst. Pusty tekst
+           sprawdzisz osobno — to zadanie dla walidacji z sekcji 7.
 
 !!! info "Niezaznaczone pole wyboru nie przychodzi wcale"
 
@@ -359,6 +448,19 @@ echo 'Cześć, ' . htmlspecialchars($imie);  // bezpieczne
 `htmlspecialchars()` zamienia znaki `<`, `>`, `&` i cudzysłowy na encje, więc
 przeglądarka pokaże je jako tekst, zamiast je wykonać.
 
+!!! example "Przewiduj"
+
+    Ktoś wpisuje adres `powitanie.php?imie=<b>Ola</b>`. Co zobaczy na stronie
+    przy pierwszej wersji `echo`, a co przy drugiej?
+
+    ??? success "Przewiduj, potem sprawdź wynik"
+
+        - Bez `htmlspecialchars()`: **Cześć, Ola!** z pogrubionym imieniem —
+          przeglądarka wykonała znacznik, który przysłał użytkownik. Zamiast
+          `<b>` mógł przysłać `<script>`.
+        - Z `htmlspecialchars()`: dosłownie `Cześć, <b>Ola</b>!` — znaczniki
+          są zwykłym tekstem. W źródle strony zobaczysz `&lt;b&gt;`.
+
 !!! quote "Zasada, którą warto zapamiętać"
 
     Sprawdzanie w przeglądarce jest **dla wygody**.
@@ -381,7 +483,7 @@ przeglądarka pokaże je jako tekst, zamiast je wykonać.
 
 Najczęstsza odpowiedź w prawdziwych aplikacjach brzmi: **oba**. JavaScript
 daje szybką odpowiedź i wygodę, PHP podejmuje decyzję i pilnuje danych.
-Dokładnie tak zrobisz dziś wycenę naprawy.
+Dokładnie tak zbudujesz w ćwiczeniach wycenę naprawy.
 
 ---
 
@@ -446,6 +548,32 @@ koszt i wpisz go do akapitu `wynik`. Sprawdź program na tych danych —
 | Serwis amortyzatora | 1 | nie | 220 zł |
 | Centrowanie koła | 4 | nie | 180 zł |
 
+??? tip "Podpowiedź 1"
+
+    Każdy z trzech elementów formularza odczytujesz tak samo: `document.getElementById("…")`, a potem właściwość. Dla listy i pola liczby to `.value`, dla pola wyboru — `.checked` (`true` albo `false`).
+
+??? tip "Podpowiedź 2"
+
+    Liczba rowerów przychodzi jako tekst — owiń ją w `Number(…)`. Cenę odczytujesz z obiektu po nazwie usługi: `CENY[usluga]`. Dopłatę dodajesz w instrukcji `if (ekspres) { … }`.
+
+??? tip "Podpowiedź 3"
+
+    Szkielet:
+
+    ```js
+    const rowery = Number(document.getElementById("rowery").value);
+    // … usługa i ekspres odczytane tak samo …
+    let razem = CENY[usluga] * rowery;
+    if (ekspres) {
+      razem = razem + DOPLATA_EKSPRES;
+    }
+    document.getElementById("wynik").textContent = "Szacunkowy koszt: " + razem + " zł";
+    ```
+
+    `Number()` stawiasz od razu przy odczycie z pola. Przy mnożeniu tekst
+    zamieniłby się na liczbę sam, ale gdy do wartości z pola cokolwiek
+    **dodajesz**, bez `Number()` dostaniesz sklejony tekst.
+
 ### :material-console: Ćwiczenie 4 — pierwszy skrypt PHP
 
 Utwórz `pierwszy.php` z sekcji 5 w katalogu `C:\xampp\htdocs\wycena\`. Otwórz
@@ -453,9 +581,11 @@ go przez `http://localhost/wycena/pierwszy.php`, potem obejrzyj źródło
 (++ctrl+u++). Następnie otwórz ten sam plik z Eksploratora plików, podwójnym
 kliknięciem, i zapisz, co się stało.
 
-Na koniec usuń celowo średnik z jednej linijki. Zanotuj komunikat i numer
-wiersza, który podał PHP — i porównaj go z wierszem, w którym naprawdę jest
-błąd.
+Na koniec usuń celowo średnik z końca wiersza 2 (`$serwis = 'Szprycha';`).
+Zanotuj komunikat i numer wiersza, który podał PHP — i porównaj go z wierszem,
+w którym naprawdę jest błąd. Średnik tuż przed znacznikiem `?>` (wiersz 3)
+można pominąć bez błędu, bo `?>` sam kończy instrukcję — dlatego usuwasz go
+z wiersza 2.
 
 ### :material-console: Ćwiczenie 5 — wycena na serwerze
 
@@ -467,6 +597,30 @@ który pojawił się w pasku po wysłaniu formularza.
 Na koniec wyłącz JavaScript w przeglądarce (++f12++ → ++ctrl+shift+p++ →
 wpisz *Disable JavaScript* → ++enter++) i przetestuj oba przyciski. Który
 jeszcze działa? Po teście włącz JavaScript z powrotem tym samym sposobem.
+
+??? tip "Podpowiedź 1"
+
+    Dane z formularza leżą w `$_GET` pod nazwami z atrybutów `name`: `$_GET['usluga']`, `$_GET['rowery']`. Pola `ekspres` nie pytasz o wartość, tylko o to, czy przyszło: `isset($_GET['ekspres'])`.
+
+??? tip "Podpowiedź 2"
+
+    Przy każdym odczycie daj wartość zastępczą operatorem `??`, na przykład `$_GET['rowery'] ?? 0` — wtedy brak pola nie kończy się ostrzeżeniem. Liczbę rowerów zamień na liczbę całkowitą: `(int)`.
+
+??? tip "Podpowiedź 3"
+
+    Szkielet:
+
+    ```php
+    $usluga  = $_GET['usluga'] ?? '';
+    $rowery  = (int) ($_GET['rowery'] ?? 0);
+    $razem   = $ceny[$usluga] * $rowery;
+    if (isset($_GET['ekspres'])) {
+        $razem = $razem + $doplataEkspres;
+    }
+    $komunikat = 'Szacunkowy koszt: ' . $razem . ' zł';
+    ```
+
+    Pamiętaj o kropce, nie plusie, przy sklejaniu tekstu.
 
 ### :material-console: Ćwiczenie 6 — spróbuj oszukać własny serwer
 
@@ -487,6 +641,18 @@ a na poprawne dane — kosztem.
 Na koniec dopisz do wyniku nazwę usługi z adresu i wpisz w pasku
 `?usluga=<i>test</i>&rowery=1`. Opisz, co się stało, i napraw to funkcją
 `htmlspecialchars()`.
+
+??? tip "Podpowiedź 1"
+
+    Wszystkie cztery złe adresy łapie jeden warunek. Zapytaj o trzy rzeczy: czy taka usługa jest w cenniku, czy rowerów jest co najmniej 1 i czy nie więcej niż 20.
+
+??? tip "Podpowiedź 2"
+
+    Czy usługa jest w cenniku, sprawdza `isset($ceny[$usluga])`. Trzy warunki łączysz operatorem `||` („lub”) — wystarczy, że jeden jest spełniony, i dane są złe. Wzór masz w sekcji 7.
+
+??? tip "Podpowiedź 3"
+
+    Całość to `if (!isset($ceny[$usluga]) || $rowery < 1 || $rowery > 20) { $komunikat = 'Niepoprawne dane zamówienia.'; } else { … }` — a obliczenia z ćwiczenia 5 przenosisz do gałęzi `else`. Nazwę usługi wypisujesz jako `htmlspecialchars($usluga)`.
 
 ---
 
@@ -576,6 +742,11 @@ zobaczysz po drodze: kody statusu, komunikaty błędów i adresy.
 2. Pobierz kartę pracy przyciskiem pod formularzem.
 3. Oba pliki dołącz w **Dzienniku VULCAN → Zadania domowe**, w zadaniu
    *Wprowadzenie do programowania — karta pracy*.
+
+---
+
+Następny temat: [Środowisko programistyczne — edytor, kompilator, translator, linker, debugger](srodowisko-programistyczne.md).
+Wrócisz w nim do wyceny naprawy — tym razem z debuggerem w ręku.
 
 ---
 
