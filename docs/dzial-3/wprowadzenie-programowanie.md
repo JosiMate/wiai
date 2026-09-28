@@ -15,11 +15,13 @@
     czym się różnią, ten nie popełni błędu, który w aplikacjach internetowych
     kosztuje najwięcej: **zaufania temu, co przysłał użytkownik**.
 
-    | Lekcja | Sekcje | Ćwiczenia |
-    | :---: | --- | --- |
-    | 1 | 1–3: strona a aplikacja, HTTP, klient i serwer | 1 |
-    | 2 | 4: pierwszy skrypt JavaScript | 2–3 |
-    | 3 | 5–9: PHP, formularz, zaufanie do danych, najczęstsze błędy | 4–6 |
+    ??? abstract "Plan trzech lekcji"
+
+        | Lekcja | Sekcje | Ćwiczenia |
+        | :---: | --- | --- |
+        | 1 | 1–3: strona a aplikacja, HTTP, klient i serwer | 1 |
+        | 2 | 4: pierwszy skrypt JavaScript | 2–3 |
+        | 3 | 5–9: PHP, formularz, zaufanie do danych, najczęstsze błędy | 4–6 |
 
 ??? rozgrzewka "Na rozgrzewkę — 3 minuty, bez zaglądania"
 

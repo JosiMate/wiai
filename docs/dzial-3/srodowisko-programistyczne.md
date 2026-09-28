@@ -15,11 +15,13 @@
     razem. Wracasz w tym temacie do wyceny naprawy dla „Szprychy” — tym razem
     z rabatem i z błędami, które znajdziesz sam.
 
-    | Lekcja | Sekcje | Ćwiczenia |
-    | :---: | --- | --- |
-    | 1 | 1–3: od tekstu do programu, kompilator i interpreter, rodzaje błędów | 1–2 |
-    | 2 | 4–5: edytor i IDE, debugger | 3–4 |
-    | 3 | 6–8: XAMPP jako środowisko uruchomieniowe, dobór narzędzi, najczęstsze kłopoty | 5–6 |
+    ??? abstract "Plan trzech lekcji"
+
+        | Lekcja | Sekcje | Ćwiczenia |
+        | :---: | --- | --- |
+        | 1 | 1–3: od tekstu do programu, kompilator i interpreter, rodzaje błędów | 1–2 |
+        | 2 | 4–5: edytor i IDE, debugger | 3–4 |
+        | 3 | 6–8: XAMPP jako środowisko uruchomieniowe, dobór narzędzi, najczęstsze kłopoty | 5–6 |
 
 ??? rozgrzewka "Na rozgrzewkę — 3 minuty, bez zaglądania"
 
