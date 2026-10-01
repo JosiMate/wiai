@@ -35,3 +35,5 @@ czy potrzebna paczka startowa do XAMPP-a i co ma w niej być>
 ## Uwagi
 
 <np. czego nie ruszać, do którego tematu nawiązać, termin lekcji>
+
+Pamiętaj o dopisaniu 5–8 pytań do banku w `docs/assets/egzamin/pytania.json` i uruchomieniu `python3 narzedzia/sprawdz_pytania.py`.
