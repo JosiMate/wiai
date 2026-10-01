@@ -15,8 +15,8 @@
     "temat": "dzial-1/powtorzenie-html-css.md",
     "pytanie": "Który atrybut znacznika <img> zapewnia tekst alternatywny wyświetlany w przypadku braku możliwości wczytania obrazu?",
     "kod": "",
-    "opcje": ["title", "src", "alt", "description"],
-    "poprawna": 2,
+    "opcje": ["alt", "title", "src", "description"],
+    "poprawna": 0,
     "wyjasnienie": "Atrybut alt podaje tekst zastępczy (alternatywny) dla czytników ekranowych i sytuacji, gdy obraz się nie wczyta. Atrybut title wyświetla dymek z podpowiedzią."
   },
   {
@@ -26,12 +26,12 @@
     "pytanie": "Jaka jest poprawna składnia reguły CSS ustawiającej kolor tła elementu o identyfikatorze 'naglowek' na niebieski?",
     "kod": "",
     "opcje": [
-      "#naglowek { background-color: blue; }",
       ".naglowek { background-color: blue; }",
+      "#naglowek { background-color: blue; }",
       "naglowek { background: blue; }",
       "*naglowek { color-background: blue; }"
     ],
-    "poprawna": 0,
+    "poprawna": 1,
     "wyjasnienie": "Identyfikator (id) w CSS wybieramy za pomocą przedrostka #. Kropka (.) służy do wybierania klas, a nazwa bez przedrostka wybiera znaczniki HTML."
   },
   {
@@ -42,11 +42,11 @@
     "kod": "",
     "opcje": [
       "Elementy potomne ukryją się na stronie.",
-      "Kontener i jego dzieci zostaną zamienione w tabelę HTML.",
       "Kontener stanie się elastycznym kontenerem (Flexbox), a jego bezpośrednie dzieci elementami elastycznymi.",
+      "Kontener i jego dzieci zostaną zamienione w tabelę HTML.",
       "Strona zostanie automatycznie przeskalowana do rozdzielczości mobilnej."
     ],
-    "poprawna": 2,
+    "poprawna": 1,
     "wyjasnienie": "Właściwość display: flex włącza elastyczny układ Flexbox dla bezpośrednich elementów potomnych kontenera."
   },
   {
@@ -65,8 +65,8 @@
     "temat": "dzial-1/powtorzenie-html-css.md",
     "pytanie": "Jaki będzie kolor tekstu w akapicie według podanej kaskady CSS?",
     "kod": "p { color: red; }\n.tekst { color: green; }\n#unikalny { color: blue; }",
-    "opcje": ["Czerwony", "Zielony", "Niebieski", "Czarny (domyślny)"],
-    "poprawna": 2,
+    "opcje": ["Czerwony", "Zielony", "Czarny (domyślny)", "Niebieski"],
+    "poprawna": 3,
     "wyjasnienie": "Selektor identyfikatora (#unikalny) ma najwyższą specyficzność (prioritet) spośród wymienionych, wyprzedzając klasę (.tekst) oraz znacznik (p)."
   },
   {
@@ -75,8 +75,8 @@
     "temat": "dzial-1/powtorzenie-html-css.md",
     "pytanie": "Która właściwość CSS służy do zmiany kroju czcionki tekstu?",
     "kod": "",
-    "opcje": ["font-style", "font-weight", "font-family", "text-transform"],
-    "poprawna": 2,
+    "opcje": ["font-style", "font-family", "font-weight", "text-transform"],
+    "poprawna": 1,
     "wyjasnienie": "font-family określa krój czcionki. font-style służy np. do kursywy, font-weight do pogrubienia, a text-transform do zmiany wielkości liter."
   },
   {
@@ -86,12 +86,12 @@
     "pytanie": "W jaki sposób poprawnie połączyć zewnętrzny arkusz stylów CSS z dokumentem HTML?",
     "kod": "",
     "opcje": [
-      "<style src=\"style.css\">",
       "<link rel=\"stylesheet\" href=\"style.css\">",
+      "<style src=\"style.css\">",
       "<script href=\"style.css\"></script>",
       "<include sheet=\"style.css\">"
     ],
-    "poprawna": 1,
+    "poprawna": 0,
     "wyjasnienie": "Do dołączania zewnętrznych plików CSS w sekcji <head> używa się znacznika <link> z atrybutami rel=\"stylesheet\" oraz href podającym ścieżkę do pliku."
   },
   {
@@ -100,8 +100,8 @@
     "temat": "dzial-1/powtorzenie-html-css.md",
     "pytanie": "Jaka jest domyślna wartość właściwości position w CSS dla większości elementów HTML?",
     "kod": "",
-    "opcje": ["relative", "absolute", "fixed", "static"],
-    "poprawna": 3,
+    "opcje": ["relative", "absolute", "static", "fixed"],
+    "poprawna": 2,
     "wyjasnienie": "Domyślną wartością pozycji każdego elementu w modelu formatowania CSS jest static (element układa się w normalnym przepływie dokumentu)."
   },
   {
@@ -110,8 +110,8 @@
     "temat": "dzial-1/powtorzenie-html-css.md",
     "pytanie": "Który znacznik HTML jest używany do zdefiniowania komórki nagłówkowej w tabeli HTML?",
     "kod": "",
-    "opcje": ["<td>", "<tr>", "<th>", "<thead>"],
-    "poprawna": 2,
+    "opcje": ["<th>", "<td>", "<tr>", "<thead>"],
+    "poprawna": 0,
     "wyjasnienie": "Znacznik <th> (table header) wyznacza komórkę nagłówkową (domyślnie pogrubioną i wyśrodkowaną), <td> to zwykła komórka danych, a <tr> reprezentuje wiersz."
   },
 
@@ -121,8 +121,8 @@
     "temat": "dzial-3/wprowadzenie-programowanie.md",
     "pytanie": "Co wypisze w konsoli poniższy fragment kodu JavaScript?",
     "kod": "let a = 3;\nlet b = \"4\";\nconsole.log(a + b);",
-    "opcje": ["7", "34", "NaN", "TypeError"],
-    "poprawna": 1,
+    "opcje": ["7", "NaN", "34", "TypeError"],
+    "poprawna": 2,
     "wyjasnienie": "Operator + w przypadku połączenia liczby i ciągu znaków dokonywa konwersji liczby na tekst i łączy oba ciągi (konkatenacja), dając \"34\"."
   },
   {
@@ -131,8 +131,8 @@
     "temat": "dzial-3/wprowadzenie-programowanie.md",
     "pytanie": "Co zwróci wyrażenie typeof null w języku JavaScript?",
     "kod": "console.log(typeof null);",
-    "opcje": ["\"null\"", "\"undefined\"", "\"object\"", "\"boolean\""],
-    "poprawna": 2,
+    "opcje": ["\"null\"", "\"undefined\"", "\"boolean\"", "\"object\""],
+    "poprawna": 3,
     "wyjasnienie": "Z powodów historycznych w języku JavaScript typeof null zwraca ciąg znaków \"object\". Jest to znana właściwość (zawiłość) tego języka."
   },
   {
@@ -143,11 +143,11 @@
     "kod": "",
     "opcje": [
       "document.getElementsByClassName()",
-      "document.getElementById()",
       "document.getElementByName()",
+      "document.getElementById()",
       "document.querySelectorId()"
     ],
-    "poprawna": 1,
+    "poprawna": 2,
     "wyjasnienie": "document.getElementById('id') pobiera pojedynczy element o wskazanym identyfikatorze. getElementsByClassName pobiera kolekcję po klasie."
   },
   {
@@ -158,11 +158,11 @@
     "kod": "",
     "opcje": [
       "Nie ma żadnej różnicy, oba porównują wartości i typy.",
-      "== porównuje wartości po ewentualnej konwersji typów, a === porównuje wartości oraz ich typy bez konwersji.",
       "=== służy do przypisania wartości, a == do porównania.",
-      "== działa tylko dla liczb, a === dla ciągów znaków."
+      "== działa tylko dla liczb, a === dla ciągów znaków.",
+      "== porównuje wartości po ewentualnej konwersji typów, a === porównuje wartości oraz ich typy bez konwersji."
     ],
-    "poprawna": 1,
+    "poprawna": 3,
     "wyjasnienie": "Operator == wykonuje automatyczną konwersję typów (scisle: rzutowanie), natomiast operator === (ścisła równość) sprawdza zarówno wartość, jak i typ danych."
   },
   {
@@ -171,8 +171,8 @@
     "temat": "dzial-3/wprowadzenie-programowanie.md",
     "pytanie": "Które zdarzenie JavaScript jest wywoływane w momencie kliknięcia przycisku myszą przez użytkownika?",
     "kod": "",
-    "opcje": ["onhover", "onchange", "onclick", "onload"],
-    "poprawna": 2,
+    "opcje": ["onclick", "onhover", "onchange", "onload"],
+    "poprawna": 0,
     "wyjasnienie": "Zdarzenie click (lub atrybut onclick) reaguje na kliknięcie elementu myszą lub naciśnięcie klawisza Enter/Spacja na aktywnym przycisku."
   },
   {
@@ -181,8 +181,8 @@
     "temat": "dzial-3/srodowisko-programistyczne.md",
     "pytanie": "Co zostanie wypisane w konsoli przeglądarki po wykonaniu podanego kodu?",
     "kod": "const tab = [10, 20, 30];\nconsole.log(tab.length);",
-    "opcje": ["2", "3", "30", "undefined"],
-    "poprawna": 1,
+    "opcje": ["3", "2", "30", "undefined"],
+    "poprawna": 0,
     "wyjasnienie": "Właściwość .length tablicy zwraca całkowitą liczbę jej elementów. Tablica [10, 20, 30] zawiera dokładnie 3 elementy."
   },
   {
@@ -191,8 +191,8 @@
     "temat": "dzial-3/wprowadzenie-programowanie.md",
     "pytanie": "Służąca do parsowania tekstu na liczbę całkowitą funkcja w JavaScript to:",
     "kod": "",
-    "opcje": ["parseInt()", "parseFloat()", "Math.integer()", "Number.toInt()"],
-    "poprawna": 0,
+    "opcje": ["parseFloat()", "parseInt()", "Math.integer()", "Number.toInt()"],
+    "poprawna": 1,
     "wyjasnienie": "Funkcja parseInt() analizuje ciąg znaków i zwraca liczbę całkowitą. parseFloat() służy do liczb zmiennoprzecinkowych."
   },
   {
@@ -201,8 +201,8 @@
     "temat": "dzial-3/srodowisko-programistyczne.md",
     "pytanie": "Co wypisze podany kod JavaScript?",
     "kod": "let x = 5;\nif (x > 10) {\n  console.log('A');\n} else {\n  console.log('B');\n}",
-    "opcje": ["A", "B", "undefined", "Wystąpi błąd"],
-    "poprawna": 1,
+    "opcje": ["B", "A", "undefined", "Wystąpi błąd"],
+    "poprawna": 0,
     "wyjasnienie": "Warunek 5 > 10 zwraca false, więc wykonana zostanie gałąź else, wywołując console.log('B')."
   },
   {
@@ -211,8 +211,8 @@
     "temat": "dzial-3/wprowadzenie-programowanie.md",
     "pytanie": "Którą metodą można dodać nowy element na końcu istniejącej tablicy w JavaScript?",
     "kod": "",
-    "opcje": ["unshift()", "pop()", "shift()", "push()"],
-    "poprawna": 3,
+    "opcje": ["unshift()", "push()", "pop()", "shift()"],
+    "poprawna": 1,
     "wyjasnienie": "Metoda .push() dodaje jeden lub więcej elementów na koniec tablicy i zwraca jej nową długość. unshift() dodaje na początku, a pop()/shift() usuwają elementy."
   },
   {
@@ -232,8 +232,8 @@
     "temat": "dzial-3/wprowadzenie-programowanie.md",
     "pytanie": "Jaki jest wynik wykonania poniższego skryptu PHP?",
     "kod": "<?php\n$a = \"5\";\n$b = 10;\necho $a + $b;\n?>",
-    "opcje": ["510", "15", "Fatal error", "0"],
-    "poprawna": 1,
+    "opcje": ["510", "Fatal error", "15", "0"],
+    "poprawna": 2,
     "wyjasnienie": "W PHP 8 operator + wykonuje operację dodawania numerycznego. Ciąg \"5\" zostaje przekonwertowany na liczbę 5, dając wynik 15."
   },
   {
@@ -242,8 +242,8 @@
     "temat": "dzial-3/wprowadzenie-programowanie.md",
     "pytanie": "Która zmienna superglobalna PHP służy do odbierania danych przesłanych z formularza metodą POST?",
     "kod": "",
-    "opcje": ["$_GET", "$_POST", "$_REQUEST_POST", "$_SERVER['POST']"],
-    "poprawna": 1,
+    "opcje": ["$_GET", "$_REQUEST_POST", "$_POST", "$_SERVER['POST']"],
+    "poprawna": 2,
     "wyjasnienie": "$_POST jest tablicą asocjacyjną zawierającą dane przesłane do skryptu metodą HTTP POST."
   },
   {
@@ -252,8 +252,8 @@
     "temat": "dzial-3/wprowadzenie-programowanie.md",
     "pytanie": "Czym rozpoczyna się nazwa każdej zmiennej w języku PHP?",
     "kod": "",
-    "opcje": ["Znak zapytania ?", "Znak dolara $", "Znak małpy @", "Słowo kluczowe var"],
-    "poprawna": 1,
+    "opcje": ["Znak dolara $", "Znak zapytania ?", "Znak małpy @", "Słowo kluczowe var"],
+    "poprawna": 0,
     "wyjasnienie": "W PHP nazwy wszystkich zmiennych muszą zaczynać się od symbolu dolara ($), np. $zmienna."
   },
   {
@@ -262,8 +262,8 @@
     "temat": "dzial-3/srodowisko-programistyczne.md",
     "pytanie": "Jaki typ danych zostanie zwrócony przez gettype(\"12.5\") w PHP?",
     "kod": "<?php\necho gettype(\"12.5\");\n?>",
-    "opcje": ["double", "float", "string", "integer"],
-    "poprawna": 2,
+    "opcje": ["string", "double", "float", "integer"],
+    "poprawna": 0,
     "wyjasnienie": "Wartość ujęta w cudzysłowy (\"12.5\") jest ciągiem znaków, więc funkcja gettype() zwraca \"string\"."
   },
   {
@@ -272,8 +272,8 @@
     "temat": "dzial-3/wprowadzenie-programowanie.md",
     "pytanie": "Która funkcja PHP służy do sprawdzenia, czy zmienna została ustawiona i nie jest równa null?",
     "kod": "",
-    "opcje": ["empty()", "isset()", "is_null()", "check()"],
-    "poprawna": 1,
+    "opcje": ["empty()", "is_null()", "check()", "isset()"],
+    "poprawna": 3,
     "wyjasnienie": "Funkcja isset() zwraca true, jeśli zmienna istnieje i jej wartość nie jest null."
   },
   {
@@ -282,8 +282,8 @@
     "temat": "dzial-3/srodowisko-programistyczne.md",
     "pytanie": "Który operator w PHP służy do łączenia (konkatenacji) dwóch ciągów znaków?",
     "kod": "",
-    "opcje": ["Plus +", "Kropka .", "Przecinek ,", "Ampersand &"],
-    "poprawna": 1,
+    "opcje": ["Plus +", "Przecinek ,", "Kropka .", "Ampersand &"],
+    "poprawna": 2,
     "wyjasnienie": "W PHP operatorem łączenia tekstów jest kropka (.), np. $tekst1 . $tekst2."
   },
   {
@@ -302,8 +302,8 @@
     "temat": "dzial-3/srodowisko-programistyczne.md",
     "pytanie": "Jaki napis wyświetli podany skrypt składni nawiasów klamrowych wewnątrz cudzysłowów w PHP?",
     "kod": "<?php\n$owoc = \"jabłko\";\necho \"Smaczne {$owoc}s\";\n?>",
-    "opcje": ["Smaczne $owocs", "Smaczne jabłkos", "Smaczne {$owoc}s", "Wystąpi błąd"],
-    "poprawna": 1,
+    "opcje": ["Smaczne $owocs", "Smaczne {$owoc}s", "Wystąpi błąd", "Smaczne jabłkos"],
+    "poprawna": 3,
     "wyjasnienie": "Nawiasy klamrowe wewnątrz ciągu znaków w podwójnych cudzysłowach pozwalają precyzyjnie wydzielić nazwę zmiennej, podstawiając jej wartość."
   },
   {
@@ -312,8 +312,8 @@
     "temat": "dzial-3/srodowisko-programistyczne.md",
     "pytanie": "Która funkcja PHP służy do obliczania długości ciągu znaków (liczby bajtów/znaków)?",
     "kod": "",
-    "opcje": ["count()", "str_length()", "strlen()", "length()"],
-    "poprawna": 2,
+    "opcje": ["count()", "str_length()", "length()", "strlen()"],
+    "poprawna": 3,
     "wyjasnienie": "Funkcja strlen($string) zwraca długość podanego ciągu znaków. count() stosuje się do tablic."
   },
   {
@@ -322,8 +322,8 @@
     "temat": "dzial-3/wprowadzenie-programowanie.md",
     "pytanie": "Co się stanie po wywołaniu poniższej funkcji test() w PHP?",
     "kod": "<?php\n$num = 10;\nfunction test() {\n  echo $num;\n}\ntest();\n?>",
-    "opcje": ["10", "0", "Warning / Undefined variable $num", "null"],
-    "poprawna": 2,
+    "opcje": ["Warning / Undefined variable $num", "10", "0", "null"],
+    "poprawna": 0,
     "wyjasnienie": "W PHP zmienne zadeklarowane na zewnątrz funkcji nie są automatycznie dostępne wewnątrz funkcji (mają zasięg globalny, a nie lokalny)."
   },
 
@@ -334,12 +334,12 @@
     "pytanie": "Które polecenie SQL służy do pobrania wszystkich kolumn z tabeli 'pracownicy'?",
     "kod": "",
     "opcje": [
-      "SELECT ALL FROM pracownicy;",
       "SELECT * FROM pracownicy;",
+      "SELECT ALL FROM pracownicy;",
       "GET * FROM pracownicy;",
       "FETCH ALL pracownicy;"
     ],
-    "poprawna": 1,
+    "poprawna": 0,
     "wyjasnienie": "Symbol gwiazdki (*) w klauzuli SELECT oznacza wybór wszystkich kolumn z danej tabeli."
   },
   {
@@ -348,8 +348,8 @@
     "temat": "https://josimate.github.io/lsbd/dzial-3/filtrowanie-warunki/",
     "pytanie": "Która klauzula SQL odpowiada za filtrowanie wierszy według określonego warunku?",
     "kod": "",
-    "opcje": ["GROUP BY", "ORDER BY", "WHERE", "HAVING"],
-    "poprawna": 2,
+    "opcje": ["GROUP BY", "WHERE", "ORDER BY", "HAVING"],
+    "poprawna": 1,
     "wyjasnienie": "Klauzula WHERE ogranicza zwracane wiersze do tych, które spełniają podany warunek logiczny."
   },
   {
@@ -360,11 +360,11 @@
     "kod": "",
     "opcje": [
       "Rosnąco (od A do Z / od najmniejszej do największej)",
-      "Malejąco (od Z do A / od największej do najmniejszej)",
       "Losowo",
+      "Malejąco (od Z do A / od największej do najmniejszej)",
       "Według kolejności wprowadzania do bazy"
     ],
-    "poprawna": 1,
+    "poprawna": 2,
     "wyjasnienie": "DESC oznacza sortowanie malejące (descending). Domyślne sortowanie rosnące to ASC (ascending)."
   },
   {
@@ -373,8 +373,8 @@
     "temat": "https://josimate.github.io/lsbd/dzial-4/agregacja-groupby/",
     "pytanie": "Która funkcja agregująca SQL oblicza średnią wartość z podanej kolumny numerycznej?",
     "kod": "",
-    "opcje": ["COUNT()", "SUM()", "AVG()", "MEAN()"],
-    "poprawna": 2,
+    "opcje": ["COUNT()", "AVG()", "SUM()", "MEAN()"],
+    "poprawna": 1,
     "wyjasnienie": "Funkcja AVG() (average) wylicza wartość średnią. COUNT() zlicza wiersze, a SUM() oblicza sumę."
   },
   {
@@ -383,8 +383,8 @@
     "temat": "https://josimate.github.io/lsbd/dzial-4/select-relacje/",
     "pytanie": "Który typ złączenia (JOIN) zwraca tylko te wiersze, które mają dopasowanie w obu łączonych tabelach?",
     "kod": "",
-    "opcje": ["LEFT JOIN", "RIGHT JOIN", "INNER JOIN", "FULL OUTER JOIN"],
-    "poprawna": 2,
+    "opcje": ["LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN", "INNER JOIN"],
+    "poprawna": 3,
     "wyjasnienie": "INNER JOIN (złączenie wewnętrzne) zwraca wyłącznie rekordy spełniające warunek złączenia w obu tabelach."
   },
   {
@@ -393,8 +393,8 @@
     "temat": "https://josimate.github.io/lsbd/dzial-6/insert/",
     "pytanie": "Które polecenie języka DML służy do dodawania nowych rekordów do tabeli bazy danych?",
     "kod": "",
-    "opcje": ["ADD ROW", "INSERT INTO", "UPDATE", "CREATE RECORD"],
-    "poprawna": 1,
+    "opcje": ["ADD ROW", "UPDATE", "CREATE RECORD", "INSERT INTO"],
+    "poprawna": 3,
     "wyjasnienie": "Polecenie INSERT INTO nazwa_tabeli (kolumny) VALUES (wartości) służy do wstawiania nowych wierszy."
   },
   {
@@ -418,8 +418,8 @@
     "temat": "https://josimate.github.io/lsbd/dzial-5/create-table/",
     "pytanie": "Które polecenie języka SQL służy do utworzenia nowej tabeli w bazie danych?",
     "kod": "",
-    "opcje": ["MAKE TABLE", "CREATE TABLE", "NEW TABLE", "ADD TABLE"],
-    "poprawna": 1,
+    "opcje": ["MAKE TABLE", "NEW TABLE", "CREATE TABLE", "ADD TABLE"],
+    "poprawna": 2,
     "wyjasnienie": "Do tworzenia nowych tabel w DDL służy polecenie CREATE TABLE nazwa (...)."
   },
   {
@@ -430,11 +430,11 @@
     "kod": "",
     "opcje": [
       "WHERE telefon = NULL",
-      "WHERE telefon IS NULL",
       "WHERE telefon == NULL",
-      "WHERE telefon EQUALS NULL"
+      "WHERE telefon EQUALS NULL",
+      "WHERE telefon IS NULL"
     ],
-    "poprawna": 1,
+    "poprawna": 3,
     "wyjasnienie": "Brak wartości (NULL) w SQL sprawdza się wyłącznie operatorem IS NULL lub IS NOT NULL."
   },
   {
@@ -444,12 +444,12 @@
     "pytanie": "Jaka jest główna różnica między klauzulami WHERE oraz HAVING w języku SQL?",
     "kod": "",
     "opcje": [
-      "WHERE filtruje pojedyncze wiersze przed grupowaniem, a HAVING filtruje zagregowane grupy po GROUP BY.",
       "HAVING działa tylko dla liczb, a WHERE dla tekstów.",
+      "WHERE filtruje pojedyncze wiersze przed grupowaniem, a HAVING filtruje zagregowane grupy po GROUP BY.",
       "WHERE służy do sortowania, a HAVING do filtrowania.",
       "Nie ma żadnej różnicy, słowa te mogą być stosowane zamiennie."
     ],
-    "poprawna": 0,
+    "poprawna": 1,
     "wyjasnienie": "WHERE nakłada warunki na indywidualne wiersze tabeli przed grupami, natomiast HAVING służy do filtrowania wyników funkcji agregujących po grupowaniu (GROUP BY)."
   },
   {
@@ -468,8 +468,8 @@
     "temat": "https://josimate.github.io/lsbd/dzial-6/update-delete/",
     "pytanie": "Które polecenie SQL służy do modyfikacji istniejących danych w tabeli?",
     "kod": "",
-    "opcje": ["ALTER TABLE", "UPDATE", "MODIFY", "CHANGE"],
-    "poprawna": 1,
+    "opcje": ["UPDATE", "ALTER TABLE", "MODIFY", "CHANGE"],
+    "poprawna": 0,
     "wyjasnienie": "Polecenie UPDATE nazwa_tabeli SET kolumna = wartość WHERE ... służy do aktualizacji wpisów w tabeli. ALTER TABLE zmienia strukturę tabeli."
   },
 
@@ -481,11 +481,11 @@
     "kod": "",
     "opcje": [
       "Kolumną pozwalającą na przechowywanie haseł użytkowników.",
-      "Atrybutem lub zespołem atrybutów jednoznacznie identyfikującym każdy rekord w tabeli.",
       "Dowolną kolumną zawierającą liczby zmiennoprzecinkowe.",
-      "Kluczem służącym do szyfrowania całej bazy danych."
+      "Kluczem służącym do szyfrowania całej bazy danych.",
+      "Atrybutem lub zespołem atrybutów jednoznacznie identyfikującym każdy rekord w tabeli."
     ],
-    "poprawna": 1,
+    "poprawna": 3,
     "wyjasnienie": "Klucz główny unikalnie identyfikuje każdy wiersz w tabeli i nie może przyjmować wartości NULL."
   },
   {
@@ -494,8 +494,8 @@
     "temat": "https://josimate.github.io/lsbd/dzial-2/zwiazki-liczebnosc/",
     "pytanie": "Jaki typ relacji występuje między tabelą 'Uczniowie' a tabelą 'Klasy', gdy uczeń należy do jednej klasy, a klasa liczy wielu uczniów?",
     "kod": "",
-    "opcje": ["1:1 (jeden do jednego)", "1:N (jeden do wielu)", "N:M (wiele do wielu)", "0:0"],
-    "poprawna": 1,
+    "opcje": ["1:N (jeden do wielu)", "1:1 (jeden do jednego)", "N:M (wiele do wielu)", "0:0"],
+    "poprawna": 0,
     "wyjasnienie": "Jedna klasa zawiera wielu uczniów, ale uczeń przypisany jest do jednej klasy – jest to relacja jeden do wielu (1:N)."
   },
   {
@@ -505,12 +505,12 @@
     "pytanie": "Co jest głównym wymogiem Pierwszej Postaci Normalnej (1NF)?",
     "kod": "",
     "opcje": [
-      "Wszystkie atrybuty muszą być wartościami atomowymi (niepodzielnymi), a tabela nie może zawierać powtarzających się grup.",
       "Usunięcie wszystkich zależności przechodnich.",
+      "Wszystkie atrybuty muszą być wartościami atomowymi (niepodzielnymi), a tabela nie może zawierać powtarzających się grup.",
       "Każda tabela musi posiadać klucz obcy.",
       "Baza danych musi być zapisana w pliku SQLite."
     ],
-    "poprawna": 0,
+    "poprawna": 1,
     "wyjasnienie": "1NF wymaga, aby każda komórka tabeli zawierała pojedynczą, atomową wartość (np. brak listy telefonów po przecinku w jednej komórce)."
   },
   {
@@ -519,8 +519,8 @@
     "temat": "https://josimate.github.io/lsbd/dzial-2/typy-danych/",
     "pytanie": "Który typ danych w MariaDB/MySQL najlepiej nadaje się do przechowywania krótkiego tekstu o zmiennej długości (np. imienia lub e-maila do 255 znaków)?",
     "kod": "",
-    "opcje": ["INT", "VARCHAR", "TEXT", "BLOB"],
-    "poprawna": 1,
+    "opcje": ["INT", "TEXT", "BLOB", "VARCHAR"],
+    "poprawna": 3,
     "wyjasnienie": "VARCHAR(N) służy do przechowywania tekstów o zmiennej długości do podanego limitu znaków. CHAR ma stałą długość."
   },
   {
@@ -531,11 +531,11 @@
     "kod": "",
     "opcje": [
       "Tworzenia kopii zapasowej tabeli.",
-      "Ustanowienia powiązania (relacji) z kluczem głównym innej tabeli i zapewnienia spójności referencyjnej.",
       "Automatycznego szyfrowania rekordów.",
+      "Ustanowienia powiązania (relacji) z kluczem głównym innej tabeli i zapewnienia spójności referencyjnej.",
       "Przyspieszenia wyszukiwania tekstu w tabeli."
     ],
-    "poprawna": 1,
+    "poprawna": 2,
     "wyjasnienie": "Klucz obcy odwołuje się do klucza głównego (lub unikalnego) w innej tabeli, gwarantując spójność relacji."
   },
   {
@@ -546,11 +546,11 @@
     "kod": "",
     "opcje": [
       "Za pomocą bezpośredniego połączenia dwóch kluczy głównych.",
-      "Wprowadzając dodatkową tabelę pośredniczącą (łączącą) zawierającą klucze obce z obu tabel.",
       "Nie da się zrealizować relacji N:M w relacyjnych bazach danych.",
+      "Wprowadzając dodatkową tabelę pośredniczącą (łączącą) zawierającą klucze obce z obu tabel.",
       "Dodając wielowartościową kolumnę ze wszystkimi identyfikatorami oddzielonymi przecinkiem."
     ],
-    "poprawna": 1,
+    "poprawna": 2,
     "wyjasnienie": "Relację N:M rozbija się na dwie relacje 1:N za pomocą tabeli pośredniczącej (asocjacyjnej)."
   },
   {
@@ -560,12 +560,12 @@
     "pytanie": "Druga Postać Normalna (2NF) wymaga spełnienia warunków 1NF oraz tego, aby:",
     "kod": "",
     "opcje": [
-      "Tabela nie zawierała żadnych kluczy obcych.",
       "Każdy atrybut niekluczowy był w pełni zależny funkcyjnie od całego klucza głównego.",
+      "Tabela nie zawierała żadnych kluczy obcych.",
       "Wszystkie kolumny tekstowe były typu VARCHAR.",
       "Tabela posiadała sztuczny identyfikator AUTO_INCREMENT."
     ],
-    "poprawna": 1,
+    "poprawna": 0,
     "wyjasnienie": "2NF eliminuje częściowe zależności funkcyjne atrybutów od klucza głównego (istotne przy kluczach złożonych)."
   },
   {
@@ -576,11 +576,11 @@
     "kod": "",
     "opcje": [
       "Pojedynczym wierszem w bazie danych.",
-      "Obiektem świata rzeczywistego posiadającym własne atrybuty (np. Klient, Towar, Zamówienie).",
       "Typem relacji między tabelami.",
+      "Obiektem świata rzeczywistego posiadającym własne atrybuty (np. Klient, Towar, Zamówienie).",
       "Skryptem wyzwalacza bazy danych."
     ],
-    "poprawna": 1,
+    "poprawna": 2,
     "wyjasnienie": "Encja (Entity) to reprezentacja obiektu świata rzeczywistego w modelu danych, reprezentowana później w relacyjnej bazie jako tabela."
   },
 
@@ -590,8 +590,8 @@
     "temat": "dzial-1/powtorzenie-html-css.md",
     "pytanie": "Który znacznik HTML5 służy do bezpośredniego osadzenia pliku wideo na stronie WWW?",
     "kod": "",
-    "opcje": ["<video>", "<media>", "<movie>", "<embed-video>"],
-    "poprawna": 0,
+    "opcje": ["<media>", "<movie>", "<embed-video>", "<video>"],
+    "poprawna": 3,
     "wyjasnienie": "Znacznik <video> wprowadza natywną obsługę odtwarzania wideo w standardzie HTML5."
   },
   {
@@ -600,8 +600,8 @@
     "temat": "dzial-1/powtorzenie-html-css.md",
     "pytanie": "Który z formatów graficznych wspiera przezroczystość kanału Alpha oraz kompresję bezstratną na stronach WWW?",
     "kod": "",
-    "opcje": ["JPEG", "PNG", "BMP", "GIF (tylko 1-bitową)"],
-    "poprawna": 1,
+    "opcje": ["JPEG", "BMP", "GIF (tylko 1-bitową)", "PNG"],
+    "poprawna": 3,
     "wyjasnienie": "Format PNG (Portable Network Graphics) obsługuje pełną przezroczystość (kanał alpha) i kompresję bezstratną."
   },
 
@@ -613,11 +613,11 @@
     "kod": "",
     "opcje": [
       "Testowania szybkości ładowania serwera.",
-      "Sprawdzania zgodności składni dokumentu HTML z oficjalnymi standardami W3C.",
       "Automatycznego naprawiania błędów w PHP.",
+      "Sprawdzania zgodności składni dokumentu HTML z oficjalnymi standardami W3C.",
       "Szyfrowania połączeń SSL."
     ],
-    "poprawna": 1,
+    "poprawna": 2,
     "wyjasnienie": "Walidator W3C weryfikuje poprawność znaczników i struktury dokumentów HTML/CSS pod kątem standardów."
   },
   {
@@ -626,8 +626,8 @@
     "temat": "dzial-2/publikacja-ftp-hosting.md",
     "pytanie": "Który protokół sieciowy jest domyślnie wykorzystywany do przesyłania plików strony internetowej na serwer hostingowy?",
     "kod": "",
-    "opcje": ["HTTP", "FTP / SFTP", "SMTP", "DNS"],
-    "poprawna": 1,
+    "opcje": ["HTTP", "SMTP", "FTP / SFTP", "DNS"],
+    "poprawna": 2,
     "wyjasnienie": "Protokół FTP (File Transfer Protocol) lub jego bezpieczna wersja SFTP służy do transferu plików na serwer."
   },
   {
@@ -636,8 +636,8 @@
     "temat": "dzial-3/srodowisko-programistyczne.md",
     "pytanie": "W pakiecie XAMPP domyślnym narzędziem webowym do zarządzania bazami danych MariaDB/MySQL jest:",
     "kod": "",
-    "opcje": ["pgAdmin", "phpMyAdmin", "WorkBench Local", "SQLite Browser"],
-    "poprawna": 1,
+    "opcje": ["pgAdmin", "WorkBench Local", "phpMyAdmin", "SQLite Browser"],
+    "poprawna": 2,
     "wyjasnienie": "XAMPP zawiera phpMyAdmin – napisany w PHP interfejs przeglądarkowy do zarządzania bazami MariaDB/MySQL."
   },
   {
@@ -686,8 +686,8 @@
     "temat": "dzial-3/srodowisko-programistyczne.md",
     "pytanie": "W pakiecie XAMPP domyślny port, na którym nasłuchuje serwer WWW Apache dla protokołu HTTP, to:",
     "kod": "",
-    "opcje": ["21", "80", "443", "3306"],
-    "poprawna": 1,
+    "opcje": ["80", "21", "443", "3306"],
+    "poprawna": 0,
     "wyjasnienie": "Standardowym portem dla protokołu HTTP obsługiwanego przez Apache jest port 80 (3306 to MariaDB/MySQL, 443 to HTTPS, 21 to FTP)."
   },
   {
@@ -696,8 +696,8 @@
     "temat": "dzial-2/walidacja-testowanie.md",
     "pytanie": "Które skróty klawiszowe otwierają Narzędzia Deweloperskie (Developer Tools) w większości przeglądarek internetowych w systemie Windows?",
     "kod": "",
-    "opcje": ["++ctrl+alt+del++", "++f12++ lub ++ctrl+shift+i++", "++alt+f4++", "++ctrl+p++"],
-    "poprawna": 1,
+    "opcje": ["++ctrl+alt+del++", "++alt+f4++", "++ctrl+p++", "++f12++ lub ++ctrl+shift+i++"],
+    "poprawna": 3,
     "wyjasnienie": "Klawisz F12 oraz kombinacja Ctrl+Shift+I w przeglądarkach typu Chrome, Firefox, Edge otwierają wbudowane Narzędzia Deweloperskie."
   }
 ]

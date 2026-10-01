@@ -1,6 +1,6 @@
 # Test próbny z części pisemnej INF.03
 
-Wybierz odpowiadający Ci tryb nauki. Poniższy widżet umożliwia zarówna szybki trening po pojedynczym temacie lekcji, jak i przeprowadzenie pełnej symulacji testu na czas.
+Wybierz odpowiadający Ci tryb nauki. Poniższy widżet umożliwia zarówno szybki trening po pojedynczym temacie lekcji, jak i przeprowadzenie pełnej symulacji testu na czas.
 
 === "Trening z obszaru"
 
