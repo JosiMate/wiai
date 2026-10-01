@@ -1,0 +1,37 @@
+[
+  {
+    "id": "html-css",
+    "nazwa": "HTML i CSS",
+    "opis": "Struktura dokumentu HTML5, znaczniki semantyczne, formularze, kaskadowe arkusze stylów (CSS3), selektory i układy."
+  },
+  {
+    "id": "javascript",
+    "nazwa": "JavaScript",
+    "opis": "Skryptowanie po stronie klienta, operacje na drzewie DOM, obsługa zdarzeń, walidacja formularzy oraz obiekty JS."
+  },
+  {
+    "id": "php",
+    "nazwa": "PHP",
+    "opis": "Skryptowanie po stronie serwera, zmienne superglobalne ($_GET, $_POST), obsługa formularzy, funkcje i środowisko PHP 8."
+  },
+  {
+    "id": "sql",
+    "nazwa": "Język SQL",
+    "opis": "Zapytania SELECT, filtrowanie, sortowanie, łączenie tabel (JOIN), agregacja (GROUP BY) oraz polecenia DDL i DML."
+  },
+  {
+    "id": "bazy-projektowanie",
+    "nazwa": "Projektowanie baz danych",
+    "opis": "Modelowanie relacyjnych baz danych, encje, atrybuty, klucze główne i obce, typy danych oraz postacie normalne."
+  },
+  {
+    "id": "grafika-multimedia",
+    "nazwa": "Grafika i multimedia",
+    "opis": "Formaty plików graficznych i multimedialnych, kompresja oraz osadzanie elementów audio i wideo na stronach."
+  },
+  {
+    "id": "narzedzia-publikacja",
+    "nazwa": "Narzędzia i publikacja",
+    "opis": "Środowisko lokalne (XAMPP), walidacja W3C, edytory kodu, publikacja przez FTP/hosting oraz zasady BHP i prawne."
+  }
+]

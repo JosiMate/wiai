@@ -70,6 +70,8 @@ extra_javascript:
   - assets/js/quiz.js
   - assets/js/postep.js
   - assets/js/narzedzia.js
+  - assets/js/egzamin.js
+  - assets/js/lista-kontrolna.js
 
 markdown_extensions:
   - abbr

@@ -271,6 +271,10 @@ Elementy w tej kolejności, od góry strony:
 10. **Zakończenie strony** jak we wzorcu tego repozytorium (stopka kursywą
     ze źródłami i datą sprawdzenia albo odsyłacze do sąsiednich tematów
     i „Materiały uzupełniające”).
+11. **Dopisanie pytań do banku egzaminacyjnego:** każdy nowy albo dostosowywany
+    temat dopisuje 5–8 pytań do `docs/assets/egzamin/pytania.json` (nowe unikalne
+    `id`, pole `temat` = ścieżka tematu, autorskie pytania) i uruchamia
+    `python3 narzedzia/sprawdz_pytania.py`.
 
 Scenariusz lekcji w Wordzie należy do standardu, ale przygotowuje go
 nauczyciel **poza repozytorium** — nie twórz go tutaj.
@@ -319,6 +323,12 @@ Komunikaty błędów PHP podawaj w postaci z PHP 8 (np.
 `hasla`, `konwerter`, `tasma`. Nowe narzędzie dopisujesz do obiektu
 `NARZEDZIA` w tym pliku, style do `docs/assets/extra.css` (klasy `.nz-…`)
 — tylko gdy zadanie o to prosi.
+
+### Widżety egzaminacyjne INF.03
+
+- Test i trening: `<div class="egzamin-test" data-tryb="pelny"></div>` lub `data-tryb="trening"`.
+- Strona postępu: `<div class="egzamin-postep"></div>`.
+- Lista kontrolna części praktycznej: standardowa lista zadaniowa `- [ ]` obsługiwana automatycznie przez `assets/js/lista-kontrolna.js`.
 
 ### Quiz „Sprawdź się”
 
@@ -384,7 +394,8 @@ angielsku”, gdy strona jest po angielsku).
 
 ## 8. Zanim oddasz zmiany
 
-1. `pip install -r requirements.txt` i `mkdocs build --strict` — **bez
+1. `python3 narzedzia/sprawdz_pytania.py` — **zero błędów**.
+2. `pip install -r requirements.txt` i `mkdocs build --strict` — **bez
    ostrzeżeń**. Martwy link albo plik poza nawigacją też jest błędem.
 2. Każdy JSON jest poprawny: karta pracy (`python3 -m json.tool plik.json`)
    i tablica quizu wewnątrz strony (wytnij ją i sprawdź tak samo).

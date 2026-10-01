@@ -23,3 +23,5 @@ Dostosuj do standardu temat `<ścieżka pliku, np. docs/dzial-2/walidacja-testow
 Nie zmieniaj reszty treści, numeracji ćwiczeń, `id` pól karty pracy ani
 tekstu wiersza w spisie tematów. W opisie PR wypisz, co dodałeś, i odhacz
 listę kontrolną z `AGENTS.md`.
+
+Pamiętaj o dopisaniu 5–8 pytań do banku w `docs/assets/egzamin/pytania.json` i uruchomieniu `python3 narzedzia/sprawdz_pytania.py`.
