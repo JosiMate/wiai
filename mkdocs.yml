@@ -72,6 +72,8 @@ extra_javascript:
   - assets/js/narzedzia.js
   - assets/js/egzamin.js
   - assets/js/lista-kontrolna.js
+  # Podpowiedzi pod ćwiczeniami odsłaniane po kolei (jedna belka „Podpowiedzi”).
+  - assets/js/podpowiedzi.js
 
 markdown_extensions:
   - abbr
