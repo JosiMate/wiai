@@ -41,10 +41,10 @@
     "pytanie": "Co się stanie po zastosowaniu właściwości CSS display: flex; dla kontenera <div>?",
     "kod": "",
     "opcje": [
-      "Elementy potomne ukryją się na stronie.",
-      "Kontener stanie się elastycznym kontenerem (Flexbox), a jego bezpośrednie dzieci elementami elastycznymi.",
-      "Kontener i jego dzieci zostaną zamienione w tabelę HTML.",
-      "Strona zostanie automatycznie przeskalowana do rozdzielczości mobilnej."
+      "Kontener stanie się siatką (Grid), a jego dzieci ułożą się w kolumnach o równej szerokości.",
+      "Kontener stanie się kontenerem Flexbox, a jego bezpośrednie dzieci ułożą się domyślnie w jednym wierszu.",
+      "Dzieci kontenera staną się elementami liniowymi (inline) i będą się zawijać jak zwykły tekst.",
+      "Kontener zacznie dopasowywać szerokość do ekranu telefonu, a dzieci ukryją się na wąskich ekranach."
     ],
     "poprawna": 1,
     "wyjasnienie": "Właściwość display: flex włącza elastyczny układ Flexbox dla bezpośrednich elementów potomnych kontenera."
@@ -157,13 +157,13 @@
     "pytanie": "Jaka jest różnica między operatorami == oraz === w JavaScript?",
     "kod": "",
     "opcje": [
-      "Nie ma żadnej różnicy, oba porównują wartości i typy.",
-      "=== służy do przypisania wartości, a == do porównania.",
-      "== działa tylko dla liczb, a === dla ciągów znaków.",
-      "== porównuje wartości po ewentualnej konwersji typów, a === porównuje wartości oraz ich typy bez konwersji."
+      "== porównuje wartość i typ, a === porównuje tylko wartość po ewentualnej konwersji typów.",
+      "Oba porównują wartość i typ w ten sam sposób; === jest tylko szybszym zapisem operatora ==.",
+      "== służy do porównywania liczb i napisów, a === do porównywania obiektów i tablic.",
+      "== porównuje po ewentualnej konwersji typów, a === porównuje wartość i typ bez konwersji."
     ],
     "poprawna": 3,
-    "wyjasnienie": "Operator == wykonuje automatyczną konwersję typów (scisle: rzutowanie), natomiast operator === (ścisła równość) sprawdza zarówno wartość, jak i typ danych."
+    "wyjasnienie": "Operator == przed porównaniem może zmienić typ jednej ze stron, więc \"5\" == 5 daje true. Operator === porównuje wartość i typ bez konwersji, więc \"5\" === 5 daje false."
   },
   {
     "id": "inf03-js-005",
@@ -322,9 +322,14 @@
     "temat": "dzial-3/wprowadzenie-programowanie.md",
     "pytanie": "Co się stanie po wywołaniu poniższej funkcji test() w PHP?",
     "kod": "<?php\n$num = 10;\nfunction test() {\n  echo $num;\n}\ntest();\n?>",
-    "opcje": ["Warning / Undefined variable $num", "10", "0", "null"],
+    "opcje": [
+      "Pojawi się ostrzeżenie o niezdefiniowanej zmiennej $num i nic nie zostanie wypisane.",
+      "Zostanie wypisane 10, bo zmienna $num jest zdefiniowana wcześniej w tym samym pliku.",
+      "Zostanie wypisane 0, bo niezdefiniowana zmienna liczbowa ma w PHP wartość zero.",
+      "Wystąpi błąd krytyczny i skrypt zatrzyma się, zanim funkcja test() zostanie wywołana."
+    ],
     "poprawna": 0,
-    "wyjasnienie": "W PHP zmienne zadeklarowane na zewnątrz funkcji nie są automatycznie dostępne wewnątrz funkcji (mają zasięg globalny, a nie lokalny)."
+    "wyjasnienie": "Zmienna zdefiniowana poza funkcją nie jest widoczna w jej wnętrzu (inny zasięg). PHP 8 zgłasza ostrzeżenie „Undefined variable $num”, echo dostaje null i nic nie wypisuje, a skrypt działa dalej. Dostęp dałoby słowo global albo przekazanie wartości przez parametr."
   },
 
   {
@@ -444,10 +449,10 @@
     "pytanie": "Jaka jest główna różnica między klauzulami WHERE oraz HAVING w języku SQL?",
     "kod": "",
     "opcje": [
-      "HAVING działa tylko dla liczb, a WHERE dla tekstów.",
-      "WHERE filtruje pojedyncze wiersze przed grupowaniem, a HAVING filtruje zagregowane grupy po GROUP BY.",
-      "WHERE służy do sortowania, a HAVING do filtrowania.",
-      "Nie ma żadnej różnicy, słowa te mogą być stosowane zamiennie."
+      "HAVING filtruje pojedyncze wiersze przed grupowaniem, a WHERE filtruje grupy po GROUP BY.",
+      "WHERE filtruje pojedyncze wiersze przed grupowaniem, a HAVING filtruje grupy po GROUP BY.",
+      "WHERE działa tylko na jednej tabeli, a HAVING także na tabelach złączonych przez JOIN.",
+      "Oba filtrują wiersze tak samo; HAVING to starsza nazwa klauzuli WHERE z dawnych wersji SQL."
     ],
     "poprawna": 1,
     "wyjasnienie": "WHERE nakłada warunki na indywidualne wiersze tabeli przed grupami, natomiast HAVING służy do filtrowania wyników funkcji agregujących po grupowaniu (GROUP BY)."
@@ -480,10 +485,10 @@
     "pytanie": "Czym w relacyjnej bazie danych jest klucz główny (Primary Key)?",
     "kod": "",
     "opcje": [
-      "Kolumną pozwalającą na przechowywanie haseł użytkowników.",
-      "Dowolną kolumną zawierającą liczby zmiennoprzecinkowe.",
-      "Kluczem służącym do szyfrowania całej bazy danych.",
-      "Atrybutem lub zespołem atrybutów jednoznacznie identyfikującym każdy rekord w tabeli."
+      "Kolumną, która wskazuje na wiersz w innej tabeli i łączy obie tabele relacją.",
+      "Kolumną z indeksem, według której baza zawsze sortuje wyniki zapytań.",
+      "Pierwszą kolumną tabeli, której wartości mogą się powtarzać, ale nie mogą być puste.",
+      "Atrybutem lub zestawem atrybutów jednoznacznie identyfikującym każdy wiersz tabeli."
     ],
     "poprawna": 3,
     "wyjasnienie": "Klucz główny unikalnie identyfikuje każdy wiersz w tabeli i nie może przyjmować wartości NULL."
@@ -505,13 +510,13 @@
     "pytanie": "Co jest głównym wymogiem Pierwszej Postaci Normalnej (1NF)?",
     "kod": "",
     "opcje": [
-      "Usunięcie wszystkich zależności przechodnich.",
-      "Wszystkie atrybuty muszą być wartościami atomowymi (niepodzielnymi), a tabela nie może zawierać powtarzających się grup.",
-      "Każda tabela musi posiadać klucz obcy.",
-      "Baza danych musi być zapisana w pliku SQLite."
+      "Każdy atrybut niekluczowy zależy od całego klucza głównego, a nie tylko od jego części.",
+      "Każde pole zawiera jedną, niepodzielną wartość i w tabeli nie ma powtarzających się grup kolumn.",
+      "Żaden atrybut niekluczowy nie zależy od innego atrybutu niekluczowego tej samej tabeli.",
+      "Każda tabela ma klucz obcy wskazujący na tabelę nadrzędną w tej samej bazie danych."
     ],
     "poprawna": 1,
-    "wyjasnienie": "1NF wymaga, aby każda komórka tabeli zawierała pojedynczą, atomową wartość (np. brak listy telefonów po przecinku w jednej komórce)."
+    "wyjasnienie": "1NF wymaga, aby każda komórka tabeli zawierała pojedynczą, atomową wartość (np. nie ma listy telefonów po przecinku w jednej komórce). Zależność od całego klucza to warunek 2NF, a brak zależności przechodnich — 3NF."
   },
   {
     "id": "inf03-bazy-004",
@@ -530,10 +535,10 @@
     "pytanie": "Klucz obcy (Foreign Key) w tabeli służy do:",
     "kod": "",
     "opcje": [
-      "Tworzenia kopii zapasowej tabeli.",
-      "Automatycznego szyfrowania rekordów.",
-      "Ustanowienia powiązania (relacji) z kluczem głównym innej tabeli i zapewnienia spójności referencyjnej.",
-      "Przyspieszenia wyszukiwania tekstu w tabeli."
+      "Jednoznacznego identyfikowania każdego wiersza w tej samej tabeli.",
+      "Przyspieszenia wyszukiwania po kolumnie bez tworzenia osobnego indeksu.",
+      "Powiązania wiersza z kluczem głównym innej tabeli i pilnowania spójności danych.",
+      "Wymuszenia, by wartości w tej kolumnie nie powtarzały się w obrębie tabeli."
     ],
     "poprawna": 2,
     "wyjasnienie": "Klucz obcy odwołuje się do klucza głównego (lub unikalnego) w innej tabeli, gwarantując spójność relacji."
@@ -560,13 +565,13 @@
     "pytanie": "Druga Postać Normalna (2NF) wymaga spełnienia warunków 1NF oraz tego, aby:",
     "kod": "",
     "opcje": [
-      "Każdy atrybut niekluczowy był w pełni zależny funkcyjnie od całego klucza głównego.",
-      "Tabela nie zawierała żadnych kluczy obcych.",
-      "Wszystkie kolumny tekstowe były typu VARCHAR.",
-      "Tabela posiadała sztuczny identyfikator AUTO_INCREMENT."
+      "Każdy atrybut niekluczowy zależał od całego klucza głównego, a nie tylko od jego części.",
+      "Każde pole zawierało jedną, niepodzielną wartość, bez powtarzających się grup kolumn.",
+      "Żaden atrybut niekluczowy nie zależał od klucza przechodnio, przez inny atrybut.",
+      "Klucz główny każdej tabeli składał się z co najmniej dwóch kolumn."
     ],
     "poprawna": 0,
-    "wyjasnienie": "2NF eliminuje częściowe zależności funkcyjne atrybutów od klucza głównego (istotne przy kluczach złożonych)."
+    "wyjasnienie": "2NF eliminuje częściowe zależności od klucza głównego, co ma znaczenie przy kluczach złożonych. Atomowe wartości to warunek 1NF, a brak zależności przechodnich — 3NF."
   },
   {
     "id": "inf03-bazy-008",
@@ -575,13 +580,13 @@
     "pytanie": "Czym w modelu pojęciowym baz danych (ERD) jest encja?",
     "kod": "",
     "opcje": [
-      "Pojedynczym wierszem w bazie danych.",
-      "Typem relacji między tabelami.",
-      "Obiektem świata rzeczywistego posiadającym własne atrybuty (np. Klient, Towar, Zamówienie).",
-      "Skryptem wyzwalacza bazy danych."
+      "Pojedynczą cechą obiektu, np. imieniem albo numerem telefonu klienta.",
+      "Powiązaniem między dwoma obiektami, np. „klient składa zamówienie”.",
+      "Obiektem lub pojęciem, o którym przechowujemy dane, np. Klient albo Zamówienie.",
+      "Kluczem, który na diagramie łączy ze sobą dwie tabele."
     ],
     "poprawna": 2,
-    "wyjasnienie": "Encja (Entity) to reprezentacja obiektu świata rzeczywistego w modelu danych, reprezentowana później w relacyjnej bazie jako tabela."
+    "wyjasnienie": "Encja to obiekt albo pojęcie z rzeczywistości, o którym baza przechowuje dane; w bazie relacyjnej staje się tabelą. Cecha encji to atrybut, a powiązanie między encjami to związek (relacja)."
   },
 
   {
@@ -612,10 +617,10 @@
     "pytanie": "Oficjalne narzędzie W3C Markup Validation Service służy do:",
     "kod": "",
     "opcje": [
-      "Testowania szybkości ładowania serwera.",
-      "Automatycznego naprawiania błędów w PHP.",
-      "Sprawdzania zgodności składni dokumentu HTML z oficjalnymi standardami W3C.",
-      "Szyfrowania połączeń SSL."
+      "Sprawdzania, czy strona wygląda tak samo we wszystkich przeglądarkach.",
+      "Mierzenia czasu ładowania strony i wskazywania plików, które ją spowalniają.",
+      "Sprawdzania, czy kod HTML jest zgodny ze standardem i nie zawiera błędów składni.",
+      "Sprawdzania poprawności skryptów PHP przed wysłaniem ich na serwer."
     ],
     "poprawna": 2,
     "wyjasnienie": "Walidator W3C weryfikuje poprawność znaczników i struktury dokumentów HTML/CSS pod kątem standardów."
@@ -626,9 +631,9 @@
     "temat": "dzial-2/publikacja-ftp-hosting.md",
     "pytanie": "Który protokół sieciowy jest domyślnie wykorzystywany do przesyłania plików strony internetowej na serwer hostingowy?",
     "kod": "",
-    "opcje": ["HTTP", "SMTP", "FTP / SFTP", "DNS"],
+    "opcje": ["HTTP", "SMTP", "FTP", "DNS"],
     "poprawna": 2,
-    "wyjasnienie": "Protokół FTP (File Transfer Protocol) lub jego bezpieczna wersja SFTP służy do transferu plików na serwer."
+    "wyjasnienie": "Do przesyłania plików na serwer służy FTP (File Transfer Protocol) albo jego szyfrowana odmiana SFTP. HTTP przesyła strony do przeglądarki, SMTP wysyła pocztę, a DNS zamienia nazwy domen na adresy IP."
   },
   {
     "id": "inf03-narz-003",
@@ -647,10 +652,10 @@
     "pytanie": "Dlaczego podczas nauki i zdawania egzaminu INF.03 zaleca się edytory kodu bez trybu WYSIWYG (np. VS Code)?",
     "kod": "",
     "opcje": [
-      "Edytory WYSIWYG są zabronione przez prawo autorskie.",
-      "Pozwala to na pełną kontrolę nad tworzonym kodem HTML/CSS/JS/PHP i zapobiega generowaniu nadmiarowego kodu.",
-      "Przeglądarki internetowe nie potrafią wyświetlać stron z edytorów WYSIWYG.",
-      "Edytory kodowe nie wymagają systemu Windows."
+      "Edytory WYSIWYG nie potrafią zapisywać plików z rozszerzeniem .html ani .php.",
+      "Daje pełną kontrolę nad kodem i nie dopisuje do niego zbędnych znaczników ani stylów.",
+      "Strony utworzone w edytorze WYSIWYG nie uruchamiają się na serwerze Apache z XAMPP.",
+      "Edytor kodu sam poprawia błędy w zapytaniach SQL zapisanych w skryptach PHP."
     ],
     "poprawna": 1,
     "wyjasnienie": "Pisanie kodu w edytorze tekstowym/programistycznym uczy zrozumienia struktury i składni oraz gwarantuje czysty kod bez śmieci generowanych przez generatory."
@@ -672,10 +677,10 @@
     "pytanie": "Plik makety/scenopisu witryny przed przystąpieniem do kodowania tworzy się w celu:",
     "kod": "",
     "opcje": [
-      "Zaplanowania układu (wireframe), zawartości oraz nawigacji na stronie.",
-      "Przyspieszenia działania PHP na serwerze.",
-      "Zautomatyzowania zapytań SQL.",
-      "Spełnienia wymogów prawnych RODO."
+      "Zaplanowania układu strony, jej zawartości i nawigacji jeszcze przed pisaniem kodu.",
+      "Przygotowania gotowych grafik w rozdzielczości wymaganej na stronie.",
+      "Sprawdzenia, czy kod HTML przejdzie walidację W3C bez błędów i ostrzeżeń.",
+      "Ustalenia, na jakim serwerze i pod jaką domeną strona zostanie opublikowana."
     ],
     "poprawna": 0,
     "wyjasnienie": "Scenopis/wireframe pozwala rozplanować strukturę, rozmieszczenie elementów i logikę nawigacji przed pisaniem kodu."
@@ -691,13 +696,13 @@
     "wyjasnienie": "Standardowym portem dla protokołu HTTP obsługiwanego przez Apache jest port 80 (3306 to MariaDB/MySQL, 443 to HTTPS, 21 to FTP)."
   },
   {
-    "id": "inf03-narz-008",
+    "id": "inf03-narz-009",
     "obszar": "narzedzia-publikacja",
     "temat": "dzial-2/walidacja-testowanie.md",
-    "pytanie": "Które skróty klawiszowe otwierają Narzędzia Deweloperskie (Developer Tools) w większości przeglądarek internetowych w systemie Windows?",
+    "pytanie": "Który klawisz otwiera Narzędzia deweloperskie (Developer Tools) w większości przeglądarek w systemie Windows?",
     "kod": "",
-    "opcje": ["++ctrl+alt+del++", "++alt+f4++", "++ctrl+p++", "++f12++ lub ++ctrl+shift+i++"],
+    "opcje": ["F5", "F11", "F1", "F12"],
     "poprawna": 3,
-    "wyjasnienie": "Klawisz F12 oraz kombinacja Ctrl+Shift+I w przeglądarkach typu Chrome, Firefox, Edge otwierają wbudowane Narzędzia Deweloperskie."
+    "wyjasnienie": "F12 otwiera Narzędzia deweloperskie w Chrome, Firefoksie i Edge (to samo robi Ctrl+Shift+I). F5 odświeża stronę, F11 włącza tryb pełnoekranowy, a F1 otwiera pomoc."
   }
 ]
