@@ -747,6 +747,9 @@ zmiennych, które zobaczysz po drodze.
 
 Poprzedni temat: [Wprowadzenie do programowania aplikacji internetowych](wprowadzenie-programowanie.md).
 
+Następny temat: [Wbudowane typy danych — char, int, float, double i ich specyfikatory](typy-danych.md).
+Zobaczysz w nim, dlaczego `450 / 0` daje w JavaScripcie `Infinity` i czemu ceny liczy się w groszach.
+
 !!! info "Materiały uzupełniające"
 
     - VS Code i PHP (po angielsku): [code.visualstudio.com/docs/languages/php](https://code.visualstudio.com/docs/languages/php)

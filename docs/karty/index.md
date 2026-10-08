@@ -48,6 +48,11 @@ otwierasz, klikając nazwę tematu.
     "plik": "srodowisko-programistyczne",
     "tytul": "Dział III · Środowisko programistyczne",
     "url": "../dzial-3/srodowisko-programistyczne/#karta"
+  },
+  {
+    "plik": "typy-danych",
+    "tytul": "Dział III · Wbudowane typy danych",
+    "url": "../dzial-3/typy-danych/#karta"
   }
 ]
 </script>

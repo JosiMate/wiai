@@ -704,5 +704,85 @@
     "opcje": ["F5", "F11", "F1", "F12"],
     "poprawna": 3,
     "wyjasnienie": "F12 otwiera Narzędzia deweloperskie w Chrome, Firefoksie i Edge (to samo robi Ctrl+Shift+I). F5 odświeża stronę, F11 włącza tryb pełnoekranowy, a F1 otwiera pomoc."
+  },
+  {
+    "id": "inf03-js-011",
+    "obszar": "javascript",
+    "temat": "dzial-3/typy-danych.md",
+    "pytanie": "Jaki napis wypisze w konsoli operator typeof użyty dla liczby 3.0?",
+    "kod": "console.log(typeof 3.0);",
+    "opcje": ["\"number\"", "\"float\"", "\"double\"", "\"integer\""],
+    "poprawna": 0,
+    "wyjasnienie": "JavaScript ma jeden typ liczbowy — number (w środku 64-bitowy double). Nie odróżnia liczb całkowitych od ułamkowych, więc typeof 3 i typeof 3.0 dają to samo: \"number\"."
+  },
+  {
+    "id": "inf03-js-012",
+    "obszar": "javascript",
+    "temat": "dzial-3/typy-danych.md",
+    "pytanie": "Jaki będzie wynik porównania sumy dwóch liczb ułamkowych w JavaScripcie?",
+    "kod": "console.log(0.1 + 0.2 === 0.3);",
+    "opcje": ["true", "false", "undefined", "NaN"],
+    "poprawna": 1,
+    "wyjasnienie": "0,1 i 0,2 nie mają dokładnego zapisu dwójkowego, więc suma wynosi 0.30000000000000004 i nie jest równa 0.3. Liczb zmiennoprzecinkowych nie porównuje się operatorem ===."
+  },
+  {
+    "id": "inf03-js-013",
+    "obszar": "javascript",
+    "temat": "dzial-3/typy-danych.md",
+    "pytanie": "Która instrukcja zwróci tekst \"59.97\" — wynik mnożenia zaokrąglony do dwóch miejsc po kropce?",
+    "kod": "",
+    "opcje": ["Math.round(19.99 * 3)", "parseInt(19.99 * 3)", "(19.99 * 3).toFixed(2)", "(19.99 * 3).toPrecision(2)"],
+    "poprawna": 2,
+    "wyjasnienie": "toFixed(2) zaokrągla do dwóch miejsc po kropce i zwraca tekst \"59.97\". Math.round daje liczbę 60, parseInt obcina do 59, a toPrecision(2) liczy dwie cyfry znaczące — \"60\"."
+  },
+  {
+    "id": "inf03-js-014",
+    "obszar": "javascript",
+    "temat": "dzial-3/typy-danych.md",
+    "pytanie": "Jaką wartość ma w JavaScripcie stała Number.MAX_SAFE_INTEGER — największa liczba całkowita, którą typ number przechowuje dokładnie?",
+    "kod": "",
+    "opcje": ["2147483647", "4294967295", "9223372036854775807", "9007199254740991"],
+    "poprawna": 3,
+    "wyjasnienie": "Typ number to double z 53 bitami precyzji, więc liczby całkowite są dokładne do 2^53 − 1 = 9007199254740991. 2147483647 to granica 32-bitowego int, a 9223372036854775807 — 64-bitowego (PHP_INT_MAX)."
+  },
+  {
+    "id": "inf03-php-011",
+    "obszar": "php",
+    "temat": "dzial-3/typy-danych.md",
+    "pytanie": "Co wypisze funkcja var_dump w podanym skrypcie PHP?",
+    "kod": "<?php\nvar_dump(7 / 2);\n?>",
+    "opcje": ["float(3.5)", "int(3)", "int(4)", "string(3) \"3.5\""],
+    "poprawna": 0,
+    "wyjasnienie": "Operator / w PHP zwraca liczbę całkowitą tylko przy dzieleniu bez reszty (10 / 5 daje int(2)). 7 / 2 to float(3.5). Dzielenie całkowite jak w C daje funkcja intdiv(7, 2)."
+  },
+  {
+    "id": "inf03-php-012",
+    "obszar": "php",
+    "temat": "dzial-3/typy-danych.md",
+    "pytanie": "Jaką nazwę typu wypisze funkcja gettype w podanym skrypcie PHP?",
+    "kod": "<?php\necho gettype(5.0);\n?>",
+    "opcje": ["float", "double", "integer", "number"],
+    "poprawna": 1,
+    "wyjasnienie": "Z powodów historycznych gettype() zwraca \"double\" dla liczb zmiennoprzecinkowych — to ten sam typ, który var_dump pokazuje jako float. Nazwa number pochodzi z JavaScriptu."
+  },
+  {
+    "id": "inf03-php-013",
+    "obszar": "php",
+    "temat": "dzial-3/typy-danych.md",
+    "pytanie": "Jaki tekst wypisze funkcja printf ze specyfikatorem %05.1f w podanym skrypcie PHP?",
+    "kod": "<?php\nprintf(\"%05.1f\", 3.14159);\n?>",
+    "opcje": ["3.14159", "3.1", "003.1", "00003"],
+    "poprawna": 2,
+    "wyjasnienie": "Specyfikator %05.1f: jedno miejsce po kropce (3.1), szerokość 5 znaków razem z kropką, a flaga 0 dopełnia z przodu zerami — wynik 003.1."
+  },
+  {
+    "id": "inf03-php-014",
+    "obszar": "php",
+    "temat": "dzial-3/typy-danych.md",
+    "pytanie": "W jaki sposób przechowywać ceny w aplikacji sklepu, żeby sumy zamówień zgadzały się co do grosza?",
+    "kod": "",
+    "opcje": ["Jako float w złotych, np. 24.99", "Jako tekst, np. \"24,99 zł\"", "Jako float zaokrąglany do jednego miejsca po kropce", "Jako liczbę całkowitą groszy, np. 2499"],
+    "poprawna": 3,
+    "wyjasnienie": "Działania na liczbach całkowitych są dokładne. Float w złotych ma błędy zapisu, które po zsumowaniu i zaokrągleniu dają różnicę grosza, a na tekście nie da się liczyć bez zamiany."
   }
 ]

@@ -7,3 +7,4 @@ append_unmatched: true
 nav:
   - "Wprowadzenie do programowania aplikacji": wprowadzenie-programowanie.md
   - "Środowisko programistyczne": srodowisko-programistyczne.md
+  - "Wbudowane typy danych": typy-danych.md

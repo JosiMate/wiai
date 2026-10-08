@@ -54,7 +54,7 @@ to powtórzenie i sprawdzian końcowy.
 | --- | :---: | --- |
 | **[Wprowadzenie do programowania aplikacji internetowych](dzial-3/wprowadzenie-programowanie.md)** | 3 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 | **[Środowisko programistyczne – edytor, kompilator, translator, linker, debugger](dzial-3/srodowisko-programistyczne.md)** | 3 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
-| Wbudowane typy danych (char, int, float, double) i ich specyfikatory | 3 | *w przygotowaniu* |
+| **[Wbudowane typy danych (char, int, float, double) i ich specyfikatory](dzial-3/typy-danych.md)** | 3 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 | Deklaracja stałych i zmiennych w odniesieniu do wbudowanych typów danych | 3 | *w przygotowaniu* |
 | Własne typy danych – typ wyliczeniowy, unie, klasy, tablice | 3 | *w przygotowaniu* |
 | Tworzenie własnych typów danych w wybranych językach programowania | 3 | *w przygotowaniu* |

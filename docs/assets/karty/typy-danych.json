@@ -1,0 +1,295 @@
+{
+ "id": "wiai-typy-danych",
+ "tytul": "Wbudowane typy danych — char, int, float, double i ich specyfikatory",
+ "przedmiot": "PCEiKZ Szczucin · witryny i aplikacje internetowe · INF.03",
+ "klasa": "4TI",
+ "sufiks": "TYPY",
+ "zadania": [
+  {
+   "nr": 1,
+   "tytul": "Zakresy i pamięć",
+   "poziom": "wymagania konieczne · ocena 2",
+   "polecenie": "Ćwiczenie 1. Obliczenia na kartce, bez komputera. Przy każdej odpowiedzi zapisz krótko, jak liczyłeś.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z1_16bit",
+       "Liczba wartości typu 16-bitowego oraz zakresy short i unsigned short",
+       ""
+      ],
+      [
+       "z1_licznik",
+       "Licznik unsigned char: ilu rowerów doliczy, co pokaże po kolejnym",
+       ""
+      ],
+      [
+       "z1_pamiec",
+       "Pomiary temperatury przez rok: bajty jako float i jako double",
+       ""
+      ],
+      [
+       "z1_typy",
+       "Najmniejsze typy: uczniowie w klasie, rok urodzenia, sekundy w roku, milisekundy od 1970 r.",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "z1_typ",
+     "wiersze": 3,
+     "pytanie": "Własnymi słowami: co mówi programowi typ danych? Podaj trzy rzeczy."
+    }
+   ]
+  },
+  {
+   "nr": 2,
+   "tytul": "Specyfikatory formatu w C",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 2. Wpisz przewidywany wynik programu <code>c/specyfikatory.c</code> — każdy wiersz razem ze spacjami. Jeśli sprawdzałeś w kompilatorze online, przy błędnych wierszach dopisz „(źle)”.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "z2_wynik",
+     "wiersze": 10,
+     "pytanie": "Dziesięć wierszy wyniku programu"
+    },
+    {
+     "typ": "tekst",
+     "id": "z2_lf",
+     "wiersze": 2,
+     "pytanie": "Dlaczego w printf wystarczy %f dla double, a w scanf trzeba napisać %lf?"
+    }
+   ]
+  },
+  {
+   "nr": 3,
+   "tytul": "Typy w PHP",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 3. Najpierw przewidywania, potem wynik ze strony <code>typy.php</code>.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "z3_przewid",
+     "wiersze": 6,
+     "pytanie": "Twoje przewidywania: wyrażenie → typ według gettype(), przed uruchomieniem strony"
+    },
+    {
+     "typ": "tekst",
+     "id": "z3_pomylki",
+     "wiersze": 3,
+     "pytanie": "Przy których wyrażeniach się pomyliłeś i co cię zaskoczyło?"
+    },
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z3_intmax",
+       "PHP_INT_MAX + 1 — wynik var_dump",
+       ""
+      ],
+      [
+       "z3_01",
+       "0.1 + 0.2 — wynik var_dump",
+       ""
+      ],
+      [
+       "z3_12abc",
+       "(int) \"12abc\" — wynik var_dump",
+       ""
+      ],
+      [
+       "z3_bajty",
+       "Ile bajtów ma int w twoim PHP",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "zrzut",
+     "id": "z3_zrzut",
+     "opis": "strona typy.php z trzema dopisanymi wierszami"
+    }
+   ]
+  },
+  {
+   "nr": 4,
+   "tytul": "Liczby w JavaScripcie",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 4. W każdym wierszu: przewidywanie / wynik z konsoli.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z4_typeof",
+       "typeof 3.0",
+       ""
+      ],
+      [
+       "z4_porownanie",
+       "0.1 + 0.2 === 0.3",
+       ""
+      ],
+      [
+       "z4_safe",
+       "Number.MAX_SAFE_INTEGER + 2",
+       ""
+      ],
+      [
+       "z4_029",
+       "0.29 * 100",
+       ""
+      ],
+      [
+       "z4_round",
+       "Math.round(0.29 * 100)",
+       ""
+      ],
+      [
+       "z4_tofixed",
+       "(1234.5).toFixed(2) i jego typ",
+       ""
+      ],
+      [
+       "z4_kod",
+       "\"A\".charCodeAt(0)",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "z4_double",
+     "wiersze": 3,
+     "pytanie": "Dlaczego typeof 3.0 i typeof 3 dają to samo? Jakiemu typowi z C odpowiada number?"
+    }
+   ]
+  },
+  {
+   "nr": 5,
+   "tytul": "Paragon w groszach",
+   "poziom": "wymagania rozszerzające · ocena 4",
+   "polecenie": "Ćwiczenie 5. Paragon ma wyglądać dokładnie jak na stronie tematu, a suma mieć typ <code>integer</code>.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "z5_kod",
+     "wiersze": 14,
+     "pytanie": "Wklej funkcję zl(), pętlę liczącą sumę i wiersz z printf."
+    },
+    {
+     "typ": "tekst",
+     "id": "z5_grosze",
+     "wiersze": 3,
+     "pytanie": "Dlaczego ceny w tablicy $pozycje są w groszach, a nie w złotych z kropką?"
+    },
+    {
+     "typ": "zrzut",
+     "id": "z5_zrzut",
+     "opis": "strona paragon.php z sumą 693,47 zł i typem integer"
+    }
+   ]
+  },
+  {
+   "nr": 6,
+   "tytul": "Kalkulator części",
+   "poziom": "wymagania rozszerzające · ocena 4",
+   "polecenie": "Ćwiczenie 6. Sprawdź cztery przypadki z tabeli na stronie tematu.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "z6_kod",
+     "wiersze": 8,
+     "pytanie": "Wklej funkcje wGroszach i naZlote."
+    },
+    {
+     "typ": "tekst",
+     "id": "z6_029",
+     "wiersze": 3,
+     "pytanie": "Co pokazywał kalkulator dla 0,29 zł × 100 przed użyciem Math.round? Skąd ten wynik?"
+    },
+    {
+     "typ": "zrzut",
+     "id": "z6_zrzut",
+     "opis": "kalkulator z wynikiem dla 0,29 zł × 100 sztuk"
+    }
+   ]
+  },
+  {
+   "nr": 7,
+   "tytul": "Dobór typu",
+   "poziom": "wymagania dopełniające · ocena 5",
+   "polecenie": "Ćwiczenie 7. W każdym wierszu: typ w C, typ w JavaScripcie i PHP, uzasadnienie jednym zdaniem.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z7_punkty",
+       "Punkty z części pisemnej INF.03 (0–40)",
+       ""
+      ],
+      [
+       "z7_saldo",
+       "Saldo konta klienta, może być ujemne, co do grosza",
+       ""
+      ],
+      [
+       "z7_kolor",
+       "Kod koloru #14213d",
+       ""
+      ],
+      [
+       "z7_litera",
+       "Pierwsza litera nazwiska",
+       ""
+      ],
+      [
+       "z7_km",
+       "Odległość w km, z dokładnością do 100 m",
+       ""
+      ],
+      [
+       "z7_rama",
+       "Numer seryjny ramy, np. WTU123456789",
+       ""
+      ],
+      [
+       "z7_gwarancja",
+       "Czy rower jest na gwarancji",
+       ""
+      ],
+      [
+       "z7_wizyty",
+       "Liczba wszystkich wizyt na stronie od początku",
+       ""
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "nr": 8,
+   "tytul": "Samoocena",
+   "poziom": "",
+   "polecenie": "Krótko i szczerze — to nie jest oceniane na stopień.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "s_zaskoczenie",
+     "wiersze": 2,
+     "pytanie": "Który wynik w tym temacie najbardziej cię zaskoczył?"
+    },
+    {
+     "typ": "tekst",
+     "id": "s_nawyk",
+     "wiersze": 2,
+     "pytanie": "Jedna rzecz, którą od dziś zrobisz inaczej, gdy w programie pojawią się pieniądze albo duże liczby."
+    }
+   ]
+  }
+ ]
+}
