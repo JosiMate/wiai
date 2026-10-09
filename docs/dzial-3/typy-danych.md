@@ -852,6 +852,7 @@ przewidywania **przed** uruchomieniem, a wyniki — po.
 ---
 
 Poprzedni temat: [Środowisko programistyczne — edytor, kompilator, translator, linker, debugger](srodowisko-programistyczne.md).
+Następny temat: [Deklaracja stałych i zmiennych w odniesieniu do wbudowanych typów danych](deklaracja-stalych-zmiennych.md).
 
 !!! info "Materiały uzupełniające"
 

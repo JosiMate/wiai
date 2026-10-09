@@ -784,5 +784,80 @@
     "opcje": ["Jako float w złotych, np. 24.99", "Jako tekst, np. \"24,99 zł\"", "Jako float zaokrąglany do jednego miejsca po kropce", "Jako liczbę całkowitą groszy, np. 2499"],
     "poprawna": 3,
     "wyjasnienie": "Działania na liczbach całkowitych są dokładne. Float w złotych ma błędy zapisu, które po zsumowaniu i zaokrągleniu dają różnicę grosza, a na tekście nie da się liczyć bez zamiany."
+  },
+  {
+    "id": "inf03-js-015",
+    "obszar": "javascript",
+    "temat": "dzial-3/deklaracja-stalych-zmiennych.md",
+    "pytanie": "Które słowo kluczowe w języku JavaScript tworzy stałą, której nie można przypisać nowej wartości po zainicjalizowaniu?",
+    "kod": "",
+    "opcje": ["var", "let", "const", "define"],
+    "poprawna": 2,
+    "wyjasnienie": "Słowo kluczowe const tworzy stałą. Próba ponownego przypisania wartości wywołuje błąd TypeError."
+  },
+  {
+    "id": "inf03-js-016",
+    "obszar": "javascript",
+    "temat": "dzial-3/deklaracja-stalych-zmiennych.md",
+    "pytanie": "Jaki błąd zostanie zgłoszony w konsoli przeglądarki po wykonaniu kodu const x = 5; x = 10;?",
+    "kod": "",
+    "opcje": ["SyntaxError: Identifier 'x' has already been declared", "TypeError: Assignment to constant variable", "ReferenceError: x is not defined", "RangeError: Invalid const value"],
+    "poprawna": 1,
+    "wyjasnienie": "Próba ponownej modyfikacji wartości stałej const wywołuje błąd wykonania TypeError: Assignment to constant variable."
+  },
+  {
+    "id": "inf03-js-017",
+    "obszar": "javascript",
+    "temat": "dzial-3/deklaracja-stalych-zmiennych.md",
+    "pytanie": "Która z nazw zmiennych jest zapisana poprawnie zgodnie z powszechnie stosowaną w JavaScript konwencją camelCase?",
+    "kod": "",
+    "opcje": ["liczba_punktow", "liczbaPunktow", "LiczbaPunktow", "liczba-punktow"],
+    "poprawna": 1,
+    "wyjasnienie": "Notacja camelCase rozpoczyna się małą literą, a każde kolejne słowo pisane jest wielką literą bez spacji i łączników."
+  },
+  {
+    "id": "inf03-js-018",
+    "obszar": "javascript",
+    "temat": "dzial-3/deklaracja-stalych-zmiennych.md",
+    "pytanie": "Co jest cechą charakterystyczną języków programowania z typowaniem dynamicznym (takich jak JavaScript)?",
+    "kod": "",
+    "opcje": [
+      "Zmienną zadeklarowaną słowem let można przypisywać wartości różnych typów w trakcie działania skryptu.",
+      "Zmienne muszą mieć określony typ danych podczas deklaracji i nie mogą go zmienić.",
+      "Wszystkie zmienne są automatycznie konwertowane na liczby całkowite.",
+      "Stałe const zmieniają typ na string po zakończeniu funkcji."
+    ],
+    "poprawna": 0,
+    "wyjasnienie": "W typowaniu dynamicznym typ jest przypisany do wartości, a nie do samej zmiennej. Zmienna let może w trakcie działania skryptu zmienić przechowywany typ."
+  },
+  {
+    "id": "inf03-js-019",
+    "obszar": "javascript",
+    "temat": "dzial-3/deklaracja-stalych-zmiennych.md",
+    "pytanie": "Co wypisze w konsoli wyrażenie console.log(typeof undefined);?",
+    "kod": "",
+    "opcje": ["\"null\"", "\"undefined\"", "\"object\"", "\"void\""],
+    "poprawna": 1,
+    "wyjasnienie": "Operator typeof dla wartości undefined zwraca ciąg znaków \"undefined\"."
+  },
+  {
+    "id": "inf03-js-020",
+    "obszar": "javascript",
+    "temat": "dzial-3/deklaracja-stalych-zmiennych.md",
+    "pytanie": "Co zostanie wypisane w konsoli po wykonaniu poniższego fragmentu kodu w JavaScript?",
+    "kod": "let a = \"10\";\nlet b = 20;\nconsole.log(a + b);",
+    "opcje": ["30", "1020", "NaN", "TypeError"],
+    "poprawna": 1,
+    "wyjasnienie": "Operator + w przypadku połączenia tekstu (\"10\") i liczby (20) zamienia liczbę na tekst i dokonuje konkatenacji (sklejania), dając \"1020\"."
+  },
+  {
+    "id": "inf03-js-021",
+    "obszar": "javascript",
+    "temat": "dzial-3/deklaracja-stalych-zmiennych.md",
+    "pytanie": "Który identyfikator spowoduje błąd składniowy (SyntaxError) podczas próby deklaracji zmiennej w JavaScript?",
+    "kod": "",
+    "opcje": ["$suma", "_katalog", "2miejsce", "wspolczynnik1"],
+    "poprawna": 2,
+    "wyjasnienie": "Identyfikatory w JavaScript nie mogą rozpoczynać się od cyfry. Nazwa 2miejsce wywoła SyntaxError."
   }
 ]

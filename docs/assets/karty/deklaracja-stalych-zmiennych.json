@@ -1,0 +1,186 @@
+{
+ "id": "wiai-deklaracja-stalych-zmiennych",
+ "tytul": "Deklaracja stałych i zmiennych w odniesieniu do wbudowanych typów danych",
+ "przedmiot": "PCEiKZ Szczucin · witryny i aplikacje internetowe · INF.03",
+ "klasa": "4TI",
+ "sufiks": "DEKLARACJA-STALYCH-ZMIENNYCH",
+ "zadania": [
+  {
+   "nr": 1,
+   "tytul": "Zmienne i stałe w JavaScript",
+   "poziom": "wymagania konieczne · ocena 2",
+   "polecenie": "Ćwiczenie 1. Wyjaśnij różnicę między zmienną a stałą oraz uzupełnij tabelę profilu użytkownika.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "z1_roznica",
+     "wiersze": 3,
+     "pytanie": "Wyjaśnij własnymi słowami różnicę między słowem let a const oraz dlaczego unika się var."
+    },
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z1_nazwaSerwisu",
+       "nazwaSerwisu (const, Wartość: Szprycha)",
+       ""
+      ],
+      [
+       "z1_idUzytkownika",
+       "idUzytkownika (const, Wartość: 1042)",
+       ""
+      ],
+      [
+       "z1_imieUzytkownika",
+       "imieUzytkownika (let, Wartość i typ z typeof)",
+       ""
+      ],
+      [
+       "z1_wiekUzytkownika",
+       "wiekUzytkownika (let, Wartość i typ z typeof)",
+       ""
+      ],
+      [
+       "z1_czyAktywny",
+       "czyAktywny (let, Wartość i typ z typeof)",
+       ""
+      ],
+      [
+       "z1_ostatniaWypozyczalnia",
+       "ostatniaWypozyczalnia (let bez wartości wyjściowej — typ z typeof)",
+       ""
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "nr": 2,
+   "tytul": "Testowanie mutowalności const vs let",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 2. Przeprowadź test modyfikacji zmiennej oraz stałej i zaobserwuj wynik w konsoli.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "z2_punkty",
+     "wiersze": 2,
+     "pytanie": "Jaka była wartość zmiennej punktyLojalnosciowe po zwiększeniu o 25?"
+    },
+    {
+     "typ": "tekst",
+     "id": "z2_blad",
+     "wiersze": 3,
+     "pytanie": "Podaj dokładny komunikat błędu z konsoli po próbie modyfikacji stałej maksymalnyRabat i wyjaśnij, dlaczego wystąpił."
+    },
+    {
+     "typ": "zrzut",
+     "id": "z2_zrzut",
+     "opis": "zrzut ekranu z konsoli F12 pokazujący komunikat błędu TypeError przy próbie nadpisania const"
+    }
+   ]
+  },
+  {
+   "nr": 3,
+   "tytul": "Nazewnictwo camelCase i typy danych",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Oceń poprawność identyfikatorów oraz przeanalizuj specyficzny przypadek typeof null.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "z3_id1",
+       "1miejsce — poprawność i ew. poprawka",
+       ""
+      ],
+      [
+       "z3_id2",
+       "liczba_punktow — poprawność i poprawka na camelCase",
+       ""
+      ],
+      [
+       "z3_id3",
+       "uzytkownikZalogowany — poprawność i ocena",
+       ""
+      ],
+      [
+       "z3_id4",
+       "let class = 4; — poprawność i wyjaśnienie błędu",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "z3_null",
+     "wiersze": 2,
+     "pytanie": "Co zwraca typeof null i z jakiego powodu tak się dzieje?"
+    }
+   ]
+  },
+  {
+   "nr": 4,
+   "tytul": "Mini-kalkulator cen części rowerowych",
+   "poziom": "wymagania rozszerzające · ocena 4",
+   "polecenie": "Ćwiczenie 3. Wklej kod skryptu kalkulatora oraz dołącz zrzut ekranu z wykonania w konsoli.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "z4_kod",
+     "wiersze": 12,
+     "pytanie": "Wklej kod JavaScript realizujący przeliczenie koszyka netto i brutto."
+    },
+    {
+     "typ": "zrzut",
+     "id": "z4_zrzut",
+     "opis": "zrzut ekranu z konsoli F12 pokazujący wyjście skryptu z przeliczeniem dla 3 oraz 5 sztuk"
+    }
+   ]
+  },
+  {
+   "nr": 5,
+   "tytul": "Walidacja typów operatorem typeof i konwersja",
+   "poziom": "wymagania dopełniające · ocena 5",
+   "polecenie": "Ćwiczenie 4. Zabezpieczenie kodu przed błędnym typem wejściowym i konwersja wartości.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "z5_kod",
+     "wiersze": 10,
+     "pytanie": "Wklej kod sprawdzający typ wejscieCena operatorem typeof i wykonujący konwersję za pomocą Number()."
+    },
+    {
+     "typ": "tekst",
+     "id": "z5_analiza",
+     "wiersze": 3,
+     "pytanie": "Co zwraca funkcja Number() dla wartości null, a co dla undefined? Wyjaśnij różnicę."
+    },
+    {
+     "typ": "zrzut",
+     "id": "z5_zrzut",
+     "opis": "zrzut ekranu z konsoli F12 z działającą walidacją i wyliczoną kwotą"
+    }
+   ]
+  },
+  {
+   "nr": 6,
+   "tytul": "Samoocena",
+   "poziom": "",
+   "polecenie": "Krótko i szczerze — to nie jest oceniane na stopień.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "s_zaskoczenie",
+     "wiersze": 2,
+     "pytanie": "Co najbardziej zaskoczyło Cię w zachowaniu stałych const lub typowania dynamicznego w JavaScript?"
+    },
+    {
+     "typ": "tekst",
+     "id": "s_wniosek",
+     "wiersze": 2,
+     "pytanie": "Kiedy w swoich przyszłych projektach zastosujesz const, a kiedy let?"
+    }
+   ]
+  }
+ ]
+}
