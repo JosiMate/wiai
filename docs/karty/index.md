@@ -53,6 +53,11 @@ otwierasz, klikając nazwę tematu.
     "plik": "typy-danych",
     "tytul": "Dział III · Wbudowane typy danych",
     "url": "../dzial-3/typy-danych/#karta"
+  },
+  {
+    "plik": "deklaracja-stalych-zmiennych",
+    "tytul": "Dział III · Deklaracja stałych i zmiennych",
+    "url": "../dzial-3/deklaracja-stalych-zmiennych/#karta"
   }
 ]
 </script>
