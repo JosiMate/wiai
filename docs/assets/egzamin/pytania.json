@@ -889,5 +889,45 @@
     "opcje": ["2", "1", "TypeError: Assignment to constant variable.", "undefined"],
     "poprawna": 0,
     "wyjasnienie": "const zabrania ponownego przypisania zmiennej, ale nie blokuje zmiany zawartości tablicy. push dodaje element, więc tablica ma 2 elementy."
+  },
+  {
+    "id": "inf03-js-023",
+    "obszar": "javascript",
+    "temat": "dzial-3/wlasne-typy-danych.md",
+    "pytanie": "Jaką wartość zwróci wyrażenie czesci.length dla tablicy zadeklarowanej w JavaScripcie poniżej?",
+    "kod": "const czesci = [\"dętka\", \"łańcuch\"];\nczesci.push(\"klocki\");",
+    "opcje": ["2", "4", "undefined", "3"],
+    "poprawna": 3,
+    "wyjasnienie": "Tablica miała 2 elementy, push dopisał trzeci na koniec. length to liczba elementów, czyli 3."
+  },
+  {
+    "id": "inf03-js-024",
+    "obszar": "javascript",
+    "temat": "dzial-3/wlasne-typy-danych.md",
+    "pytanie": "Która instrukcja JavaScriptu tworzy obiekt klasy Rower?",
+    "kod": "class Rower {\n  constructor(marka) { this.marka = marka; }\n}",
+    "opcje": ["const r = new Rower(\"Kross\");", "const r = Rower(\"Kross\");", "const r = Rower.create(\"Kross\");", "const r = {Rower: \"Kross\"};"],
+    "poprawna": 0,
+    "wyjasnienie": "Obiekt klasy tworzy się słowem kluczowym new, które wywołuje konstruktor. Rower(...) bez new kończy się błędem TypeError."
+  },
+  {
+    "id": "inf03-php-017",
+    "obszar": "php",
+    "temat": "dzial-3/wlasne-typy-danych.md",
+    "pytanie": "Która pętla PHP wypisze wszystkie pary usługa i cena z tablicy asocjacyjnej $cennik?",
+    "kod": "",
+    "opcje": ["for ($i = 0; $i < $cennik; $i++) echo $i;", "foreach ($cennik as $usluga => $cena) echo \"$usluga: $cena\";", "while ($cennik) echo $cennik;", "foreach ($cena in $cennik) echo $cena;"],
+    "poprawna": 1,
+    "wyjasnienie": "foreach ($tablica as $klucz => $wartosc) przechodzi po wszystkich parach tablicy asocjacyjnej. Zapis z in pochodzi z innych języków."
+  },
+  {
+    "id": "inf03-php-018",
+    "obszar": "php",
+    "temat": "dzial-3/wlasne-typy-danych.md",
+    "pytanie": "Co wyświetli poniższy skrypt PHP?",
+    "kod": "<?php\n$czesci = ['dętka', 'łańcuch'];\n$czesci[] = 'klocki';\necho $czesci[2];",
+    "opcje": ["łańcuch", "Warning: Undefined array key 2", "klocki", "3"],
+    "poprawna": 2,
+    "wyjasnienie": "$czesci[] = ... dopisuje element na koniec tablicy z kolejnym indeksem 2. Indeksy liczą się od 0, więc $czesci[2] to klocki."
   }
 ]

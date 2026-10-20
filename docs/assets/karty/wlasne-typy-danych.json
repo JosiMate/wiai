@@ -1,0 +1,289 @@
+{
+ "id": "wiai-wlasne-typy-danych",
+ "tytul": "Własne typy danych – typ wyliczeniowy, unie, klasy, tablice",
+ "przedmiot": "PCEiKZ Szczucin · witryny i aplikacje internetowe · INF.03",
+ "klasa": "4TI",
+ "sufiks": "WLASNE-TYPY",
+ "zadania": [
+  {
+   "nr": 1,
+   "tytul": "Tablice w C",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 1. Program <code>c/tablice.c</code> tylko czytasz — odpowiedzi wpisz, zanim go uruchomisz.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "t1_wynik",
+     "wiersze": 5,
+     "pytanie": "Co wypiszą kolejne wiersze z printf (pięć wierszy)?"
+    },
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "t1_ostatni",
+       "Indeks ostatniego elementu tablicy ceny",
+       ""
+      ],
+      [
+       "t1_napis",
+       "Dlaczego \"Szprycha\" zajmuje 9 bajtów?",
+       ""
+      ],
+      [
+       "t1_wierszA",
+       "Co się stanie po odkomentowaniu wiersza A?",
+       ""
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "nr": 2,
+   "tytul": "Tablica części w JavaScripcie",
+   "poziom": "wymagania konieczne · ocena 2",
+   "polecenie": "Ćwiczenie 2. Plik <code>js/czesci.js</code> — przepisz wyniki z konsoli.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "t2_dlugosc",
+       "Liczba elementów na początku i po push",
+       ""
+      ],
+      [
+       "t2_pierwszy",
+       "Pierwszy i ostatni element",
+       ""
+      ],
+      [
+       "t2_poza",
+       "Wynik czesci[10]",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "t2_kod",
+     "wiersze": 10,
+     "pytanie": "Wklej swój kod z czesci.js."
+    }
+   ]
+  },
+  {
+   "nr": 3,
+   "tytul": "Cennik — tablica asocjacyjna w PHP",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 3. Plik <code>cennik.php</code>.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "t3_kod",
+     "wiersze": 6,
+     "pytanie": "Wklej przypisanie z ZADANIA 1 i pętlę liczącą sumę."
+    },
+    {
+     "typ": "tekst",
+     "id": "t3_wierszB",
+     "wiersze": 2,
+     "pytanie": "Komunikat po odkomentowaniu wiersza B i jego przyczyna."
+    },
+    {
+     "typ": "zrzut",
+     "id": "t3_zrzut",
+     "opis": "strona cennik.php z pięcioma usługami i sumą 245 zł"
+    }
+   ]
+  },
+  {
+   "nr": 4,
+   "tytul": "Jaki typ?",
+   "poziom": "wymagania konieczne · ocena 2",
+   "polecenie": "Ćwiczenie 4. Przy każdej informacji: rodzaj typu i jedno zdanie uzasadnienia.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "t4_abonament",
+       "Ceny abonamentu w 12 miesiącach",
+       ""
+      ],
+      [
+       "t4_rodzaj",
+       "Rodzaj roweru: górski, miejski, szosowy, dziecięcy",
+       ""
+      ],
+      [
+       "t4_klient",
+       "Dane jednego klienta",
+       ""
+      ],
+      [
+       "t4_godziny",
+       "Godziny otwarcia w dniach tygodnia",
+       ""
+      ],
+      [
+       "t4_ocena",
+       "Ocena zlecenia: liczba gwiazdek albo kod komentarza (mikrokontroler)",
+       ""
+      ],
+      [
+       "t4_rowery",
+       "Wszystkie rowery w serwisie",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "t4_enum",
+     "wiersze": 2,
+     "pytanie": "Dlaczego status zlecenia lepiej zapisać typem wyliczeniowym niż napisem?"
+    }
+   ]
+  },
+  {
+   "nr": 5,
+   "tytul": "Lista zleceń",
+   "poziom": "wymagania rozszerzające · ocena 4",
+   "polecenie": "Ćwiczenie 5. Plik <code>js/status.js</code>.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "t5_kod",
+     "wiersze": 14,
+     "pytanie": "Wklej tablicę zlecenia, zmianę statusu i pętlę liczącą zlecenia do odbioru."
+    },
+    {
+     "typ": "tekst",
+     "id": "t5_freeze",
+     "wiersze": 2,
+     "pytanie": "Co się stało po próbie zmiany STATUS.GOTOWE? Dlaczego nie było błędu?"
+    },
+    {
+     "typ": "zrzut",
+     "id": "t5_zrzut",
+     "opis": "konsola F12 z tabelą zleceń i wierszem: Do odbioru: 3 (101, 102, 103)"
+    }
+   ]
+  },
+  {
+   "nr": 6,
+   "tytul": "Enum, struktura i unia w C",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 6. Program <code>c/serwis.c</code> tylko czytasz.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "t6_wynik",
+     "wiersze": 5,
+     "pytanie": "Co wypiszą kolejne wiersze z printf (pięć wierszy)?"
+    },
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "t6_status",
+       "Dlaczego status wypisuje się jako liczba?",
+       ""
+      ],
+      [
+       "t6_unia",
+       "Dlaczego k.grosze nie ma już wartości 12500?",
+       ""
+      ],
+      [
+       "t6_rozmiar",
+       "Rozmiar unii i struktury — z obliczeniem",
+       ""
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "nr": 7,
+   "tytul": "Klasa Rower",
+   "poziom": "wymagania rozszerzające · ocena 4",
+   "polecenie": "Ćwiczenie 7. Plik <code>js/rower.js</code>.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "t7_kod",
+     "wiersze": 14,
+     "pytanie": "Wklej klasę Rower, tablicę rowery i pętlę z łącznym przebiegiem."
+    },
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "t7_instanceof",
+       "Wynik rowery[0] instanceof Rower i typeof rowery[0]",
+       ""
+      ],
+      [
+       "t7_wierszD",
+       "Komunikat po odkomentowaniu wiersza D",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "zrzut",
+     "id": "t7_zrzut",
+     "opis": "konsola F12 z trzema rowerami i wierszem Razem: 5930 km"
+    }
+   ]
+  },
+  {
+   "nr": 8,
+   "tytul": "Enum i klasa w PHP",
+   "poziom": "wymagania dopełniające · ocena 5",
+   "polecenie": "Ćwiczenie 8. Plik <code>zlecenia.php</code>.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "t8_kod",
+     "wiersze": 14,
+     "pytanie": "Wklej konstruktor, tablicę $zlecenia i pętlę liczącą zlecenia do odbioru."
+    },
+    {
+     "typ": "tekst",
+     "id": "t8_wierszC",
+     "wiersze": 3,
+     "pytanie": "Komunikat po odkomentowaniu wiersza C i twoja poprawka."
+    },
+    {
+     "typ": "zrzut",
+     "id": "t8_zrzut",
+     "opis": "strona zlecenia.php z tabelą i wierszem: Do odbioru: 2 zlecenia na 165,00 zł"
+    }
+   ]
+  },
+  {
+   "nr": 9,
+   "tytul": "Samoocena",
+   "poziom": "",
+   "polecenie": "Krótko i szczerze — to nie jest oceniane na stopień.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "s_zaskoczenie",
+     "wiersze": 2,
+     "pytanie": "Co najbardziej zaskoczyło cię w tablicach, unii albo klasach?"
+    },
+    {
+     "typ": "tekst",
+     "id": "s_wniosek",
+     "wiersze": 2,
+     "pytanie": "Po czym poznasz, że danym przyda się klasa, a nie zwykła tablica?"
+    }
+   ]
+  }
+ ]
+}

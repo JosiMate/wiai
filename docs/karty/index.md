@@ -58,6 +58,11 @@ otwierasz, klikając nazwę tematu.
     "plik": "deklaracja-stalych-zmiennych",
     "tytul": "Dział III · Deklaracja stałych i zmiennych",
     "url": "../dzial-3/deklaracja-stalych-zmiennych/#karta"
+  },
+  {
+    "plik": "wlasne-typy-danych",
+    "tytul": "Dział III · Własne typy danych",
+    "url": "../dzial-3/wlasne-typy-danych/#karta"
   }
 ]
 </script>

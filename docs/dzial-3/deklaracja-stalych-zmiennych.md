@@ -979,6 +979,7 @@ Z tego tematu oddajesz **kartę pracy** w formacie Word. Kartę wypełniaj w tra
 ---
 
 Poprzedni temat: [Wbudowane typy danych — char, int, float, double i ich specyfikatory](typy-danych.md).
+Następny temat: [Własne typy danych – typ wyliczeniowy, unie, klasy, tablice](wlasne-typy-danych.md).
 
 !!! info "Materiały uzupełniające"
 
