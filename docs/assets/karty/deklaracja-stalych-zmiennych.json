@@ -7,47 +7,93 @@
  "zadania": [
   {
    "nr": 1,
-   "tytul": "Zmienne i stałe w JavaScript",
+   "tytul": "Deklaracje w C",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 1. Program <code>c/deklaracje.c</code> tylko czytasz — nie uruchamiaj go, zanim nie wpiszesz odpowiedzi.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "c1_rowery",
+       "int rowery — deklaracja, deklaracja z inicjalizacją czy przypisanie?",
+       ""
+      ],
+      [
+       "c1_kupione",
+       "int kupione — deklaracja, deklaracja z inicjalizacją czy przypisanie?",
+       ""
+      ],
+      [
+       "c1_przypisanie",
+       "kupione = rowery + 1 — deklaracja, deklaracja z inicjalizacją czy przypisanie?",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "c1_wynik",
+     "wiersze": 3,
+     "pytanie": "Co wypiszą trzy wiersze z printf?"
+    },
+    {
+     "typ": "tekst",
+     "id": "c1_raty",
+     "wiersze": 2,
+     "pytanie": "Dlaczego raty ma taką wartość?"
+    },
+    {
+     "typ": "tekst",
+     "id": "c1_wierszA",
+     "wiersze": 3,
+     "pytanie": "Co się stanie po odkomentowaniu wiersza A? Czym różniłoby się to przy #define MAX_ROWEROW 5?"
+    }
+   ]
+  },
+  {
+   "nr": 2,
+   "tytul": "Profil klienta w JavaScripcie",
    "poziom": "wymagania konieczne · ocena 2",
-   "polecenie": "Ćwiczenie 1. Wyjaśnij różnicę między zmienną a stałą oraz uzupełnij tabelę profilu użytkownika.",
+   "polecenie": "Ćwiczenie 2. Uzupełnij <code>js/profil.js</code> i przepisz wyniki z konsoli: wartość i typ z <code>typeof</code>.",
    "pola": [
     {
      "typ": "tekst",
      "id": "z1_roznica",
      "wiersze": 3,
-     "pytanie": "Wyjaśnij własnymi słowami różnicę między słowem let a const oraz dlaczego unika się var."
+     "pytanie": "Własnymi słowami: czym różni się let od const i dlaczego nie używamy var?"
     },
     {
      "typ": "tabela",
      "wiersze": [
       [
        "z1_nazwaSerwisu",
-       "nazwaSerwisu (const, Wartość: Szprycha)",
+       "nazwaSerwisu (const) — wartość i typ",
        ""
       ],
       [
        "z1_idUzytkownika",
-       "idUzytkownika (const, Wartość: 1042)",
+       "idUzytkownika (const) — wartość i typ",
        ""
       ],
       [
        "z1_imieUzytkownika",
-       "imieUzytkownika (let, Wartość i typ z typeof)",
+       "imieUzytkownika (let) — wartość i typ",
        ""
       ],
       [
        "z1_wiekUzytkownika",
-       "wiekUzytkownika (let, Wartość i typ z typeof)",
+       "wiekUzytkownika (let) — wartość i typ",
        ""
       ],
       [
        "z1_czyAktywny",
-       "czyAktywny (let, Wartość i typ z typeof)",
+       "czyAktywny (let) — wartość i typ",
        ""
       ],
       [
        "z1_ostatniaWypozyczalnia",
-       "ostatniaWypozyczalnia (let bez wartości wyjściowej — typ z typeof)",
+       "ostatniaWypozyczalnia (let bez wartości) — wartość i typ",
        ""
       ]
      ]
@@ -55,57 +101,63 @@
    ]
   },
   {
-   "nr": 2,
-   "tytul": "Testowanie mutowalności const vs let",
+   "nr": 3,
+   "tytul": "Zmienna, stała i stała tablica",
    "poziom": "wymagania podstawowe · ocena 3",
-   "polecenie": "Ćwiczenie 2. Przeprowadź test modyfikacji zmiennej oraz stałej i zaobserwuj wynik w konsoli.",
+   "polecenie": "Ćwiczenie 3. Plik <code>js/stala.js</code>.",
    "pola": [
     {
      "typ": "tekst",
      "id": "z2_punkty",
-     "wiersze": 2,
-     "pytanie": "Jaka była wartość zmiennej punktyLojalnosciowe po zwiększeniu o 25?"
+     "wiersze": 1,
+     "pytanie": "Jaką wartość ma punktyLojalnosciowe po zwiększeniu o 25?"
     },
     {
      "typ": "tekst",
      "id": "z2_blad",
      "wiersze": 3,
-     "pytanie": "Podaj dokładny komunikat błędu z konsoli po próbie modyfikacji stałej maksymalnyRabat i wyjaśnij, dlaczego wystąpił."
+     "pytanie": "Dokładny komunikat z konsoli po przypisaniu nowej wartości stałej maksymalnyRabat — i dlaczego się pojawił."
+    },
+    {
+     "typ": "tekst",
+     "id": "z2_koszyk",
+     "wiersze": 3,
+     "pytanie": "Czy push do stałej tablicy koszyk dał błąd? Co właściwie chroni const?"
     },
     {
      "typ": "zrzut",
      "id": "z2_zrzut",
-     "opis": "zrzut ekranu z konsoli F12 pokazujący komunikat błędu TypeError przy próbie nadpisania const"
+     "opis": "konsola F12 z komunikatem TypeError: Assignment to constant variable. i koszykiem z dwoma elementami"
     }
    ]
   },
   {
-   "nr": 3,
-   "tytul": "Nazewnictwo camelCase i typy danych",
-   "poziom": "wymagania podstawowe · ocena 3",
-   "polecenie": "Oceń poprawność identyfikatorów oraz przeanalizuj specyficzny przypadek typeof null.",
+   "nr": 4,
+   "tytul": "Nazwy i typy",
+   "poziom": "wymagania konieczne · ocena 2",
+   "polecenie": "Ćwiczenie 4. Na każdy identyfikator: poprawny czy błędny, a jeśli poprawny — czy zgodny ze zwyczajem JavaScriptu. Dla złych podaj poprawkę.",
    "pola": [
     {
      "typ": "tabela",
      "wiersze": [
       [
        "z3_id1",
-       "1miejsce — poprawność i ew. poprawka",
+       "1miejsce",
        ""
       ],
       [
        "z3_id2",
-       "liczba_punktow — poprawność i poprawka na camelCase",
+       "liczba_punktow",
        ""
       ],
       [
        "z3_id3",
-       "uzytkownikZalogowany — poprawność i ocena",
+       "uzytkownikZalogowany",
        ""
       ],
       [
        "z3_id4",
-       "let class = 4; — poprawność i wyjaśnienie błędu",
+       "let class = 4;",
        ""
       ]
      ]
@@ -114,56 +166,150 @@
      "typ": "tekst",
      "id": "z3_null",
      "wiersze": 2,
-     "pytanie": "Co zwraca typeof null i z jakiego powodu tak się dzieje?"
-    }
-   ]
-  },
-  {
-   "nr": 4,
-   "tytul": "Mini-kalkulator cen części rowerowych",
-   "poziom": "wymagania rozszerzające · ocena 4",
-   "polecenie": "Ćwiczenie 3. Wklej kod skryptu kalkulatora oraz dołącz zrzut ekranu z wykonania w konsoli.",
-   "pola": [
-    {
-     "typ": "tekst",
-     "id": "z4_kod",
-     "wiersze": 12,
-     "pytanie": "Wklej kod JavaScript realizujący przeliczenie koszyka netto i brutto."
-    },
-    {
-     "typ": "zrzut",
-     "id": "z4_zrzut",
-     "opis": "zrzut ekranu z konsoli F12 pokazujący wyjście skryptu z przeliczeniem dla 3 oraz 5 sztuk"
+     "pytanie": "Co zwraca typeof null i dlaczego?"
     }
    ]
   },
   {
    "nr": 5,
-   "tytul": "Walidacja typów operatorem typeof i konwersja",
-   "poziom": "wymagania dopełniające · ocena 5",
-   "polecenie": "Ćwiczenie 4. Zabezpieczenie kodu przed błędnym typem wejściowym i konwersja wartości.",
+   "tytul": "Kalkulator koszyka",
+   "poziom": "wymagania rozszerzające · ocena 4",
+   "polecenie": "Ćwiczenie 5. Plik <code>js/koszyk.js</code>, ceny w groszach.",
    "pola": [
     {
      "typ": "tekst",
-     "id": "z5_kod",
-     "wiersze": 10,
-     "pytanie": "Wklej kod sprawdzający typ wejscieCena operatorem typeof i wykonujący konwersję za pomocą Number()."
-    },
-    {
-     "typ": "tekst",
-     "id": "z5_analiza",
-     "wiersze": 3,
-     "pytanie": "Co zwraca funkcja Number() dla wartości null, a co dla undefined? Wyjaśnij różnicę."
+     "id": "z4_kod",
+     "wiersze": 12,
+     "pytanie": "Wklej swój kod z koszyk.js (stałe, zmienne, obliczenia i komunikaty)."
     },
     {
      "typ": "zrzut",
-     "id": "z5_zrzut",
-     "opis": "zrzut ekranu z konsoli F12 z działającą walidacją i wyliczoną kwotą"
+     "id": "z4_zrzut",
+     "opis": "konsola F12 z wynikami dla 3 i dla 5 sztuk"
     }
    ]
   },
   {
    "nr": 6,
+   "tytul": "Napraw skrypt",
+   "poziom": "wymagania dopełniające · ocena 5",
+   "polecenie": "Ćwiczenie 6. Plik <code>js/naprawa.js</code> — pięć błędów w deklaracjach.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "z5_kod",
+     "wiersze": 10,
+     "pytanie": "Dla każdego z pięciu błędów: komunikat z konsoli (albo objaw) → twoja poprawka."
+    },
+    {
+     "typ": "tekst",
+     "id": "z5_analiza",
+     "wiersze": 3,
+     "pytanie": "Który błąd nie dał żadnego komunikatu? Dlaczego przeglądarka go nie zgłosiła?"
+    },
+    {
+     "typ": "zrzut",
+     "id": "z5_zrzut",
+     "opis": "konsola F12 z wierszem: Szprycha: zlecenia 1, do zapłaty 96 zł"
+    }
+   ]
+  },
+  {
+   "nr": 7,
+   "tytul": "Zmienne i stałe w PHP",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 7. Plik <code>deklaracje.php</code>. Przewidywania wpisz <strong>przed</strong> otwarciem strony.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "p7_przewid",
+     "wiersze": 2,
+     "pytanie": "Twoje przewidywania: typ $liczbaRowerow i typ $netto według gettype()."
+    },
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "p7_liczba",
+       "$liczbaRowerow — typ ze strony",
+       ""
+      ],
+      [
+       "p7_netto",
+       "$netto — typ i wartość ze strony",
+       ""
+      ],
+      [
+       "p7_wierszB",
+       "Wiersz B — komunikat",
+       ""
+      ],
+      [
+       "p7_wierszC",
+       "Wiersz C — komunikat i wartość STAWKA_VAT po nim",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "p7_wniosek",
+     "wiersze": 3,
+     "pytanie": "Co PHP zrobił z literówką w nazwie zmiennej, a czego nie pozwolił zrobić ze stałą?"
+    },
+    {
+     "typ": "zrzut",
+     "id": "p7_zrzut",
+     "opis": "strona deklaracje.php z tabelą typów"
+    }
+   ]
+  },
+  {
+   "nr": 8,
+   "tytul": "Jedna informacja w trzech językach",
+   "poziom": "wymagania rozszerzające · ocena 4",
+   "polecenie": "Ćwiczenie 8. W każdym wierszu: deklaracja w C · JavaScripcie · PHP.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "t8_max",
+       "Maksymalna liczba rowerów dziennie — 12",
+       ""
+      ],
+      [
+       "t8_dzis",
+       "Liczba rowerów przyjętych dziś — 0",
+       ""
+      ],
+      [
+       "t8_cena",
+       "Cena wymiany łańcucha — 45,00 zł",
+       ""
+      ],
+      [
+       "t8_sms",
+       "Zgoda klienta na SMS-y — tak",
+       ""
+      ],
+      [
+       "t8_kod",
+       "Kod pocztowy serwisu — 33-230",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "t8_wniosek",
+     "wiersze": 2,
+     "pytanie": "W którym języku pomyłkę typu wykryje narzędzie, zanim program ruszy?"
+    }
+   ]
+  },
+  {
+   "nr": 9,
    "tytul": "Samoocena",
    "poziom": "",
    "polecenie": "Krótko i szczerze — to nie jest oceniane na stopień.",
@@ -172,13 +318,13 @@
      "typ": "tekst",
      "id": "s_zaskoczenie",
      "wiersze": 2,
-     "pytanie": "Co najbardziej zaskoczyło Cię w zachowaniu stałych const lub typowania dynamicznego w JavaScript?"
+     "pytanie": "Co najbardziej zaskoczyło cię w deklaracjach w C, JavaScripcie lub PHP?"
     },
     {
      "typ": "tekst",
      "id": "s_wniosek",
      "wiersze": 2,
-     "pytanie": "Kiedy w swoich przyszłych projektach zastosujesz const, a kiedy let?"
+     "pytanie": "Po czym poznasz, czy daną informację zapisać jako stałą, czy jako zmienną?"
     }
    ]
   }

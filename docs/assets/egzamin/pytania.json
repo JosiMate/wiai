@@ -859,5 +859,35 @@
     "opcje": ["$suma", "_katalog", "2miejsce", "wspolczynnik1"],
     "poprawna": 2,
     "wyjasnienie": "Identyfikatory w JavaScript nie mogą rozpoczynać się od cyfry. Nazwa 2miejsce wywoła SyntaxError."
+  },
+  {
+    "id": "inf03-php-015",
+    "obszar": "php",
+    "temat": "dzial-3/deklaracja-stalych-zmiennych.md",
+    "pytanie": "Który zapis poprawnie definiuje w PHP stałą o nazwie STAWKA_VAT?",
+    "kod": "",
+    "opcje": ["$STAWKA_VAT = 0.23;", "let STAWKA_VAT = 0.23;", "var STAWKA_VAT = 0.23;", "define('STAWKA_VAT', 0.23);"],
+    "poprawna": 3,
+    "wyjasnienie": "Stałą w PHP tworzy define('NAZWA', wartość) albo const NAZWA = wartość;. Nazwa stałej nie ma znaku $. Słowa let w PHP nie ma, a var służy tylko do pól w klasach."
+  },
+  {
+    "id": "inf03-php-016",
+    "obszar": "php",
+    "temat": "dzial-3/deklaracja-stalych-zmiennych.md",
+    "pytanie": "Co wyświetli poniższy skrypt w PHP 8?",
+    "kod": "<?php\n$cena = \"5\";\n$ilosc = 3;\necho $cena + $ilosc;",
+    "opcje": ["53", "Błąd TypeError", "5 3", "8"],
+    "poprawna": 3,
+    "wyjasnienie": "Operator + w PHP zawsze dodaje liczbowo: napis \"5\" zostaje zamieniony na liczbę 5, więc wynik to 8. Do sklejania napisów służy kropka."
+  },
+  {
+    "id": "inf03-js-022",
+    "obszar": "javascript",
+    "temat": "dzial-3/deklaracja-stalych-zmiennych.md",
+    "pytanie": "Co wypisze w konsoli poniższy kod JavaScript?",
+    "kod": "const koszyk = [\"dętka\"];\nkoszyk.push(\"łańcuch\");\nconsole.log(koszyk.length);",
+    "opcje": ["2", "1", "TypeError: Assignment to constant variable.", "undefined"],
+    "poprawna": 0,
+    "wyjasnienie": "const zabrania ponownego przypisania zmiennej, ale nie blokuje zmiany zawartości tablicy. push dodaje element, więc tablica ma 2 elementy."
   }
 ]
