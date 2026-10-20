@@ -26,7 +26,7 @@
 
   // „Świętego Mikołaja” i „swietego mikolaja” mają być tym samym
   const uprosc = (s) => String(s ?? "").toLowerCase()
-    .normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .replace(/ł/g, "l").replace(/[^a-z0-9]+/g, "");
 
   function widokPytania(host, pytanie, nr, ile) {
@@ -263,15 +263,20 @@
 
   function podepnij(host, pytania) {
     render(host, pytania);
+    if (host.dataset.podpiete) return;
+    host.dataset.podpiete = "1";
+
     const podsum = host.querySelector(".qz-podsumowanie");
 
     const odswiezPodsumowanie = () => {
+      const podsumAktualne = host.querySelector(".qz-podsumowanie");
+      if (!podsumAktualne) return;
       const zrobione = host.querySelectorAll(".qz-pytanie[data-wynik]");
-      if (zrobione.length < pytania.length) { podsum.hidden = true; return; }
+      if (zrobione.length < pytania.length) { podsumAktualne.hidden = true; return; }
       const dobre = host.querySelectorAll('.qz-pytanie[data-wynik="1"]').length;
-      podsum.hidden = false;
-      podsum.className = "qz-podsumowanie " + (dobre === pytania.length ? "qz-ok" : "");
-      podsum.textContent = dobre === pytania.length
+      podsumAktualne.hidden = false;
+      podsumAktualne.className = "qz-podsumowanie " + (dobre === pytania.length ? "qz-ok" : "");
+      podsumAktualne.textContent = dobre === pytania.length
         ? `Komplet — ${dobre} z ${pytania.length}. Ten materiał masz opanowany.`
         : `${dobre} z ${pytania.length} poprawnie. Wróć do sekcji, których dotyczyły pomyłki.`;
     };
@@ -284,7 +289,7 @@
         const li = e.target.closest(".qz-pytanie");
         if (sprawdzJedno(li, pytania[Number(li.dataset.i)]) !== null) odswiezPodsumowanie();
       }
-      if (e.target.closest(".qz-reset")) podepnij(host, pytania);
+      if (e.target.closest(".qz-reset")) render(host, pytania);
     });
     host.addEventListener("keydown", (e) => {
       if (e.key === "Enter" && e.target.classList.contains("qz-tekst")) {
@@ -305,8 +310,17 @@
 
       host.dataset.gotowe = "1";
       let pytania;
-      try { pytania = JSON.parse(tekst); }
-      catch (e) {
+      try {
+        pytania = JSON.parse(tekst);
+        if (pytania && !Array.isArray(pytania) && Array.isArray(pytania.pytania)) {
+          pytania = pytania.pytania;
+        }
+        if (Array.isArray(pytania)) {
+          pytania.forEach((q) => {
+            if (!q.opcje && q.odpowiedzi) q.opcje = q.odpowiedzi;
+          });
+        }
+      } catch (e) {
         host.innerHTML = '<p class="kp-blad">Nie udało się wczytać pytań (błąd w danych quizu).</p>';
         console.warn("quiz: błąd w JSON-ie —", e.message);
         return;

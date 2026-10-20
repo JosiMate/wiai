@@ -453,8 +453,10 @@
       if (p) zapiszPole(p, e.target.value);
     });
     host.addEventListener("change", (e) => {
-      if (e.target.type === "radio" && e.target.dataset.pole)
-        zapiszPole(e.target.dataset.pole, e.target.value);
+      const p = e.target.dataset.pole;
+      if (p && e.target.type !== "file") {
+        zapiszPole(p, e.target.value);
+      }
       // Pole na plik obsługujemy tylko wtedy, gdy należy do strefy na zrzut.
       // W stopce jest jeszcze jedno — do wczytywania postępu — i bez tego
       // sprawdzenia trafiało tutaj z pustym „closest", wywracając skrypt.
