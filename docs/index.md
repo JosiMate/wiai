@@ -57,8 +57,8 @@ to powtórzenie i sprawdzian końcowy.
 | **[Wbudowane typy danych (char, int, float, double) i ich specyfikatory](dzial-3/typy-danych.md)** | 3 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 | **[Deklaracja stałych i zmiennych w odniesieniu do wbudowanych typów danych](dzial-3/deklaracja-stalych-zmiennych.md)** | 3 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 | **[Własne typy danych – typ wyliczeniowy, unie, klasy, tablice](dzial-3/wlasne-typy-danych.md)** | 3 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
-| Tworzenie własnych typów danych w wybranych językach programowania | 3 | *w przygotowaniu* |
-| Operatory arytmetyczne, bitowe, logiczne oraz relacji | 3 | *w przygotowaniu* |
+| **[Tworzenie własnych typów danych w wybranych językach programowania](dzial-3/tworzenie-typow-danych.md)** | 3 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
+| **[Operatory arytmetyczne, bitowe, logiczne oraz relacji](dzial-3/operatory.md)** | 3 | :material-check-circle:{ title="Materiał gotowy" } gotowe |
 
 ### Dział IV. Algorytmy i struktura programu
 

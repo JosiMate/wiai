@@ -1,0 +1,229 @@
+{
+ "id": "wiai-tworzenie-typow-danych",
+ "tytul": "Tworzenie własnych typów danych w wybranych językach programowania",
+ "przedmiot": "PCEiKZ Szczucin · witryny i aplikacje internetowe · INF.03",
+ "klasa": "4TI",
+ "sufiks": "TWORZENIE-TYPOW",
+ "zadania": [
+  {
+   "nr": 1,
+   "tytul": "Typ Rower w C",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 1. Program <code>c/rower.c</code> tylko czytasz — odpowiedzi wpisz przed uruchomieniem.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "k1_wynik",
+     "wiersze": 3,
+     "pytanie": "Co wypiszą trzy wiersze wyniku?"
+    },
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "k1_minus",
+       "Dlaczego dodaj_przebieg(&a, -500) niczego nie zmieniło?",
+       ""
+      ],
+      [
+       "k1_kopia",
+       "Dlaczego zeruj_kopie(a) nie wyzerowała przebiegu?",
+       ""
+      ],
+      [
+       "k1_b",
+       "Dlaczego b ma inny przebieg niż a?",
+       ""
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "nr": 2,
+   "tytul": "Metody klasy Rower",
+   "poziom": "wymagania konieczne · ocena 2",
+   "polecenie": "Ćwiczenie 2. Plik <code>js/rower.js</code>.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "k2_kod",
+     "wiersze": 12,
+     "pytanie": "Wklej cztery metody klasy Rower."
+    },
+    {
+     "typ": "zrzut",
+     "id": "k2_zrzut",
+     "opis": "konsola F12 z pięcioma wierszami wyniku ćwiczenia 2"
+    }
+   ]
+  },
+  {
+   "nr": 3,
+   "tytul": "Metody w PHP",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 3. Plik <code>rower.php</code>.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "k3_kod",
+     "wiersze": 10,
+     "pytanie": "Wklej metody opis(), dodajPrzebieg() i pętlę z ZADANIA 4."
+    },
+    {
+     "typ": "zrzut",
+     "id": "k3_zrzut",
+     "opis": "strona rower.php z tabelą trzech rowerów"
+    }
+   ]
+  },
+  {
+   "nr": 4,
+   "tytul": "Zaprojektuj typ",
+   "poziom": "wymagania konieczne · ocena 2",
+   "polecenie": "Ćwiczenie 4. Rezerwacja stanowiska — bez kodu, tylko projekt.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "k4_pola",
+       "Pola (zaznacz prywatne i tylko do odczytu)",
+       ""
+      ],
+      [
+       "k4_metody",
+       "Metody (nazwa, parametry, co zwraca)",
+       ""
+      ],
+      [
+       "k4_reguly",
+       "Reguły — kiedy metoda rzuca błąd (co najmniej dwie)",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "k4_diagram",
+     "wiersze": 8,
+     "pytanie": "Diagram klasy (jak w sekcji 5)."
+    }
+   ]
+  },
+  {
+   "nr": 5,
+   "tytul": "Licznik, którego nie da się cofnąć",
+   "poziom": "wymagania rozszerzające · ocena 4",
+   "polecenie": "Ćwiczenie 5. Plik <code>js/przebieg.js</code>.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "k5_kod",
+     "wiersze": 16,
+     "pytanie": "Wklej klasę LicznikRoweru."
+    },
+    {
+     "typ": "tekst",
+     "id": "k5_dlaczego",
+     "wiersze": 2,
+     "pytanie": "Dlaczego przypisanie licznik.przebiegKm = 0 nic nie zmieniło?"
+    },
+    {
+     "typ": "zrzut",
+     "id": "k5_zrzut",
+     "opis": "konsola F12 z pięcioma wierszami wyniku ćwiczenia 5"
+    }
+   ]
+  },
+  {
+   "nr": 6,
+   "tytul": "Zlecenie z usługami",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 6. Plik <code>zlecenie.php</code>.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "k6_kod",
+     "wiersze": 12,
+     "pytanie": "Wklej metody dodaj() i suma() oraz dodanie trzech usług."
+    },
+    {
+     "typ": "tekst",
+     "id": "k6_wierszC",
+     "wiersze": 2,
+     "pytanie": "Komunikat po odkomentowaniu wiersza C i jego przyczyna."
+    },
+    {
+     "typ": "zrzut",
+     "id": "k6_zrzut",
+     "opis": "strona zlecenie.php: Razem: 165,00 zł (pozycji: 3)"
+    }
+   ]
+  },
+  {
+   "nr": 7,
+   "tytul": "Kolejność statusów",
+   "poziom": "wymagania rozszerzające · ocena 4",
+   "polecenie": "Ćwiczenie 7. Plik <code>js/zlecenie.js</code>.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "k7_kod",
+     "wiersze": 16,
+     "pytanie": "Wklej metody zmienStatus() i toString() oraz kod z ZADANIA 3."
+    },
+    {
+     "typ": "zrzut",
+     "id": "k7_zrzut",
+     "opis": "konsola F12: błąd zmiany statusu, dwa zlecenia i Zleceń: 2"
+    }
+   ]
+  },
+  {
+   "nr": 8,
+   "tytul": "Karnet według specyfikacji",
+   "poziom": "wymagania dopełniające · ocena 5",
+   "polecenie": "Ćwiczenie 8. Plik <code>js/karnet.js</code> — wszystkie testy mają dać OK.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "k8_kod",
+     "wiersze": 20,
+     "pytanie": "Wklej klasę Karnet."
+    },
+    {
+     "typ": "tekst",
+     "id": "k8_diagram",
+     "wiersze": 8,
+     "pytanie": "Diagram klasy Karnet."
+    },
+    {
+     "typ": "zrzut",
+     "id": "k8_zrzut",
+     "opis": "konsola F12 z sześcioma OK i Wynik: 6/6"
+    }
+   ]
+  },
+  {
+   "nr": 9,
+   "tytul": "Samoocena",
+   "poziom": "",
+   "polecenie": "Krótko i szczerze — to nie jest oceniane na stopień.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "s_zaskoczenie",
+     "wiersze": 2,
+     "pytanie": "Co najbardziej zaskoczyło cię przy pisaniu własnych klas?"
+    },
+    {
+     "typ": "tekst",
+     "id": "s_wniosek",
+     "wiersze": 2,
+     "pytanie": "Kiedy w swoim projekcie warto schować pole i dać do niego getter?"
+    }
+   ]
+  }
+ ]
+}

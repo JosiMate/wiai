@@ -63,6 +63,16 @@ otwierasz, klikając nazwę tematu.
     "plik": "wlasne-typy-danych",
     "tytul": "Dział III · Własne typy danych",
     "url": "../dzial-3/wlasne-typy-danych/#karta"
+  },
+  {
+    "plik": "tworzenie-typow-danych",
+    "tytul": "Dział III · Tworzenie własnych typów danych",
+    "url": "../dzial-3/tworzenie-typow-danych/#karta"
+  },
+  {
+    "plik": "operatory",
+    "tytul": "Dział III · Operatory",
+    "url": "../dzial-3/operatory/#karta"
   }
 ]
 </script>

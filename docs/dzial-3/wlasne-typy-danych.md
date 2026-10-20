@@ -1015,6 +1015,7 @@ Z tego tematu oddajesz **kartę pracy** w formacie Word. Kartę wypełniaj w tra
 ---
 
 Poprzedni temat: [Deklaracja stałych i zmiennych w odniesieniu do wbudowanych typów danych](deklaracja-stalych-zmiennych.md).
+Następny temat: [Tworzenie własnych typów danych w wybranych językach programowania](tworzenie-typow-danych.md).
 
 !!! info "Materiały uzupełniające"
 

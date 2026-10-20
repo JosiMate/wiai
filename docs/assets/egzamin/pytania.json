@@ -929,5 +929,105 @@
     "opcje": ["łańcuch", "Warning: Undefined array key 2", "klocki", "3"],
     "poprawna": 2,
     "wyjasnienie": "$czesci[] = ... dopisuje element na koniec tablicy z kolejnym indeksem 2. Indeksy liczą się od 0, więc $czesci[2] to klocki."
+  },
+  {
+    "id": "inf03-js-025",
+    "obszar": "javascript",
+    "temat": "dzial-3/operatory.md",
+    "pytanie": "Jaki będzie wynik porównania \"5\" === 5 w JavaScripcie?",
+    "kod": "",
+    "opcje": ["false", "true", "undefined", "TypeError"],
+    "poprawna": 0,
+    "wyjasnienie": "Operator === porównuje wartość i typ bez zamiany typów. Napis i liczba to różne typy, więc wynik to false."
+  },
+  {
+    "id": "inf03-js-026",
+    "obszar": "javascript",
+    "temat": "dzial-3/operatory.md",
+    "pytanie": "Które wyrażenie JavaScript poprawnie sprawdza, czy liczba n jest parzysta?",
+    "kod": "",
+    "opcje": ["n / 2 === 0", "n % 2 === 1", "n ^ 2 === 0", "n % 2 === 0"],
+    "poprawna": 3,
+    "wyjasnienie": "Operator % zwraca resztę z dzielenia. Liczba parzysta daje resztę 0 przy dzieleniu przez 2."
+  },
+  {
+    "id": "inf03-js-027",
+    "obszar": "javascript",
+    "temat": "dzial-3/operatory.md",
+    "pytanie": "Jaką wartość wypisze poniższy kod JavaScript?",
+    "kod": "let x = 10;\nx += 5;\nx *= 2;\nconsole.log(x);",
+    "opcje": ["20", "25", "30", "15"],
+    "poprawna": 2,
+    "wyjasnienie": "x += 5 daje 15, a x *= 2 mnoży wynik przez 2, czyli 30."
+  },
+  {
+    "id": "inf03-php-019",
+    "obszar": "php",
+    "temat": "dzial-3/operatory.md",
+    "pytanie": "Który warunek PHP jest prawdziwy tylko wtedy, gdy wiek należy do przedziału od 18 do 65 włącznie?",
+    "kod": "",
+    "opcje": ["$wiek >= 18 || $wiek <= 65", "$wiek > 18 && $wiek < 65", "$wiek >= 18 && $wiek <= 65", "!($wiek >= 18) && $wiek <= 65"],
+    "poprawna": 2,
+    "wyjasnienie": "Należenie do przedziału wymaga spełnienia obu warunków naraz (&&), a słowo „włącznie” oznacza operatory >= i <=."
+  },
+  {
+    "id": "inf03-php-020",
+    "obszar": "php",
+    "temat": "dzial-3/operatory.md",
+    "pytanie": "Jaki napis wyświetli skrypt PHP z operatorem % i funkcją intdiv()?",
+    "kod": "<?php\necho 7 % 3 . ' ' . intdiv(7, 3);",
+    "opcje": ["2 1", "1 2", "1 2.33", "2.33 1"],
+    "poprawna": 1,
+    "wyjasnienie": "7 % 3 to reszta z dzielenia (1), a intdiv(7, 3) to część całkowita ilorazu (2)."
+  },
+  {
+    "id": "inf03-js-028",
+    "obszar": "javascript",
+    "temat": "dzial-3/tworzenie-typow-danych.md",
+    "pytanie": "Za pomocą którego słowa kluczowego metoda klasy w JavaScripcie odwołuje się do pól obiektu, na rzecz którego ją wywołano?",
+    "kod": "",
+    "opcje": ["self", "this", "$this", "super"],
+    "poprawna": 1,
+    "wyjasnienie": "W metodach klasy JavaScript bieżący obiekt to this, np. this.przebiegKm. W PHP odpowiednikiem jest $this->."
+  },
+  {
+    "id": "inf03-js-029",
+    "obszar": "javascript",
+    "temat": "dzial-3/tworzenie-typow-danych.md",
+    "pytanie": "Co wypisze poniższy kod JavaScript?",
+    "kod": "class Licznik {\n  #wartosc = 0;\n  zwieksz() { this.#wartosc++; }\n  get wartosc() { return this.#wartosc; }\n}\nconst l = new Licznik();\nl.zwieksz();\nl.zwieksz();\nconsole.log(l.wartosc);",
+    "opcje": ["0", "undefined", "SyntaxError", "2"],
+    "poprawna": 3,
+    "wyjasnienie": "Metoda zwieksz() dwa razy zwiększa prywatne pole #wartosc, a getter wartosc zwraca jego aktualną wartość: 2."
+  },
+  {
+    "id": "inf03-php-021",
+    "obszar": "php",
+    "temat": "dzial-3/tworzenie-typow-danych.md",
+    "pytanie": "Który modyfikator w PHP sprawia, że właściwość klasy jest dostępna tylko wewnątrz tej klasy?",
+    "kod": "",
+    "opcje": ["private", "public", "static", "readonly"],
+    "poprawna": 0,
+    "wyjasnienie": "private ogranicza dostęp do wnętrza klasy. Próba odczytu z zewnątrz kończy się błędem Cannot access private property."
+  },
+  {
+    "id": "inf03-php-022",
+    "obszar": "php",
+    "temat": "dzial-3/tworzenie-typow-danych.md",
+    "pytanie": "Jaki będzie wynik działania poniższego skryptu PHP?",
+    "kod": "<?php\nclass Koszyk {\n    private array $ceny = [];\n    public function dodaj(int $c): void { $this->ceny[] = $c; }\n    public function suma(): int { return array_sum($this->ceny); }\n}\n$k = new Koszyk();\n$k->dodaj(90);\n$k->dodaj(35);\necho $k->suma();",
+    "opcje": ["90", "125", "9035", "Error: Cannot access private property"],
+    "poprawna": 1,
+    "wyjasnienie": "Metoda dodaj() dopisuje ceny do prywatnej tablicy, a suma() je dodaje: 90 + 35 = 125. Dostęp do pola odbywa się wewnątrz klasy, więc błędu nie ma."
+  },
+  {
+    "id": "inf03-php-023",
+    "obszar": "php",
+    "temat": "dzial-3/tworzenie-typow-danych.md",
+    "pytanie": "Co się stanie przy próbie zmiany wartości właściwości zadeklarowanej jako public readonly int $nr po utworzeniu obiektu (PHP 8.1+)?",
+    "kod": "",
+    "opcje": ["Wartość zostanie zmieniona", "Pojawi się tylko ostrzeżenie Warning", "Zostanie zgłoszony błąd Cannot modify readonly property", "Właściwość zostanie usunięta"],
+    "poprawna": 2,
+    "wyjasnienie": "Właściwość readonly można zainicjować tylko raz, wewnątrz klasy. Każda późniejsza zmiana kończy się błędem Error."
   }
 ]

@@ -1,0 +1,306 @@
+{
+ "id": "wiai-operatory",
+ "tytul": "Operatory arytmetyczne, bitowe, logiczne oraz relacji",
+ "przedmiot": "PCEiKZ Szczucin · witryny i aplikacje internetowe · INF.03",
+ "klasa": "4TI",
+ "sufiks": "OPERATORY",
+ "zadania": [
+  {
+   "nr": 1,
+   "tytul": "Policz bez komputera",
+   "poziom": "wymagania konieczne · ocena 2",
+   "polecenie": "Ćwiczenie 1. Wynik każdego wyrażenia w podanym języku.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "o1_a",
+       "a) C: 17 / 5",
+       ""
+      ],
+      [
+       "o1_b",
+       "b) JavaScript: 17 / 5",
+       ""
+      ],
+      [
+       "o1_c",
+       "c) 17 % 5",
+       ""
+      ],
+      [
+       "o1_d",
+       "d) 20 - 2 * 3 + 4",
+       ""
+      ],
+      [
+       "o1_e",
+       "e) (20 - 2) * (3 + 4)",
+       ""
+      ],
+      [
+       "o1_f",
+       "f) JavaScript: \"Rowery: \" + 2 + 1",
+       ""
+      ],
+      [
+       "o1_g",
+       "g) PHP: intdiv(17, 5)",
+       ""
+      ],
+      [
+       "o1_h",
+       "h) JavaScript: 2 ** 4",
+       ""
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "nr": 2,
+   "tytul": "Kasa serwisu",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 2. Plik <code>js/kasa.js</code>.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "o2_kod",
+     "wiersze": 10,
+     "pytanie": "Wklej obliczenia z ZADANIA 1 i pętlę wydającą resztę (ZADANIE 3)."
+    },
+    {
+     "typ": "zrzut",
+     "id": "o2_zrzut",
+     "opis": "konsola F12: Czas naprawy: 2 h 15 min, nominały 50, 20, 10, 5, 2 i Klientów: 13"
+    }
+   ]
+  },
+  {
+   "nr": 3,
+   "tytul": "Operatory w C",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 3. Program <code>c/operatory.c</code> tylko czytasz — odpowiedzi wpisz przed uruchomieniem.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "o3_wynik",
+     "wiersze": 7,
+     "pytanie": "Co wypisze każdy z siedmiu wierszy z printf?"
+    },
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "o3_srednio",
+       "Dlaczego „Srednio” i „Srednio inaczej” się różnią?",
+       ""
+      ],
+      [
+       "o3_wierszA",
+       "Co się stanie po odkomentowaniu wiersza A?",
+       ""
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "nr": 4,
+   "tytul": "== czy ===?",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 4. Plik <code>js/porownania.js</code>. Przewidywanie wpisz PRZED odświeżeniem strony; przy pomyłce dopisz „(źle)”.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "o4_1",
+       "Porównanie 1",
+       ""
+      ],
+      [
+       "o4_2",
+       "Porównanie 2",
+       ""
+      ],
+      [
+       "o4_3",
+       "Porównanie 3",
+       ""
+      ],
+      [
+       "o4_4",
+       "Porównanie 4",
+       ""
+      ],
+      [
+       "o4_5",
+       "Porównanie 5",
+       ""
+      ],
+      [
+       "o4_6",
+       "Porównanie 6",
+       ""
+      ],
+      [
+       "o4_7",
+       "Porównanie 7",
+       ""
+      ],
+      [
+       "o4_8",
+       "Porównanie 8",
+       ""
+      ]
+     ]
+    },
+    {
+     "typ": "tekst",
+     "id": "o4_kod",
+     "wiersze": 3,
+     "pytanie": "Twoja poprawka funkcji kodPoprawny i dlaczego wcześniej zawsze dawała false."
+    }
+   ]
+  },
+  {
+   "nr": 5,
+   "tytul": "Rabat w PHP",
+   "poziom": "wymagania rozszerzające · ocena 4",
+   "polecenie": "Ćwiczenie 5. Plik <code>rabat.php</code>.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "o5_warunek",
+     "wiersze": 6,
+     "pytanie": "Wklej odczyt danych z adresu (ZADANIE 1) i warunek rabatu (ZADANIE 2)."
+    },
+    {
+     "typ": "tekst",
+     "id": "o5_nawias",
+     "wiersze": 2,
+     "pytanie": "Po co nawias w warunku rabatu? Co by się stało bez niego?"
+    },
+    {
+     "typ": "zrzut",
+     "id": "o5_zrzut",
+     "opis": "strona rabat.php dla 300 zł i 0 wizyt: Do zapłaty: 270,00 zł (rabat: tak)"
+    }
+   ]
+  },
+  {
+   "nr": 6,
+   "tytul": "Bity na kartce",
+   "poziom": "wymagania podstawowe · ocena 3",
+   "polecenie": "Ćwiczenie 6. Zapisz liczby dwójkowo i oblicz.",
+   "pola": [
+    {
+     "typ": "tabela",
+     "wiersze": [
+      [
+       "o6_and",
+       "12 & 10",
+       ""
+      ],
+      [
+       "o6_or",
+       "12 | 10",
+       ""
+      ],
+      [
+       "o6_xor",
+       "12 ^ 10",
+       ""
+      ],
+      [
+       "o6_shl",
+       "5 << 2",
+       ""
+      ],
+      [
+       "o6_shr",
+       "20 >> 2",
+       ""
+      ],
+      [
+       "o6_parz",
+       "13 & 1 i 14 & 1 — co mówi wynik?",
+       ""
+      ],
+      [
+       "o6_chmod",
+       "Odczyt + zapis bez wykonania; czy 5 zawiera zapis?",
+       ""
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "nr": 7,
+   "tytul": "Uprawnienia w panelu",
+   "poziom": "wymagania rozszerzające · ocena 4",
+   "polecenie": "Ćwiczenie 7. Plik <code>js/uprawnienia.js</code>.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "o7_kod",
+     "wiersze": 10,
+     "pytanie": "Wklej kierownika, funkcję ma() i zmiany uprawnień mechanika."
+    },
+    {
+     "typ": "tekst",
+     "id": "o7_wierszD",
+     "wiersze": 3,
+     "pytanie": "Dlaczego wiersz D wypisuje 1?"
+    },
+    {
+     "typ": "zrzut",
+     "id": "o7_zrzut",
+     "opis": "konsola F12: kierownik: 15 (1111) i mechanik po zmianach: 9 (1001)"
+    }
+   ]
+  },
+  {
+   "nr": 8,
+   "tytul": "Napraw skrypt",
+   "poziom": "wymagania dopełniające · ocena 5",
+   "polecenie": "Ćwiczenie 8. Plik <code>js/naprawa.js</code> — pięć błędów w operatorach.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "o8_bledy",
+     "wiersze": 10,
+     "pytanie": "Dla każdego błędu: zły wiersz → poprawka → dlaczego liczył źle."
+    },
+    {
+     "typ": "zrzut",
+     "id": "o8_zrzut",
+     "opis": "konsola F12 z czterema poprawnymi wierszami wyniku"
+    }
+   ]
+  },
+  {
+   "nr": 9,
+   "tytul": "Samoocena",
+   "poziom": "",
+   "polecenie": "Krótko i szczerze — to nie jest oceniane na stopień.",
+   "pola": [
+    {
+     "typ": "tekst",
+     "id": "s_zaskoczenie",
+     "wiersze": 2,
+     "pytanie": "Który operator albo wynik najbardziej cię zaskoczył?"
+    },
+    {
+     "typ": "tekst",
+     "id": "s_wniosek",
+     "wiersze": 2,
+     "pytanie": "Jakie dwie zasady z tego tematu zastosujesz w swoim kodzie?"
+    }
+   ]
+  }
+ ]
+}
